@@ -1,4 +1,5 @@
 // AUTO-GENERATED from /public/assets/aistudio/*.md — STRICTLY GROUNDED, ZERO ⚠️ QUESTIONS
+// Questões com origem "autoral" vêm de /conteudo/questoes/**/*.yaml. Edite lá e rode npm run generate:content.
 import type { Question } from '../types';
 
 export const QUESTIONS: Question[] = [
@@ -12603,1776 +12604,6 @@ export const QUESTIONS: Question[] = [
     "isBossStyle": true
   },
   {
-    "id": "q-mc-0642",
-    "fichaId": "cid",
-    "fichaTitulo": "Princípios: Confidencialidade, Integridade, Disponibilidade ( + autenticidade e não repúdio)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em Segurança da Informação, qual alternativa descreve corretamente \"Princípios: Confidencialidade, Integridade, Disponibilidade (…\"?",
-    "alternativas": [
-      "Problema: em microsserviços, instâncias sobem e caem e mudam de IP. Como um serviço acha o outro?",
-      "exceção = evento que interrompe o fluxo normal do programa. Criar e entregar o objeto de exceção ao runtime = lançar (throw).",
-      "Estatuto de Roma do Tribunal Penal Internacional: Julga pessoas por genocídio, crimes contra a humanidade, de guerra e agressão. Adoção: 17/07/1998. No Brasil…",
-      "Confidencialidade: só quem pode, vê. Integridade: não foi alterado indevidamente. Disponibilidade: está acessível quando precisa.",
-      "sistema de gestão da informação de privacidade (PIMS) — trata dados pessoais (PII), com controles para controladores e operadores."
-    ],
-    "correta": 3,
-    "trechoFonte": "Confidencialidade: só quem pode, vê. Integridade: não foi alterado indevidamente. Disponibilidade: está acessível quando precisa.",
-    "dificuldade": 1
-  },
-  {
-    "id": "q-lac-0643",
-    "fichaId": "cid",
-    "fichaTitulo": "Princípios: Confidencialidade, Integridade, Disponibilidade ( + autenticidade e não repúdio)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "lacuna",
-    "enunciado": "Complete a lacuna conforme a ficha \"Princípios: Confidencialidade, Integridade, Disponibilidade (…\": \"________: só quem pode, vê. Integridade: não foi alterado indevidamente. Disponibilidade: está acessível quando precisa.\"",
-    "alternativas": [
-      "2025 (14/10/2025)",
-      "controladores",
-      "desenvolvimento",
-      "Confidencialidade",
-      "Direitos do titular (art. 18)"
-    ],
-    "correta": 3,
-    "trechoFonte": "Confidencialidade: só quem pode, vê. Integridade: não foi alterado indevidamente. Disponibilidade: está acessível quando precisa.",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ass-0644",
-    "fichaId": "cid",
-    "fichaTitulo": "Princípios: Confidencialidade, Integridade, Disponibilidade ( + autenticidade e não repúdio)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "associacao",
-    "enunciado": "Associe o trecho abaixo ao tópico correspondente de Segurança da Informação: \"Extras que aparecem nos normativos: autenticidade (é quem diz ser) e não repúdio (o autor não pode negar a autoria) — ambos exigidos pelo moreq-jus e providos pela assinatura digital…\"",
-    "alternativas": [
-      "Zabbix, Prometheus, Grafana, ELK e Fluentd ( Técnico: ELK)",
-      "Arquiteturas: cliente-servidor, multicamadas, objetos…",
-      "Processo de desenvolvimento de software e ciclo de vida",
-      "Princípios: Confidencialidade, Integridade, Disponibilidade (…",
-      "OWASP Top 10:2025 + desenvolvimento seguro"
-    ],
-    "correta": 3,
-    "trechoFonte": "Extras que aparecem nos normativos: autenticidade (é quem diz ser) e não repúdio (o autor não pode negar a autoria) — ambos exigidos pelo moreq-jus e providos pela assinatura digital (ver criptografia).",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ce-0645",
-    "fichaId": "cid",
-    "fichaTitulo": "Princípios: Confidencialidade, Integridade, Disponibilidade ( + autenticidade e não repúdio)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "certo_errado",
-    "enunciado": "Julgue o item: A definição de \"Princípios: Confidencialidade, Integridade, Disponibilidade (…\" corresponde a: \"27001 — o que é: norma de requisitos para um SGSI (Sistema de Gestão da Segurança da Informação). É a que se certifica. Título atual: \"Segurança da informação, segurança cibernética e…\"",
-    "alternativas": [
-      "Certo",
-      "Errado"
-    ],
-    "correta": 1,
-    "trechoFonte": "Confidencialidade: só quem pode, vê. Integridade: não foi alterado indevidamente. Disponibilidade: está acessível quando precisa. (A afirmação trocada refere-se a ABNT NBR ISO/IEC 27001 e 27002.)",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-con-0646",
-    "fichaId": "cid",
-    "fichaTitulo": "Princípios: Confidencialidade, Integridade, Disponibilidade ( + autenticidade e não repúdio)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "conexao",
-    "enunciado": "Qual das fichas abaixo possui conexão direta apontada na ficha \"Princípios: Confidencialidade, Integridade, Disponibilidade (…\"?",
-    "alternativas": [
-      "Ataques, ameaças e códigos maliciosos",
-      "ABNT NBR ISO/IEC 27701 — privacidade (PIMS)",
-      "Criptografia, hashes, certificados e assinaturas digitais",
-      "CIS Controls v8",
-      "Modelo OSI × arquitetura TCP/IP"
-    ],
-    "correta": 2,
-    "trechoFonte": "Conexões de Princípios: Confidencialidade, Integridade, Disponibilidade (…: Resolução CNJ nº 522/2023 + MoReq-Jus 2ª edição · Criptografia, hashes, certificados e assinaturas digitais · Resolução CNJ nº 396/2021 — ENSEC-PJ (Estratégia Nacional de Segurança Cibernética do Poder Judiciário) · PDTIC 2024-2026 do TRT4.",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-fcc-0647",
-    "fichaId": "cid",
-    "fichaTitulo": "Princípios: Confidencialidade, Integridade, Disponibilidade ( + autenticidade e não repúdio)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em estudo preparatório para o TRT da 4ª Região (Segurança da Informação), considerando especificamente o conteúdo de \"Princípios: Confidencialidade, Integridade, Disponibilidade (…\", assinale a alternativa CORRETA:",
-    "alternativas": [
-      "1FN: só valores atômicos (sem atributos multivalorados/grupos repetidos).",
-      "O que é (Google ML Crash Course): treinar um software — o modelo — para fazer previsões ou gerar conteúdo a partir de dados.",
-      "Extras que aparecem nos normativos: autenticidade (é quem diz ser) e não repúdio (o autor não pode negar a autoria) — ambos exigidos pelo moreq-jus e providos pela…",
-      "Estrutura lógica: floresta (conjunto de árvores; o primeiro domínio é o domínio raiz) → árvore (domínios com namespace contíguo) → domínio → OU (unidade…",
-      "Implementation Groups (IGs):"
-    ],
-    "correta": 2,
-    "trechoFonte": "Extras que aparecem nos normativos: autenticidade (é quem diz ser) e não repúdio (o autor não pode negar a autoria) — ambos exigidos pelo moreq-jus e providos pela assinatura digital (ver criptografia).",
-    "dificuldade": 3,
-    "isBossStyle": true
-  },
-  {
-    "id": "q-mc-0648",
-    "fichaId": "iso-27001",
-    "fichaTitulo": "ABNT NBR ISO/IEC 27001 e 27002",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em Segurança da Informação, qual alternativa descreve corretamente \"ABNT NBR ISO/IEC 27001 e 27002\"?",
-    "alternativas": [
-      "regras técnicas para desenvolver módulos e serviços na PDPJ-Br. É a \"Definition of Done\" do Judiciário.",
-      "Convenção sobre a Eliminação de Todas as Formas de Discriminação Racial: Define discriminação racial; permite ações afirmativas temporárias. Adoção: 1965…",
-      "institui o Modelo de Requisitos para Sistemas Informatizados de Gestão de Processos e Documentos do Poder Judiciário (MoReq-Jus) e torna obrigatório usá-lo no…",
-      "27001 — o que é: norma de requisitos para um SGSI (Sistema de Gestão da Segurança da Informação). É a que se certifica. Título atual: \"Segurança da informação…",
-      "Servidor web: serve conteúdo HTTP (estático e encaminha dinâmico) — ex.: Apache HTTP Server, IIS, NGINX."
-    ],
-    "correta": 3,
-    "trechoFonte": "27001 — o que é: norma de requisitos para um SGSI (Sistema de Gestão da Segurança da Informação). É a que se certifica. Título atual: \"Segurança da informação, segurança cibernética e proteção à privacidade\".",
-    "dificuldade": 1
-  },
-  {
-    "id": "q-lac-0649",
-    "fichaId": "iso-27001",
-    "fichaTitulo": "ABNT NBR ISO/IEC 27001 e 27002",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "lacuna",
-    "enunciado": "Complete a lacuna conforme a ficha \"ABNT NBR ISO/IEC 27001 e 27002\": \"________: norma de requisitos para um SGSI (Sistema de Gestão da Segurança da Informação). É a que se certifica. Título atual: \"Segurança da informação, segurança cibernética e proteção à privacidade\".\"",
-    "alternativas": [
-      "Algoritmos (documentação NGINX)",
-      "independentemente da intencionalidade",
-      "stages",
-      "27001 — o que é",
-      "TCP"
-    ],
-    "correta": 3,
-    "trechoFonte": "27001 — o que é: norma de requisitos para um SGSI (Sistema de Gestão da Segurança da Informação). É a que se certifica. Título atual: \"Segurança da informação, segurança cibernética e proteção à privacidade\".",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ass-0650",
-    "fichaId": "iso-27001",
-    "fichaTitulo": "ABNT NBR ISO/IEC 27001 e 27002",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "associacao",
-    "enunciado": "Associação (ABNT NBR ISO/IEC 27001 e 27002): qual descrição corresponde corretamente a \"Organizacionais (5)\"?",
-    "alternativas": [
-      "O que é: política nacional do CNJ, alterada pela Res. 518/2023 e pela Res. 671/2026. Objetivo: trabalho digno, saudável, seguro e sustentável no…",
-      "Classe (molde) → objeto (instância). Interface = contrato de métodos que a classe implementa.",
-      "Nº de controles: 37",
-      "Comitê de Governança de TIC (Comissão Permanente do Regimento Interno; art. 227-A):",
-      "10/12/1948, Res. 217 A (III)"
-    ],
-    "correta": 2,
-    "trechoFonte": "Organizacionais (5) — 37",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ce-0651",
-    "fichaId": "iso-27001",
-    "fichaTitulo": "ABNT NBR ISO/IEC 27001 e 27002",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "certo_errado",
-    "enunciado": "Julgue o item: A definição de \"ABNT NBR ISO/IEC 27001 e 27002\" corresponde a: \"Confidencialidade: só quem pode, vê. Integridade: não foi alterado indevidamente. Disponibilidade: está acessível quando precisa.\"",
-    "alternativas": [
-      "Certo",
-      "Errado"
-    ],
-    "correta": 1,
-    "trechoFonte": "27001 — o que é: norma de requisitos para um SGSI (Sistema de Gestão da Segurança da Informação). É a que se certifica. Título atual: \"Segurança da informação, segurança cibernética e proteção à privacidade\". (A afirmação trocada refere-se a Princípios: Confidencialidade, Integridade, Disponibilidade (….)",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-con-0652",
-    "fichaId": "iso-27001",
-    "fichaTitulo": "ABNT NBR ISO/IEC 27001 e 27002",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "conexao",
-    "enunciado": "Qual das fichas abaixo possui conexão direta apontada na ficha \"ABNT NBR ISO/IEC 27001 e 27002\"?",
-    "alternativas": [
-      "SQL: DDL, DML, DCL ( + TCL)",
-      "ABNT NBR ISO/IEC 27701 — privacidade (PIMS)",
-      "JSON Web Token (RFC 7519)",
-      "Banco de dados: PostgreSQL e H2",
-      "Código de Conduta e Valores Éticos do TRT4 (Portaria GP.TRT4…"
-    ],
-    "correta": 1,
-    "trechoFonte": "Conexões de ABNT NBR ISO/IEC 27001 e 27002: ABNT NBR ISO/IEC 27005:2023 — gestão de riscos de segurança da informação · ABNT NBR ISO/IEC 27701 — privacidade (PIMS) · Resolução CNJ nº 396/2021 — ENSEC-PJ (Estratégia Nacional de Segurança Cibernética do Poder Judiciário) · CIS Controls v8.",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-fcc-0653",
-    "fichaId": "iso-27001",
-    "fichaTitulo": "ABNT NBR ISO/IEC 27001 e 27002",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em estudo preparatório para o TRT da 4ª Região (Segurança da Informação), considerando especificamente o conteúdo de \"ABNT NBR ISO/IEC 27001 e 27002\", assinale a alternativa CORRETA:",
-    "alternativas": [
-      "JBoss EAP × WildFly: WildFly (antes \"JBoss AS\", renomeado em 2014) é o projeto comunitário/upstream; o JBoss EAP é a versão comercial com suporte da Red Hat…",
-      "27002 — o que é: guia de boas práticas que detalha os controles (definição, propósito, como implementar).",
-      "O que é: a trajetória dos direitos humanos das declarações do séc. XVIII (ex.: Declaração dos Direitos do Homem e do Cidadão, França, 1789) até o sistema…",
-      "O que é: classificação didática do jurista tcheco Karel Vasak, apresentada em 1979 no Instituto Internacional de Direitos Humanos de Estrasburgo, usando o lema da…",
-      "Carta da ONU + Estatuto da Corte Internacional de Justiça — Adoção: 1945"
-    ],
-    "correta": 1,
-    "trechoFonte": "27002 — o que é: guia de boas práticas que detalha os controles (definição, propósito, como implementar).",
-    "dificuldade": 3,
-    "isBossStyle": true
-  },
-  {
-    "id": "q-mc-0654",
-    "fichaId": "iso-27701",
-    "fichaTitulo": "ABNT NBR ISO/IEC 27701 — privacidade (PIMS)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em Segurança da Informação, qual alternativa descreve corretamente \"ABNT NBR ISO/IEC 27701 — privacidade (PIMS)\"?",
-    "alternativas": [
-      "sistema de gestão da informação de privacidade (PIMS) — trata dados pessoais (PII), com controles para controladores e operadores.",
-      "Convenção sobre Diversidade Biológica: Conservação e uso sustentável da biodiversidade. Adoção: Rio de Janeiro, 05/06/1992. No Brasil: Decreto 2.519/1998.",
-      "controlar o que muda, quem mudou, quando e por quê nos itens do software (código, configs, scripts, documentação), garantindo que qualquer versão possa ser…",
-      "IPv4: 32 bits (ex.: 192.168.10.25). Privados (RFC 1918): 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16.",
-      "Confidencialidade: só quem pode, vê. Integridade: não foi alterado indevidamente. Disponibilidade: está acessível quando precisa."
-    ],
-    "correta": 0,
-    "trechoFonte": "O que é: sistema de gestão da informação de privacidade (PIMS) — trata dados pessoais (PII), com controles para controladores e operadores.",
-    "dificuldade": 1
-  },
-  {
-    "id": "q-lac-0655",
-    "fichaId": "iso-27701",
-    "fichaTitulo": "ABNT NBR ISO/IEC 27701 — privacidade (PIMS)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "lacuna",
-    "enunciado": "Complete a lacuna conforme a ficha \"ABNT NBR ISO/IEC 27701 — privacidade (PIMS)\": \"O que é: sistema de gestão da ________ — trata dados pessoais (PII), com controles para controladores e operadores.\"",
-    "alternativas": [
-      "informação de privacidade (PIMS)",
-      "6E são o",
-      "funções/código",
-      "Integridade",
-      "função de perda"
-    ],
-    "correta": 0,
-    "trechoFonte": "O que é: sistema de gestão da informação de privacidade (PIMS) — trata dados pessoais (PII), com controles para controladores e operadores.",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ass-0656",
-    "fichaId": "iso-27701",
-    "fichaTitulo": "ABNT NBR ISO/IEC 27701 — privacidade (PIMS)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "associacao",
-    "enunciado": "Associe o trecho abaixo ao tópico correspondente de Segurança da Informação: \"2019: era uma extensão da 27001/27002 (precisava de SGSI). → o edital do Técnico cita 27701:2019.\"",
-    "alternativas": [
-      "Gerações (dimensões) de direitos",
-      "Pacto Internacional dos Direitos Econômicos, Sociais e Culturais",
-      "ABNT NBR ISO/IEC 27701 — privacidade (PIMS)",
-      "Engenharia de requisitos",
-      "Princípios: Confidencialidade, Integridade, Disponibilidade (…"
-    ],
-    "correta": 2,
-    "trechoFonte": "2019: era uma extensão da 27001/27002 (precisava de SGSI). → o edital do Técnico cita 27701:2019.",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ce-0657",
-    "fichaId": "iso-27701",
-    "fichaTitulo": "ABNT NBR ISO/IEC 27701 — privacidade (PIMS)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "certo_errado",
-    "enunciado": "Julgue o item sobre \"ABNT NBR ISO/IEC 27701 — privacidade (PIMS)\": 2019: era uma extensão da 27001/27002 (precisava de SGSI). → o edital do Técnico cita 27701:2019.",
-    "alternativas": [
-      "Certo",
-      "Errado"
-    ],
-    "correta": 0,
-    "trechoFonte": "2019: era uma extensão da 27001/27002 (precisava de SGSI). → o edital do Técnico cita 27701:2019.",
-    "dificuldade": 1
-  },
-  {
-    "id": "q-con-0658",
-    "fichaId": "iso-27701",
-    "fichaTitulo": "ABNT NBR ISO/IEC 27701 — privacidade (PIMS)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "conexao",
-    "enunciado": "Qual das fichas abaixo possui conexão direta apontada na ficha \"ABNT NBR ISO/IEC 27701 — privacidade (PIMS)\"?",
-    "alternativas": [
-      "Jenkins",
-      "Gerações (dimensões) de direitos",
-      "LGPD — Lei nº 13.709/2018",
-      "Linux: Red Hat Enterprise Linux e Oracle Linux",
-      "Princípios: Confidencialidade, Integridade, Disponibilidade (…"
-    ],
-    "correta": 2,
-    "trechoFonte": "Conexões de ABNT NBR ISO/IEC 27701 — privacidade (PIMS): LGPD — Lei nº 13.709/2018 · ABNT NBR ISO/IEC 27001 e 27002.",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-fcc-0659",
-    "fichaId": "iso-27701",
-    "fichaTitulo": "ABNT NBR ISO/IEC 27701 — privacidade (PIMS)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em estudo preparatório para o TRT da 4ª Região (Segurança da Informação), considerando especificamente o conteúdo de \"ABNT NBR ISO/IEC 27701 — privacidade (PIMS)\", assinale a alternativa CORRETA:",
-    "alternativas": [
-      "2019: era uma extensão da 27001/27002 (precisava de SGSI). → o edital do Técnico cita 27701:2019.",
-      "CD (Continuous Delivery): o software está sempre em estado implantável; a ida à produção pode ter aprovação manual. (Continuous Deployment = vai automático.)",
-      "Firewall: filtra tráfego por regras (endereço, porta, protocolo, estado da conexão).",
-      "Ementa mínima (Portaria CNJ 257/2022):",
-      "O que é: 18 controles prioritizados do Center for Internet Security (eram 20 na v7) com 153 salvaguardas."
-    ],
-    "correta": 0,
-    "trechoFonte": "2019: era uma extensão da 27001/27002 (precisava de SGSI). → o edital do Técnico cita 27701:2019.",
-    "dificuldade": 3,
-    "isBossStyle": true
-  },
-  {
-    "id": "q-mc-0660",
-    "fichaId": "iso-27005",
-    "fichaTitulo": "ABNT NBR ISO/IEC 27005:2023 — gestão de riscos de segurança da informação",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "tecnico",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em Segurança da Informação, qual alternativa descreve corretamente \"ABNT NBR ISO/IEC 27005:2023 — gestão de riscos de segurança da…\"?",
-    "alternativas": [
-      "Desenvolvimento seguro / programação defensiva: validar toda entrada, usar consultas parametrizadas (contra injeção), tratar exceções sem vazar detalhes (liga com…",
-      "framework de governança e gestão de informação e tecnologia (I&T) corporativa da ISACA, lançado em 2018 (sucessor do COBIT 5, de 2012).",
-      "é a linguagem preferencial da PDPJ-Br (Portaria 253/2020).",
-      "Convenção sobre os Direitos da Criança: Proteção integral. Adoção: 20/11/1989. No Brasil: Decreto 99.710/1990.",
-      "orientações para gerir riscos de SI, apoiando a 27001 (identificar, analisar, avaliar, tratar, comunicar e monitorar riscos)."
-    ],
-    "correta": 4,
-    "trechoFonte": "O que é: orientações para gerir riscos de SI, apoiando a 27001 (identificar, analisar, avaliar, tratar, comunicar e monitorar riscos).",
-    "dificuldade": 1
-  },
-  {
-    "id": "q-lac-0661",
-    "fichaId": "iso-27005",
-    "fichaTitulo": "ABNT NBR ISO/IEC 27005:2023 — gestão de riscos de segurança da informação",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "tecnico",
-    "tipo": "lacuna",
-    "enunciado": "Complete a lacuna conforme a ficha \"ABNT NBR ISO/IEC 27005:2023 — gestão de riscos de segurança da…\": \"O que é: orientações para ________ de SI, apoiando a 27001 (identificar, analisar, avaliar, tratar, comunicar e monitorar riscos).\"",
-    "alternativas": [
-      "papéis",
-      "incidente",
-      "rodando",
-      "No TRT4",
-      "gerir riscos"
-    ],
-    "correta": 4,
-    "trechoFonte": "O que é: orientações para gerir riscos de SI, apoiando a 27001 (identificar, analisar, avaliar, tratar, comunicar e monitorar riscos).",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ass-0662",
-    "fichaId": "iso-27005",
-    "fichaTitulo": "ABNT NBR ISO/IEC 27005:2023 — gestão de riscos de segurança da informação",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "tecnico",
-    "tipo": "associacao",
-    "enunciado": "Associe o trecho abaixo ao tópico correspondente de Segurança da Informação: \"Tratamento do risco (opções clássicas): modificar/mitigar, reter/aceitar, evitar, compartilhar/transferir.\"",
-    "alternativas": [
-      "Portaria CNJ nº 131/2021 — Grupo Revisor de Código-Fonte",
-      "Resolução CNJ nº 335/2020 — cria a PDPJ-Br",
-      "CMMI v3.0 — domínio Development",
-      "Uso de assistentes de IA no desenvolvimento",
-      "ABNT NBR ISO/IEC 27005:2023 — gestão de riscos de segurança da…"
-    ],
-    "correta": 4,
-    "trechoFonte": "Tratamento do risco (opções clássicas): modificar/mitigar, reter/aceitar, evitar, compartilhar/transferir.",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ce-0663",
-    "fichaId": "iso-27005",
-    "fichaTitulo": "ABNT NBR ISO/IEC 27005:2023 — gestão de riscos de segurança da informação",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "tecnico",
-    "tipo": "certo_errado",
-    "enunciado": "Julgue o item: A definição de \"ABNT NBR ISO/IEC 27005:2023 — gestão de riscos de segurança da…\" corresponde a: \"Confidencialidade: só quem pode, vê. Integridade: não foi alterado indevidamente. Disponibilidade: está acessível quando precisa.\"",
-    "alternativas": [
-      "Certo",
-      "Errado"
-    ],
-    "correta": 1,
-    "trechoFonte": "O que é: orientações para gerir riscos de SI, apoiando a 27001 (identificar, analisar, avaliar, tratar, comunicar e monitorar riscos). (A afirmação trocada refere-se a Princípios: Confidencialidade, Integridade, Disponibilidade (….)",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-con-0664",
-    "fichaId": "iso-27005",
-    "fichaTitulo": "ABNT NBR ISO/IEC 27005:2023 — gestão de riscos de segurança da informação",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "tecnico",
-    "tipo": "conexao",
-    "enunciado": "Qual das fichas abaixo possui conexão direta apontada na ficha \"ABNT NBR ISO/IEC 27005:2023 — gestão de riscos de segurança da…\"?",
-    "alternativas": [
-      "CIS Controls v8",
-      "Declaração Americana dos Direitos e Deveres do Homem",
-      "Git: commit, branch, merge, rebase",
-      "LGPD — Lei nº 13.709/2018",
-      "ABNT NBR ISO/IEC/IEEE 12207:2021 — processos do ciclo de vida…"
-    ],
-    "correta": 4,
-    "trechoFonte": "Conexões de ABNT NBR ISO/IEC 27005:2023 — gestão de riscos de segurança da…: Resolução CNJ nº 396/2021 — ENSEC-PJ (Estratégia Nacional de Segurança Cibernética do Poder Judiciário) · ABNT NBR ISO/IEC/IEEE 12207:2021 — processos do ciclo de vida do software.",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-fcc-0665",
-    "fichaId": "iso-27005",
-    "fichaTitulo": "ABNT NBR ISO/IEC 27005:2023 — gestão de riscos de segurança da informação",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "tecnico",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em estudo preparatório para o TRT da 4ª Região (Segurança da Informação), considerando especificamente o conteúdo de \"ABNT NBR ISO/IEC 27005:2023 — gestão de riscos de segurança da…\", assinale a alternativa CORRETA:",
-    "alternativas": [
-      "git branch → lista, cria, apaga e renomeia ramos.",
-      "Dá para pular versões (14 → 18 direto), mas leia as release notes de todas as intermediárias (incompatibilidades).",
-      "O que é: Unified Modeling Language, mantida pela OMG. Notação para modelar sistemas orientados a objetos.",
-      "Cuidado: muitos autores preferem \"dimensões\", porque uma geração não substitui a outra. A doutrina brasileira fala também em 4ª e 5ª gerações, mas não há consenso.",
-      "Tratamento do risco (opções clássicas): modificar/mitigar, reter/aceitar, evitar, compartilhar/transferir."
-    ],
-    "correta": 4,
-    "trechoFonte": "Tratamento do risco (opções clássicas): modificar/mitigar, reter/aceitar, evitar, compartilhar/transferir.",
-    "dificuldade": 3,
-    "isBossStyle": true
-  },
-  {
-    "id": "q-mc-0666",
-    "fichaId": "cis-controls",
-    "fichaTitulo": "CIS Controls v8",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "tecnico",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em Segurança da Informação, qual alternativa descreve corretamente \"CIS Controls v8\"?",
-    "alternativas": [
-      "27001 — o que é: norma de requisitos para um SGSI (Sistema de Gestão da Segurança da Informação). É a que se certifica. Título atual: \"Segurança da informação…",
-      "VPN: túnel criptografado sobre rede pública. IPSec (camada de rede) ou SSL/TLS (VPN-SSL, geralmente via navegador/cliente leve).",
-      "Alocação contígua: partições fixas/variáveis → fragmentação externa (buracos entre blocos) e interna (sobra dentro do bloco). Estratégias: first-fit, best-fit…",
-      "Low-code: abordagem visual de desenvolvimento, com mínimo de codificação manual (arrastar e soltar, componentes prontos, modelos). Ainda permite código/scripts.",
-      "18 controles prioritizados do Center for Internet Security (eram 20 na v7) com 153 salvaguardas."
-    ],
-    "correta": 4,
-    "trechoFonte": "O que é: 18 controles prioritizados do Center for Internet Security (eram 20 na v7) com 153 salvaguardas.",
-    "dificuldade": 1
-  },
-  {
-    "id": "q-lac-0667",
-    "fichaId": "cis-controls",
-    "fichaTitulo": "CIS Controls v8",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "tecnico",
-    "tipo": "lacuna",
-    "enunciado": "Complete a lacuna conforme a ficha \"CIS Controls v8\": \"O que é: ________ prioritizados do Center for Internet Security (eram 20 na v7) com 153 salvaguardas.\"",
-    "alternativas": [
-      "3 ciclos de vida",
-      "2% do faturamento",
-      "firewall de",
-      "Dado pessoal sensível",
-      "18 controles"
-    ],
-    "correta": 4,
-    "trechoFonte": "O que é: 18 controles prioritizados do Center for Internet Security (eram 20 na v7) com 153 salvaguardas.",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ass-0668",
-    "fichaId": "cis-controls",
-    "fichaTitulo": "CIS Controls v8",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "tecnico",
-    "tipo": "associacao",
-    "enunciado": "Associe o trecho abaixo ao tópico correspondente de Segurança da Informação: \"Implementation Groups (IGs):\"",
-    "alternativas": [
-      "Convenção sobre Diversidade Biológica",
-      "ABNT NBR ISO/IEC 27005:2023 — gestão de riscos de segurança da…",
-      "Linguagem Java",
-      "Balanceamento de carga e SSL offloading",
-      "CIS Controls v8"
-    ],
-    "correta": 4,
-    "trechoFonte": "Implementation Groups (IGs):",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ce-0669",
-    "fichaId": "cis-controls",
-    "fichaTitulo": "CIS Controls v8",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "tecnico",
-    "tipo": "certo_errado",
-    "enunciado": "Julgue o item: A definição de \"CIS Controls v8\" corresponde a: \"Confidencialidade: só quem pode, vê. Integridade: não foi alterado indevidamente. Disponibilidade: está acessível quando precisa.\"",
-    "alternativas": [
-      "Certo",
-      "Errado"
-    ],
-    "correta": 1,
-    "trechoFonte": "O que é: 18 controles prioritizados do Center for Internet Security (eram 20 na v7) com 153 salvaguardas. (A afirmação trocada refere-se a Princípios: Confidencialidade, Integridade, Disponibilidade (….)",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-con-0670",
-    "fichaId": "cis-controls",
-    "fichaTitulo": "CIS Controls v8",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "tecnico",
-    "tipo": "conexao",
-    "enunciado": "Qual das fichas abaixo possui conexão direta apontada na ficha \"CIS Controls v8\"?",
-    "alternativas": [
-      "Testes de software (o Técnico aprofunda)",
-      "Modelo Entidade-Relacionamento (ER)",
-      "Apache Maven",
-      "Resolução CNJ nº 400/2021 — Política de Sustentabilidade do…",
-      "WSUS (Windows Server Update Services)"
-    ],
-    "correta": 4,
-    "trechoFonte": "Conexões de CIS Controls v8: ABNT NBR ISO/IEC 27001 e 27002 · WSUS (Windows Server Update Services).",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-fcc-0671",
-    "fichaId": "cis-controls",
-    "fichaTitulo": "CIS Controls v8",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "tecnico",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em estudo preparatório para o TRT da 4ª Região (Segurança da Informação), considerando especificamente o conteúdo de \"CIS Controls v8\", assinale a alternativa CORRETA:",
-    "alternativas": [
-      "Declaração Universal dos Direitos Humanos — Adoção: 10/12/1948, Res. 217 A (III)",
-      "O que é: projeto \"guarda-chuva\" de ferramentas para automatizar navegadores.",
-      "Carta da ONU + Estatuto da Corte Internacional de Justiça — Promulgação/Status no Brasil: Decreto 19.841/1945",
-      "Hash criptográfico: resumo de tamanho fixo, unidirecional (ex.: SHA-256) → integridade.",
-      "IG1 = higiene cibernética essencial: 56 salvaguardas — o mínimo para toda organização."
-    ],
-    "correta": 4,
-    "trechoFonte": "IG1 = higiene cibernética essencial: 56 salvaguardas — o mínimo para toda organização.",
-    "dificuldade": 3,
-    "isBossStyle": true
-  },
-  {
-    "id": "q-mc-0672",
-    "fichaId": "lgpd",
-    "fichaTitulo": "LGPD — Lei nº 13.709/2018",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em Segurança da Informação, qual alternativa descreve corretamente \"LGPD — Lei nº 13.709/2018\"?",
-    "alternativas": [
-      "Definições (art. 5º):",
-      "classificação didática do jurista tcheco Karel Vasak, apresentada em 1979 no Instituto Internacional de Direitos Humanos de Estrasburgo, usando o lema da Revolução…",
-      "🟢 Ambos: testes automatizados (no Analista, junto com Selenium em DevOps).",
-      "programa da Justiça do Trabalho para promover equidade de raça, gênero, etnia, orientação sexual, identidade de gênero, idade e pessoas com deficiência (art. 1º).",
-      "Firewall: filtra tráfego por regras (endereço, porta, protocolo, estado da conexão)."
-    ],
-    "correta": 0,
-    "trechoFonte": "Definições (art. 5º):",
-    "dificuldade": 1
-  },
-  {
-    "id": "q-lac-0673",
-    "fichaId": "lgpd",
-    "fichaTitulo": "LGPD — Lei nº 13.709/2018",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "lacuna",
-    "enunciado": "Complete a lacuna conforme a ficha \"LGPD — Lei nº 13.709/2018\": \"________: informação relacionada a pessoa natural identificada ou identificável.\"",
-    "alternativas": [
-      "Dado pessoal",
-      "Tratamento do risco (opções clássicas)",
-      "Objetivos (art. 1º)",
-      "TypeScript",
-      "< 576px (.col-)"
-    ],
-    "correta": 0,
-    "trechoFonte": "Dado pessoal: informação relacionada a pessoa natural identificada ou identificável.",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ass-0674",
-    "fichaId": "lgpd",
-    "fichaTitulo": "LGPD — Lei nº 13.709/2018",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "associacao",
-    "enunciado": "Associe o trecho abaixo ao tópico correspondente de Segurança da Informação: \"Dado pessoal: informação relacionada a pessoa natural identificada ou identificável.\"",
-    "alternativas": [
-      "LGPD — Lei nº 13.709/2018",
-      "CIS Controls v8",
-      "HTML5, CSS3, Bootstrap 5, PWA",
-      "Resolução CNJ nº 351/2020 — Prevenção e Enfrentamento do…",
-      "Tratados de DH em face da CF/88 e status hierárquico"
-    ],
-    "correta": 0,
-    "trechoFonte": "Dado pessoal: informação relacionada a pessoa natural identificada ou identificável.",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ce-0675",
-    "fichaId": "lgpd",
-    "fichaTitulo": "LGPD — Lei nº 13.709/2018",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "certo_errado",
-    "enunciado": "Julgue o item sobre \"LGPD — Lei nº 13.709/2018\": Dado pessoal: informação relacionada a pessoa natural identificada ou identificável.",
-    "alternativas": [
-      "Certo",
-      "Errado"
-    ],
-    "correta": 0,
-    "trechoFonte": "Dado pessoal: informação relacionada a pessoa natural identificada ou identificável.",
-    "dificuldade": 1
-  },
-  {
-    "id": "q-con-0676",
-    "fichaId": "lgpd",
-    "fichaTitulo": "LGPD — Lei nº 13.709/2018",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "conexao",
-    "enunciado": "Qual das fichas abaixo possui conexão direta apontada na ficha \"LGPD — Lei nº 13.709/2018\"?",
-    "alternativas": [
-      "ABNT NBR ISO/IEC 27701 — privacidade (PIMS)",
-      "JSF (Jakarta Faces) e JSP (Jakarta Pages)",
-      "IA generativa e LLMs (grandes modelos de linguagem)",
-      "Framework Spring, Spring Boot e Spring Cloud",
-      "CIS Controls v8"
-    ],
-    "correta": 0,
-    "trechoFonte": "Conexões de LGPD — Lei nº 13.709/2018: ABNT NBR ISO/IEC 27701 — privacidade (PIMS) · Resolução CNJ nº 335/2020 — cria a PDPJ-Br · Resolução CNJ nº 574/2024 — dados judiciais públicos, serviços privados e portal unificado · JSON Web Token (RFC 7519) · Código de Conduta e Valores Éticos do TRT4 (Portaria GP.TRT4 nº 4.573/2023).",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-fcc-0677",
-    "fichaId": "lgpd",
-    "fichaTitulo": "LGPD — Lei nº 13.709/2018",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em estudo preparatório para o TRT da 4ª Região (Segurança da Informação), considerando especificamente o conteúdo de \"LGPD — Lei nº 13.709/2018\", assinale a alternativa CORRETA:",
-    "alternativas": [
-      "10 princípios (art. 6º, além da boa-fé): finalidade, adequação, necessidade, livre acesso, qualidade dos dados, transparência, segurança, prevenção, não…",
-      "27002 — o que é: guia de boas práticas que detalha os controles (definição, propósito, como implementar).",
-      "2025 (14/10/2025): virou norma independente (stand-alone), certificável sem a 27001. → o edital do Analista cita \"27701:2026\" (provável adoção ABNT da versão 2025).",
-      "Falsos cognatos: actually = na verdade · eventually = por fim/finalmente · pretend = fingir · library = biblioteca · data = dados · support = suportar/apoiar e…",
-      "Problema: em microsserviços, instâncias sobem e caem e mudam de IP. Como um serviço acha o outro?"
-    ],
-    "correta": 0,
-    "trechoFonte": "10 princípios (art. 6º, além da boa-fé): finalidade, adequação, necessidade, livre acesso, qualidade dos dados, transparência, segurança, prevenção, não discriminação, responsabilização e prestação de contas.",
-    "dificuldade": 3,
-    "isBossStyle": true
-  },
-  {
-    "id": "q-mc-0678",
-    "fichaId": "owasp",
-    "fichaTitulo": "OWASP Top 10:2025 + desenvolvimento seguro",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em Segurança da Informação, qual alternativa descreve corretamente \"OWASP Top 10:2025 + desenvolvimento seguro\"?",
-    "alternativas": [
-      "modelo de ramificação publicado por Vincent Driessen (nvie, 05/01/2010).",
-      "estratégia nacional de segurança cibernética para todo o Judiciário, exceto o STF.",
-      "Protocolo de San Salvador (DESC): Direitos econômicos, sociais e culturais no sistema regional. Data: 17/11/1988. No Brasil: Decreto 3.321/1999.",
-      "Desenvolvimento seguro / programação defensiva: validar toda entrada, usar consultas parametrizadas (contra injeção), tratar exceções sem vazar detalhes (liga com…",
-      "Carta da ONU + Estatuto da Corte Internacional de Justiça: Cria a ONU; a CIJ é seu órgão judicial. Adoção: 1945. No Brasil: Decreto 19.841/1945."
-    ],
-    "correta": 3,
-    "trechoFonte": "Desenvolvimento seguro / programação defensiva: validar toda entrada, usar consultas parametrizadas (contra injeção), tratar exceções sem vazar detalhes (liga com A10), menor privilégio.",
-    "dificuldade": 1
-  },
-  {
-    "id": "q-lac-0679",
-    "fichaId": "owasp",
-    "fichaTitulo": "OWASP Top 10:2025 + desenvolvimento seguro",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "lacuna",
-    "enunciado": "Complete a lacuna conforme a ficha \"OWASP Top 10:2025 + desenvolvimento seguro\": \"| A01 | ________ (controle de acesso quebrado) | Continua 1º; absorveu SSRF; inclui BOLA/BFLA de APIs |\"",
-    "alternativas": [
-      "IKE",
-      "Ideia central (art. 2º)",
-      "sabe",
-      "Broken Access Control",
-      "sustentabilidade"
-    ],
-    "correta": 3,
-    "trechoFonte": "| A01 | Broken Access Control (controle de acesso quebrado) | Continua 1º; absorveu SSRF; inclui BOLA/BFLA de APIs |",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ass-0680",
-    "fichaId": "owasp",
-    "fichaTitulo": "OWASP Top 10:2025 + desenvolvimento seguro",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "associacao",
-    "enunciado": "Associação (OWASP Top 10:2025 + desenvolvimento seguro): qual descrição corresponde corretamente a \"A01\"?",
-    "alternativas": [
-      "Documento: Política de Educação e Cultura em Segurança Cibernética · Para que serve: Conscientização e capacitação",
-      "Documento: Manual de Gestão de Identidades · Para que serve: Identidade, acesso e privilégios",
-      "Categoria 2025: Broken Access Control (controle de acesso quebrado) · O que mudou: Continua 1º; absorveu SSRF; inclui BOLA/BFLA de APIs",
-      "Tipo: governança · Nº: 5",
-      "O que é: projeto \"guarda-chuva\" de ferramentas para automatizar navegadores."
-    ],
-    "correta": 2,
-    "trechoFonte": "A01 — Broken Access Control (controle de acesso quebrado) — Continua 1º; absorveu SSRF; inclui BOLA/BFLA de APIs",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ce-0681",
-    "fichaId": "owasp",
-    "fichaTitulo": "OWASP Top 10:2025 + desenvolvimento seguro",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "certo_errado",
-    "enunciado": "Julgue o item: A definição de \"OWASP Top 10:2025 + desenvolvimento seguro\" corresponde a: \"Confidencialidade: só quem pode, vê. Integridade: não foi alterado indevidamente. Disponibilidade: está acessível quando precisa.\"",
-    "alternativas": [
-      "Certo",
-      "Errado"
-    ],
-    "correta": 1,
-    "trechoFonte": "Desenvolvimento seguro / programação defensiva: validar toda entrada, usar consultas parametrizadas (contra injeção), tratar exceções sem vazar detalhes (liga com A10), menor privilégio. (A afirmação trocada refere-se a Princípios: Confidencialidade, Integridade, Disponibilidade (….)",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-con-0682",
-    "fichaId": "owasp",
-    "fichaTitulo": "OWASP Top 10:2025 + desenvolvimento seguro",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "conexao",
-    "enunciado": "Qual das fichas abaixo possui conexão direta apontada na ficha \"OWASP Top 10:2025 + desenvolvimento seguro\"?",
-    "alternativas": [
-      "Windows 11, Windows 10 e Windows Server 2019/2022/2025",
-      "Autenticação: SSO, Keycloak, OAuth2 (RFC 6749) e boas práticas…",
-      "Criptografia, hashes, certificados e assinaturas digitais",
-      "ABNT NBR ISO/IEC 27701 — privacidade (PIMS)",
-      "CIS Controls v8"
-    ],
-    "correta": 1,
-    "trechoFonte": "Conexões de OWASP Top 10:2025 + desenvolvimento seguro: Administração de exceções · Autenticação: SSO, Keycloak, OAuth2 (RFC 6749) e boas práticas (RFC 9700) · SQL: DDL, DML, DCL ( + TCL) · Deploy, Continuous Integration e Continuous Delivery · Sistemas de proteção: firewall, WAF, UTM, DMZ, Proxy, NAC, antivírus/antispam, IDS/IPS ( + SIEM).",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-fcc-0683",
-    "fichaId": "owasp",
-    "fichaTitulo": "OWASP Top 10:2025 + desenvolvimento seguro",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em estudo preparatório para o TRT da 4ª Região (Segurança da Informação), considerando especificamente o conteúdo de \"OWASP Top 10:2025 + desenvolvimento seguro\", assinale a alternativa CORRETA:",
-    "alternativas": [
-      "Pacto Internacional dos Direitos Econômicos, Sociais e Culturais — Adoção: 16/12/1966",
-      "🔵 SDL (Security Development Lifecycle, da Microsoft) e CLASP (OWASP): metodologias que embutem segurança em todo o ciclo de vida.",
-      "Extras que aparecem nos normativos: autenticidade (é quem diz ser) e não repúdio (o autor não pode negar a autoria) — ambos exigidos pelo moreq-jus e providos pela…",
-      "Atributo (simples, composto, multivalorado, derivado, chave).",
-      "O que é: sistema de gestão da informação de privacidade (PIMS) — trata dados pessoais (PII), com controles para controladores e operadores."
-    ],
-    "correta": 1,
-    "trechoFonte": "🔵 SDL (Security Development Lifecycle, da Microsoft) e CLASP (OWASP): metodologias que embutem segurança em todo o ciclo de vida.",
-    "dificuldade": 3,
-    "isBossStyle": true
-  },
-  {
-    "id": "q-mc-0684",
-    "fichaId": "protecao-perimetro",
-    "fichaTitulo": "Sistemas de proteção: firewall, WAF, UTM, DMZ, Proxy, NAC, antivírus/antispam, IDS/IPS ( + SIEM)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em Segurança da Informação, qual alternativa descreve corretamente \"Sistemas de proteção: firewall, WAF, UTM, DMZ, Proxy, NAC…\"?",
-    "alternativas": [
-      "Firewall: filtra tráfego por regras (endereço, porta, protocolo, estado da conexão).",
-      "dispõe sobre o acesso a dados judiciais públicos consolidados pelo CNJ, prevê o depósito de serviços privados na PDPJ-Br e institui o portal unificado para…",
-      "sistema de controle de versão distribuído — cada desenvolvedor tem uma cópia completa do histórico.",
-      "política nacional do CNJ, alterada pela Res. 518/2023 e pela Res. 671/2026. Objetivo: trabalho digno, saudável, seguro e sustentável no Judiciário (art. 1º).",
-      "Desenvolvimento seguro / programação defensiva: validar toda entrada, usar consultas parametrizadas (contra injeção), tratar exceções sem vazar detalhes (liga com…"
-    ],
-    "correta": 0,
-    "trechoFonte": "Firewall: filtra tráfego por regras (endereço, porta, protocolo, estado da conexão).",
-    "dificuldade": 1
-  },
-  {
-    "id": "q-lac-0685",
-    "fichaId": "protecao-perimetro",
-    "fichaTitulo": "Sistemas de proteção: firewall, WAF, UTM, DMZ, Proxy, NAC, antivírus/antispam, IDS/IPS ( + SIEM)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "lacuna",
-    "enunciado": "Complete a lacuna conforme a ficha \"Sistemas de proteção: firewall, WAF, UTM, DMZ, Proxy, NAC…\": \"________: filtra tráfego por regras (endereço, porta, protocolo, estado da conexão).\"",
-    "alternativas": [
-      "Firewall",
-      "Princípios (art. 3º, destaques)",
-      "Desempenho/confiabilidade",
-      "pode escolher não ir",
-      "Comitê Gestor Nacional"
-    ],
-    "correta": 0,
-    "trechoFonte": "Firewall: filtra tráfego por regras (endereço, porta, protocolo, estado da conexão).",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ass-0686",
-    "fichaId": "protecao-perimetro",
-    "fichaTitulo": "Sistemas de proteção: firewall, WAF, UTM, DMZ, Proxy, NAC, antivírus/antispam, IDS/IPS ( + SIEM)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "associacao",
-    "enunciado": "Associe o trecho abaixo ao tópico correspondente de Segurança da Informação: \"WAF (Web Application Firewall): firewall de camada de aplicação HTTP — bloqueia ataques web (injeção, XSS) → liga com owasp.\"",
-    "alternativas": [
-      "Sistemas de proteção: firewall, WAF, UTM, DMZ, Proxy, NAC…",
-      "Eclipse IDE e Visual Studio Code",
-      "Direitos humanos em espécie e grupos vulneráveis",
-      "Princípios: Confidencialidade, Integridade, Disponibilidade (…",
-      "PDTIC 2024-2026 do TRT4"
-    ],
-    "correta": 0,
-    "trechoFonte": "WAF (Web Application Firewall): firewall de camada de aplicação HTTP — bloqueia ataques web (injeção, XSS) → liga com owasp.",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ce-0687",
-    "fichaId": "protecao-perimetro",
-    "fichaTitulo": "Sistemas de proteção: firewall, WAF, UTM, DMZ, Proxy, NAC, antivírus/antispam, IDS/IPS ( + SIEM)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "certo_errado",
-    "enunciado": "Julgue o item sobre \"Sistemas de proteção: firewall, WAF, UTM, DMZ, Proxy, NAC…\": WAF (Web Application Firewall): firewall de camada de aplicação HTTP — bloqueia ataques web (injeção, XSS) → liga com owasp.",
-    "alternativas": [
-      "Certo",
-      "Errado"
-    ],
-    "correta": 0,
-    "trechoFonte": "WAF (Web Application Firewall): firewall de camada de aplicação HTTP — bloqueia ataques web (injeção, XSS) → liga com owasp.",
-    "dificuldade": 1
-  },
-  {
-    "id": "q-con-0688",
-    "fichaId": "protecao-perimetro",
-    "fichaTitulo": "Sistemas de proteção: firewall, WAF, UTM, DMZ, Proxy, NAC, antivírus/antispam, IDS/IPS ( + SIEM)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "conexao",
-    "enunciado": "Qual das fichas abaixo possui conexão direta apontada na ficha \"Sistemas de proteção: firewall, WAF, UTM, DMZ, Proxy, NAC…\"?",
-    "alternativas": [
-      "OWASP Top 10:2025 + desenvolvimento seguro",
-      "Linux: Red Hat Enterprise Linux e Oracle Linux",
-      "MapStruct",
-      "Resolução CSJT nº 360/2023 — Prevenção e Enfrentamento da…",
-      "Eclipse IDE e Visual Studio Code"
-    ],
-    "correta": 0,
-    "trechoFonte": "Conexões de Sistemas de proteção: firewall, WAF, UTM, DMZ, Proxy, NAC…: OWASP Top 10:2025 + desenvolvimento seguro · Proxy reverso, SSL offloading e balanceamento de carga.",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-fcc-0689",
-    "fichaId": "protecao-perimetro",
-    "fichaTitulo": "Sistemas de proteção: firewall, WAF, UTM, DMZ, Proxy, NAC, antivírus/antispam, IDS/IPS ( + SIEM)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em estudo preparatório para o TRT da 4ª Região (Segurança da Informação), considerando especificamente o conteúdo de \"Sistemas de proteção: firewall, WAF, UTM, DMZ, Proxy, NAC…\", assinale a alternativa CORRETA:",
-    "alternativas": [
-      "DMZ: sub-rede intermediária onde ficam serviços expostos à internet (web, e-mail), isolando a rede interna.",
-      "Alocação contígua: partições fixas/variáveis → fragmentação externa (buracos entre blocos) e interna (sobra dentro do bloco). Estratégias: first-fit, best-fit…",
-      "27002 — o que é: guia de boas práticas que detalha os controles (definição, propósito, como implementar).",
-      "Docker empacota a aplicação + dependências numa imagem; Kubernetes orquestra (pods, deployments, services, escala); Rancher gerencia vários clusters. Detalhes no…",
-      "MIB (Management Information Base): a \"base de perguntas\" — objetos identificados por OID (ex.: MIB-II, RFC 1213)."
-    ],
-    "correta": 0,
-    "trechoFonte": "DMZ: sub-rede intermediária onde ficam serviços expostos à internet (web, e-mail), isolando a rede interna.",
-    "dificuldade": 3,
-    "isBossStyle": true
-  },
-  {
-    "id": "q-mc-0690",
-    "fichaId": "vpn-ztna",
-    "fichaTitulo": "VPN, VPN-SSL e ZTNA (Zero Trust)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em Segurança da Informação, qual alternativa descreve corretamente \"VPN, VPN-SSL e ZTNA (Zero Trust)\"?",
-    "alternativas": [
-      "institui o Modelo de Requisitos para Sistemas Informatizados de Gestão de Processos e Documentos do Poder Judiciário (MoReq-Jus) e torna obrigatório usá-lo no…",
-      "Low-code: abordagem visual de desenvolvimento, com mínimo de codificação manual (arrastar e soltar, componentes prontos, modelos). Ainda permite código/scripts.",
-      "orientações para gerir riscos de SI, apoiando a 27001 (identificar, analisar, avaliar, tratar, comunicar e monitorar riscos).",
-      "VPN: túnel criptografado sobre rede pública. IPSec (camada de rede) ou SSL/TLS (VPN-SSL, geralmente via navegador/cliente leve).",
-      "Características clássicas cobradas: universalidade, indivisibilidade, interdependência, inter-relação, inalienabilidade, imprescritibilidade, historicidade…"
-    ],
-    "correta": 3,
-    "trechoFonte": "VPN: túnel criptografado sobre rede pública. IPSec (camada de rede) ou SSL/TLS (VPN-SSL, geralmente via navegador/cliente leve).",
-    "dificuldade": 1
-  },
-  {
-    "id": "q-lac-0691",
-    "fichaId": "vpn-ztna",
-    "fichaTitulo": "VPN, VPN-SSL e ZTNA (Zero Trust)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "lacuna",
-    "enunciado": "Complete a lacuna conforme a ficha \"VPN, VPN-SSL e ZTNA (Zero Trust)\": \"________: túnel criptografado sobre rede pública. IPSec (camada de rede) ou SSL/TLS (VPN-SSL, geralmente via navegador/cliente leve).\"",
-    "alternativas": [
-      "OMG",
-      "RHCK (Red Hat Compatible Kernel)",
-      "absorveu SSRF",
-      "VPN",
-      "Convenção sobre os Direitos da Criança (Brasil)"
-    ],
-    "correta": 3,
-    "trechoFonte": "VPN: túnel criptografado sobre rede pública. IPSec (camada de rede) ou SSL/TLS (VPN-SSL, geralmente via navegador/cliente leve).",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ass-0692",
-    "fichaId": "vpn-ztna",
-    "fichaTitulo": "VPN, VPN-SSL e ZTNA (Zero Trust)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "associacao",
-    "enunciado": "Associe o trecho abaixo ao tópico correspondente de Segurança da Informação: \"Zero Trust (NIST SP 800-207, 2020): nenhuma confiança implícita é dada a ativos ou contas só pela localização na rede (LAN × internet) ou pela propriedade do dispositivo; autenticação…\"",
-    "alternativas": [
-      "Banco de dados: PostgreSQL e H2",
-      "Sistemas de proteção: firewall, WAF, UTM, DMZ, Proxy, NAC…",
-      "Portaria CNJ nº 131/2021 — Grupo Revisor de Código-Fonte",
-      "VPN, VPN-SSL e ZTNA (Zero Trust)",
-      "Balanceamento de carga e SSL offloading"
-    ],
-    "correta": 3,
-    "trechoFonte": "Zero Trust (NIST SP 800-207, 2020): nenhuma confiança implícita é dada a ativos ou contas só pela localização na rede (LAN × internet) ou pela propriedade do dispositivo; autenticação e autorização de sujeito e dispositivo antes de cada sessão. Lema: \"nunca confie, sempre verifique\".",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ce-0693",
-    "fichaId": "vpn-ztna",
-    "fichaTitulo": "VPN, VPN-SSL e ZTNA (Zero Trust)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "certo_errado",
-    "enunciado": "Julgue o item: A definição de \"VPN, VPN-SSL e ZTNA (Zero Trust)\" corresponde a: \"Confidencialidade: só quem pode, vê. Integridade: não foi alterado indevidamente. Disponibilidade: está acessível quando precisa.\"",
-    "alternativas": [
-      "Certo",
-      "Errado"
-    ],
-    "correta": 1,
-    "trechoFonte": "VPN: túnel criptografado sobre rede pública. IPSec (camada de rede) ou SSL/TLS (VPN-SSL, geralmente via navegador/cliente leve). (A afirmação trocada refere-se a Princípios: Confidencialidade, Integridade, Disponibilidade (….)",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-con-0694",
-    "fichaId": "vpn-ztna",
-    "fichaTitulo": "VPN, VPN-SSL e ZTNA (Zero Trust)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "conexao",
-    "enunciado": "Qual das fichas abaixo possui conexão direta apontada na ficha \"VPN, VPN-SSL e ZTNA (Zero Trust)\"?",
-    "alternativas": [
-      "ABNT NBR ISO/IEC 27701 — privacidade (PIMS)",
-      "Modelo Entidade-Relacionamento (ER)",
-      "TLS 1.2 ( Analista: + TLS 1.3 e limitações do SSL)",
-      "Sistemas de proteção: firewall, WAF, UTM, DMZ, Proxy, NAC…",
-      "Equipamentos de interconexão"
-    ],
-    "correta": 2,
-    "trechoFonte": "Conexões de VPN, VPN-SSL e ZTNA (Zero Trust): Protocolos e portas (as que mais caem) · TLS 1.2 ( Analista: + TLS 1.3 e limitações do SSL) · Controle de acesso: autenticação, autorização, auditoria (AAA), RBAC, MFA · Resolução CNJ nº 396/2021 — ENSEC-PJ (Estratégia Nacional de Segurança Cibernética do Poder Judiciário).",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-fcc-0695",
-    "fichaId": "vpn-ztna",
-    "fichaTitulo": "VPN, VPN-SSL e ZTNA (Zero Trust)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em estudo preparatório para o TRT da 4ª Região (Segurança da Informação), considerando especificamente o conteúdo de \"VPN, VPN-SSL e ZTNA (Zero Trust)\", assinale a alternativa CORRETA:",
-    "alternativas": [
-      "H2: banco Java leve, que roda embutido/em memória — muito usado em testes automatizados.",
-      "Função: analisar as mudanças de código feitas pela comunidade (CNJ e tribunais) e executar testes de qualidade do código e garantias operacionais.",
-      "Zero Trust (NIST SP 800-207, 2020): nenhuma confiança implícita é dada a ativos ou contas só pela localização na rede (LAN × internet) ou pela propriedade do…",
-      "O que é: 18 controles prioritizados do Center for Internet Security (eram 20 na v7) com 153 salvaguardas.",
-      "Categorias de par trançado (banda): Cat 5e = 100 MHz · Cat 6 = 250 MHz · Cat 6A = 500 MHz (10GBASE-T)."
-    ],
-    "correta": 2,
-    "trechoFonte": "Zero Trust (NIST SP 800-207, 2020): nenhuma confiança implícita é dada a ativos ou contas só pela localização na rede (LAN × internet) ou pela propriedade do dispositivo; autenticação e autorização de sujeito e dispositivo antes de cada sessão. Lema: \"nunca confie, sempre verifique\".",
-    "dificuldade": 3,
-    "isBossStyle": true
-  },
-  {
-    "id": "q-mc-0696",
-    "fichaId": "wifi-seguranca",
-    "fichaTitulo": "Segurança em redes sem fio",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em Segurança da Informação, qual alternativa descreve corretamente \"Segurança em redes sem fio\"?",
-    "alternativas": [
-      "Desenvolvimento seguro / programação defensiva: validar toda entrada, usar consultas parametrizadas (contra injeção), tratar exceções sem vazar detalhes (liga com…",
-      "Spring Framework: base com injeção de dependências / inversão de controle.",
-      "NBR 14565:2019 (5ª edição, 30/09/2019): requisitos de cabeamento estruturado metálico e óptico para um edifício ou conjunto de edifícios comerciais em um campus.…",
-      "o framework de gerenciamento de serviços (e agora de produtos) digitais, mantido pela PeopleCert. A ITIL (Version 5) foi lançada com o ITIL Foundation em…",
-      "Legados (inseguros): WEP, WPA."
-    ],
-    "correta": 4,
-    "trechoFonte": "Legados (inseguros): WEP, WPA.",
-    "dificuldade": 1
-  },
-  {
-    "id": "q-lac-0697",
-    "fichaId": "wifi-seguranca",
-    "fichaTitulo": "Segurança em redes sem fio",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "lacuna",
-    "enunciado": "Complete a lacuna conforme a ficha \"Segurança em redes sem fio\": \"________: usava PSK (chave pré-compartilhada) no modo pessoal — vulnerável a ataque de dicionário offline e ao KRACK (2017).\"",
-    "alternativas": [
-      "sigilo direto (forward secrecy)",
-      "Evento negocial",
-      "fraca",
-      "papéis",
-      "WPA2"
-    ],
-    "correta": 4,
-    "trechoFonte": "WPA2: usava PSK (chave pré-compartilhada) no modo pessoal — vulnerável a ataque de dicionário offline e ao KRACK (2017).",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ass-0698",
-    "fichaId": "wifi-seguranca",
-    "fichaTitulo": "Segurança em redes sem fio",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "associacao",
-    "enunciado": "Associe o trecho abaixo ao tópico correspondente de Segurança da Informação: \"WPA2: usava PSK (chave pré-compartilhada) no modo pessoal — vulnerável a ataque de dicionário offline e ao KRACK (2017).\"",
-    "alternativas": [
-      "Git: commit, branch, merge, rebase",
-      "ITIL® (Version 5)",
-      "Apache Maven",
-      "Portaria CNJ nº 162/2021 — Protocolos e Manuais da ENSEC-PJ",
-      "Segurança em redes sem fio"
-    ],
-    "correta": 4,
-    "trechoFonte": "WPA2: usava PSK (chave pré-compartilhada) no modo pessoal — vulnerável a ataque de dicionário offline e ao KRACK (2017).",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ce-0699",
-    "fichaId": "wifi-seguranca",
-    "fichaTitulo": "Segurança em redes sem fio",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "certo_errado",
-    "enunciado": "Julgue o item sobre \"Segurança em redes sem fio\": WPA2: usava PSK (chave pré-compartilhada) no modo pessoal — vulnerável a ataque de dicionário offline e ao KRACK (2017).",
-    "alternativas": [
-      "Certo",
-      "Errado"
-    ],
-    "correta": 0,
-    "trechoFonte": "WPA2: usava PSK (chave pré-compartilhada) no modo pessoal — vulnerável a ataque de dicionário offline e ao KRACK (2017).",
-    "dificuldade": 1
-  },
-  {
-    "id": "q-con-0700",
-    "fichaId": "wifi-seguranca",
-    "fichaTitulo": "Segurança em redes sem fio",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "conexao",
-    "enunciado": "Qual das fichas abaixo possui conexão direta apontada na ficha \"Segurança em redes sem fio\"?",
-    "alternativas": [
-      "Autenticação: SSO, Keycloak, OAuth2 (RFC 6749) e boas práticas…",
-      "Declaração Americana dos Direitos e Deveres do Homem",
-      "IA generativa e LLMs (grandes modelos de linguagem)",
-      "CircleCI",
-      "Wi-Fi: família IEEE 802.11 ( ênfase ac/ax/be; ênfase ax/6E)"
-    ],
-    "correta": 4,
-    "trechoFonte": "Conexões de Segurança em redes sem fio: Wi-Fi: família IEEE 802.11 ( ênfase ac/ax/be; ênfase ax/6E) · VLAN (802.1Q), 802.1X, 802.3 e Spanning Tree ( STP/RSTP) · Active Directory (AD DS).",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-fcc-0701",
-    "fichaId": "wifi-seguranca",
-    "fichaTitulo": "Segurança em redes sem fio",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em estudo preparatório para o TRT da 4ª Região (Segurança da Informação), considerando especificamente o conteúdo de \"Segurança em redes sem fio\", assinale a alternativa CORRETA:",
-    "alternativas": [
-      "27002 — o que é: guia de boas práticas que detalha os controles (definição, propósito, como implementar).",
-      "Pacto Internacional dos Direitos Econômicos, Sociais e Culturais — Direitos de 2ª geração; realização progressiva",
-      "Dado pessoal sensível: origem racial ou étnica, convicção religiosa, opinião política, filiação sindical ou a organização religiosa/filosófica/política, saúde…",
-      "Convenção sobre os Direitos da Criança — Adoção: 20/11/1989",
-      "WPA2: usava PSK (chave pré-compartilhada) no modo pessoal — vulnerável a ataque de dicionário offline e ao KRACK (2017)."
-    ],
-    "correta": 4,
-    "trechoFonte": "WPA2: usava PSK (chave pré-compartilhada) no modo pessoal — vulnerável a ataque de dicionário offline e ao KRACK (2017).",
-    "dificuldade": 3,
-    "isBossStyle": true
-  },
-  {
-    "id": "q-mc-0702",
-    "fichaId": "criptografia",
-    "fichaTitulo": "Criptografia, hashes, certificados e assinaturas digitais",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em Segurança da Informação, qual alternativa descreve corretamente \"Criptografia, hashes, certificados e assinaturas digitais\"?",
-    "alternativas": [
-      "Simétrica: mesma chave para cifrar e decifrar — rápida (ex.: AES). Problema: distribuir a chave.",
-      "processo de descobrir, documentar e manter o que o sistema deve fazer.",
-      "Convenção sobre Diversidade Biológica: Conservação e uso sustentável da biodiversidade. Adoção: Rio de Janeiro, 05/06/1992. No Brasil: Decreto 2.519/1998.",
-      "servidor de automação open source para CI/CD.",
-      "Princípio pro persona (pro homine): havendo duas normas, aplica-se a mais favorável à pessoa."
-    ],
-    "correta": 0,
-    "trechoFonte": "Simétrica: mesma chave para cifrar e decifrar — rápida (ex.: AES). Problema: distribuir a chave.",
-    "dificuldade": 1
-  },
-  {
-    "id": "q-lac-0703",
-    "fichaId": "criptografia",
-    "fichaTitulo": "Criptografia, hashes, certificados e assinaturas digitais",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "lacuna",
-    "enunciado": "Complete a lacuna conforme a ficha \"Criptografia, hashes, certificados e assinaturas digitais\": \"________: mesma chave para cifrar e decifrar — rápida (ex.: AES). Problema: distribuir a chave.\"",
-    "alternativas": [
-      "Simétrica",
-      "PL/pgSQL",
-      "contínuo",
-      "service",
-      "triggers"
-    ],
-    "correta": 0,
-    "trechoFonte": "Simétrica: mesma chave para cifrar e decifrar — rápida (ex.: AES). Problema: distribuir a chave.",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ass-0704",
-    "fichaId": "criptografia",
-    "fichaTitulo": "Criptografia, hashes, certificados e assinaturas digitais",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "associacao",
-    "enunciado": "Associe o trecho abaixo ao tópico correspondente de Segurança da Informação: \"Assimétrica: par de chaves pública/privada (ex.: RSA, curvas elípticas). Cifrar com a pública do destinatário → só a privada dele decifra.\"",
-    "alternativas": [
-      "Resolução CNJ nº 574/2024 — dados judiciais públicos, serviços…",
-      "Serviços de rede e servidores (e-mail, DNS, DHCP, proxy…",
-      "Criptografia, hashes, certificados e assinaturas digitais",
-      "Acesso a banco de dados nas linguagens",
-      "ABNT NBR ISO/IEC 27701 — privacidade (PIMS)"
-    ],
-    "correta": 2,
-    "trechoFonte": "Assimétrica: par de chaves pública/privada (ex.: RSA, curvas elípticas). Cifrar com a pública do destinatário → só a privada dele decifra.",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ce-0705",
-    "fichaId": "criptografia",
-    "fichaTitulo": "Criptografia, hashes, certificados e assinaturas digitais",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "certo_errado",
-    "enunciado": "Julgue o item sobre \"Criptografia, hashes, certificados e assinaturas digitais\": Assimétrica: par de chaves pública/privada (ex.: RSA, curvas elípticas). Cifrar com a pública do destinatário → só a privada dele decifra.",
-    "alternativas": [
-      "Certo",
-      "Errado"
-    ],
-    "correta": 0,
-    "trechoFonte": "Assimétrica: par de chaves pública/privada (ex.: RSA, curvas elípticas). Cifrar com a pública do destinatário → só a privada dele decifra.",
-    "dificuldade": 1
-  },
-  {
-    "id": "q-con-0706",
-    "fichaId": "criptografia",
-    "fichaTitulo": "Criptografia, hashes, certificados e assinaturas digitais",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "conexao",
-    "enunciado": "Qual das fichas abaixo possui conexão direta apontada na ficha \"Criptografia, hashes, certificados e assinaturas digitais\"?",
-    "alternativas": [
-      "Pacto Internacional dos Direitos Econômicos, Sociais e Culturais",
-      "Resolução CNJ nº 351/2020 — Prevenção e Enfrentamento do…",
-      "TLS 1.2 ( Analista: + TLS 1.3 e limitações do SSL)",
-      "Ataques, ameaças e códigos maliciosos",
-      "Convenção sobre a Eliminação de Todas as Formas de…"
-    ],
-    "correta": 2,
-    "trechoFonte": "Conexões de Criptografia, hashes, certificados e assinaturas digitais: Resolução CNJ nº 522/2023 + MoReq-Jus 2ª edição · JSON Web Token (RFC 7519) · TLS 1.2 ( Analista: + TLS 1.3 e limitações do SSL).",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-fcc-0707",
-    "fichaId": "criptografia",
-    "fichaTitulo": "Criptografia, hashes, certificados e assinaturas digitais",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em estudo preparatório para o TRT da 4ª Região (Segurança da Informação), considerando especificamente o conteúdo de \"Criptografia, hashes, certificados e assinaturas digitais\", assinale a alternativa CORRETA:",
-    "alternativas": [
-      "IEEE 802.1X: controle de acesso por porta (cabeada ou Wi-Fi): suplicante → autenticador (switch/AP) → servidor de autenticação (RADIUS), com EAP. Base do NAC.",
-      "Convenção sobre Diversidade Biológica — Adoção: Rio de Janeiro, 05/06/1992",
-      "Hash criptográfico: resumo de tamanho fixo, unidirecional (ex.: SHA-256) → integridade.",
-      "Treino: ajustar os pesos para reduzir a função de perda, com backpropagation (retropropagação do erro) + gradiente descendente.",
-      "Dado pessoal: informação relacionada a pessoa natural identificada ou identificável."
-    ],
-    "correta": 2,
-    "trechoFonte": "Hash criptográfico: resumo de tamanho fixo, unidirecional (ex.: SHA-256) → integridade.",
-    "dificuldade": 3,
-    "isBossStyle": true
-  },
-  {
-    "id": "q-mc-0708",
-    "fichaId": "tls",
-    "fichaTitulo": "TLS 1.2 ( Analista: + TLS 1.3 e limitações do SSL)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em Segurança da Informação, qual alternativa descreve corretamente \"TLS 1.2 ( Analista: + TLS 1.3 e limitações do SSL)\"?",
-    "alternativas": [
-      "protocolo que cria um canal seguro entre dois pontos (confidencialidade, integridade, autenticação do servidor). Dois componentes: handshake (negocia algoritmos e…",
-      "Formato: um ou dois textos; cerca de 60% de questões curtas e 40% com alternativas longas ou que exigem ler o texto inteiro.",
-      "classificação didática do jurista tcheco Karel Vasak, apresentada em 1979 no Instituto Internacional de Direitos Humanos de Estrasburgo, usando o lema da Revolução…",
-      "DoS / DDoS: esgotar recursos para negar serviço; DDoS usa muitas origens (frequentemente uma botnet).",
-      "Pontos clássicos de prova: JOINs (INNER, LEFT, RIGHT, FULL), GROUP BY + HAVING (filtra grupos; WHERE filtra linhas), subconsultas, DISTINCT, UNION × UNION ALL…"
-    ],
-    "correta": 0,
-    "trechoFonte": "O que é: protocolo que cria um canal seguro entre dois pontos (confidencialidade, integridade, autenticação do servidor). Dois componentes: handshake (negocia algoritmos e chaves, autentica) e record protocol (protege os dados).",
-    "dificuldade": 1
-  },
-  {
-    "id": "q-lac-0709",
-    "fichaId": "tls",
-    "fichaTitulo": "TLS 1.2 ( Analista: + TLS 1.3 e limitações do SSL)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "lacuna",
-    "enunciado": "Complete a lacuna conforme a ficha \"TLS 1.2 ( Analista: + TLS 1.3 e limitações do SSL)\": \"O que é: protocolo que cria um ________ entre dois pontos (confidencialidade, integridade, autenticação do servidor). Dois componentes: handshake (negocia algoritmos e chaves, autentica) e record protocol (protege os…\"",
-    "alternativas": [
-      "canal seguro",
-      "Programa MoReq-Aval",
-      "CSJT",
-      "Pacotes (packages)",
-      "Na prática (HTTP)"
-    ],
-    "correta": 0,
-    "trechoFonte": "O que é: protocolo que cria um canal seguro entre dois pontos (confidencialidade, integridade, autenticação do servidor). Dois componentes: handshake (negocia algoritmos e chaves, autentica) e record protocol (protege os dados).",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ass-0710",
-    "fichaId": "tls",
-    "fichaTitulo": "TLS 1.2 ( Analista: + TLS 1.3 e limitações do SSL)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "associacao",
-    "enunciado": "Associe o trecho abaixo ao tópico correspondente de Segurança da Informação: \"🟣 TLS 1.3 × 1.2: removeu troca de chaves RSA estática e DH estático → toda troca de chaves pública tem sigilo direto (forward secrecy); removeu compressão e DSA; handshake mais rápido.\"",
-    "alternativas": [
-      "Convenção sobre Diversidade Biológica",
-      "Swagger / OpenAPI ( Técnico cita \"OpenAPI/Swagger\")",
-      "TLS 1.2 ( Analista: + TLS 1.3 e limitações do SSL)",
-      "Processos, threads e escalonamento de CPU",
-      "OWASP Top 10:2025 + desenvolvimento seguro"
-    ],
-    "correta": 2,
-    "trechoFonte": "🟣 TLS 1.3 × 1.2: removeu troca de chaves RSA estática e DH estático → toda troca de chaves pública tem sigilo direto (forward secrecy); removeu compressão e DSA; handshake mais rápido.",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ce-0711",
-    "fichaId": "tls",
-    "fichaTitulo": "TLS 1.2 ( Analista: + TLS 1.3 e limitações do SSL)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "certo_errado",
-    "enunciado": "Julgue o item sobre \"TLS 1.2 ( Analista: + TLS 1.3 e limitações do SSL)\": 🟣 TLS 1.3 × 1.2: removeu troca de chaves RSA estática e DH estático → toda troca de chaves pública tem sigilo direto (forward secrecy); removeu compressão e DSA; handshake mais rápido.",
-    "alternativas": [
-      "Certo",
-      "Errado"
-    ],
-    "correta": 0,
-    "trechoFonte": "🟣 TLS 1.3 × 1.2: removeu troca de chaves RSA estática e DH estático → toda troca de chaves pública tem sigilo direto (forward secrecy); removeu compressão e DSA; handshake mais rápido.",
-    "dificuldade": 1
-  },
-  {
-    "id": "q-con-0712",
-    "fichaId": "tls",
-    "fichaTitulo": "TLS 1.2 ( Analista: + TLS 1.3 e limitações do SSL)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "conexao",
-    "enunciado": "Qual das fichas abaixo possui conexão direta apontada na ficha \"TLS 1.2 ( Analista: + TLS 1.3 e limitações do SSL)\"?",
-    "alternativas": [
-      "Proxy reverso, SSL offloading e balanceamento de carga",
-      "Sistemas de proteção: firewall, WAF, UTM, DMZ, Proxy, NAC…",
-      "Aprendizado de máquina (ML)",
-      "Convenção sobre os Direitos das Pessoas com Deficiência +…",
-      "Processos, threads e escalonamento de CPU"
-    ],
-    "correta": 0,
-    "trechoFonte": "Conexões de TLS 1.2 ( Analista: + TLS 1.3 e limitações do SSL): Criptografia, hashes, certificados e assinaturas digitais · Proxy reverso, SSL offloading e balanceamento de carga · VPN, VPN-SSL e ZTNA (Zero Trust).",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-fcc-0713",
-    "fichaId": "tls",
-    "fichaTitulo": "TLS 1.2 ( Analista: + TLS 1.3 e limitações do SSL)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em estudo preparatório para o TRT da 4ª Região (Segurança da Informação), considerando especificamente o conteúdo de \"TLS 1.2 ( Analista: + TLS 1.3 e limitações do SSL)\", assinale a alternativa CORRETA:",
-    "alternativas": [
-      "🟣 TLS 1.3 × 1.2: removeu troca de chaves RSA estática e DH estático → toda troca de chaves pública tem sigilo direto (forward secrecy); removeu compressão e DSA…",
-      "Agentes de tratamento: controlador (decide) e operador (executa em nome do controlador).",
-      "5 características essenciais: autoatendimento sob demanda · amplo acesso pela rede · pool de recursos (multi-inquilino) · elasticidade rápida · serviço medido…",
-      "Formas normais (resumo de prova):",
-      "contraste: however, although, though, whereas, nevertheless, despite/in spite of;"
-    ],
-    "correta": 0,
-    "trechoFonte": "🟣 TLS 1.3 × 1.2: removeu troca de chaves RSA estática e DH estático → toda troca de chaves pública tem sigilo direto (forward secrecy); removeu compressão e DSA; handshake mais rápido.",
-    "dificuldade": 3,
-    "isBossStyle": true
-  },
-  {
-    "id": "q-mc-0714",
-    "fichaId": "controle-acesso",
-    "fichaTitulo": "Controle de acesso: autenticação, autorização, auditoria (AAA), RBAC, MFA",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em Segurança da Informação, qual alternativa descreve corretamente \"Controle de acesso: autenticação, autorização, auditoria…\"?",
-    "alternativas": [
-      "18 controles prioritizados do Center for Internet Security (eram 20 na v7) com 153 salvaguardas.",
-      "institui a política pública de governança e gestão do processo judicial eletrônico e cria a Plataforma Digital do Poder Judiciário Brasileiro (PDPJ-Br). Mantém o…",
-      "Compilação × interpretação: compilado → traduzido antes de rodar (C → código de máquina); Java → compila para bytecode (.class) que roda na JVM; C# → compila para…",
-      "notação da OMG para modelar processos de negócio. A versão 2.0 (2011) mudou o nome para \"Modelo e Notação de Processos de Negócio\".",
-      "AAA: Autenticação (quem é você?), Autorização (o que pode fazer?), Auditoria/Accounting (o que fez?)."
-    ],
-    "correta": 4,
-    "trechoFonte": "AAA: Autenticação (quem é você?), Autorização (o que pode fazer?), Auditoria/Accounting (o que fez?).",
-    "dificuldade": 1
-  },
-  {
-    "id": "q-lac-0715",
-    "fichaId": "controle-acesso",
-    "fichaTitulo": "Controle de acesso: autenticação, autorização, auditoria (AAA), RBAC, MFA",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "lacuna",
-    "enunciado": "Complete a lacuna conforme a ficha \"Controle de acesso: autenticação, autorização, auditoria…\": \"________: Autenticação (quem é você?), Autorização (o que pode fazer?), Auditoria/Accounting (o que fez?).\"",
-    "alternativas": [
-      "fluxo de mensagem",
-      "Disponibilidade",
-      "2019",
-      "Security Misconfiguration",
-      "AAA"
-    ],
-    "correta": 4,
-    "trechoFonte": "AAA: Autenticação (quem é você?), Autorização (o que pode fazer?), Auditoria/Accounting (o que fez?).",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ass-0716",
-    "fichaId": "controle-acesso",
-    "fichaTitulo": "Controle de acesso: autenticação, autorização, auditoria (AAA), RBAC, MFA",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "associacao",
-    "enunciado": "Associe o trecho abaixo ao tópico correspondente de Segurança da Informação: \"RBAC: permissões atribuídas a papéis, e papéis a usuários (ex.: \"Assessor\", \"Servidor de Secretaria\").\"",
-    "alternativas": [
-      "Mensageria e webhooks: Message Broker, RabbitMQ, evento…",
-      "Princípios: Confidencialidade, Integridade, Disponibilidade (…",
-      "LGPD — Lei nº 13.709/2018",
-      "Interpretação dos tratados e colisão de direitos",
-      "Controle de acesso: autenticação, autorização, auditoria…"
-    ],
-    "correta": 4,
-    "trechoFonte": "RBAC: permissões atribuídas a papéis, e papéis a usuários (ex.: \"Assessor\", \"Servidor de Secretaria\").",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ce-0717",
-    "fichaId": "controle-acesso",
-    "fichaTitulo": "Controle de acesso: autenticação, autorização, auditoria (AAA), RBAC, MFA",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "certo_errado",
-    "enunciado": "Julgue o item sobre \"Controle de acesso: autenticação, autorização, auditoria…\": RBAC: permissões atribuídas a papéis, e papéis a usuários (ex.: \"Assessor\", \"Servidor de Secretaria\").",
-    "alternativas": [
-      "Certo",
-      "Errado"
-    ],
-    "correta": 0,
-    "trechoFonte": "RBAC: permissões atribuídas a papéis, e papéis a usuários (ex.: \"Assessor\", \"Servidor de Secretaria\").",
-    "dificuldade": 1
-  },
-  {
-    "id": "q-con-0718",
-    "fichaId": "controle-acesso",
-    "fichaTitulo": "Controle de acesso: autenticação, autorização, auditoria (AAA), RBAC, MFA",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "conexao",
-    "enunciado": "Qual das fichas abaixo possui conexão direta apontada na ficha \"Controle de acesso: autenticação, autorização, auditoria…\"?",
-    "alternativas": [
-      "CMMI v3.0 — domínio Development",
-      "Resolução CNJ nº 522/2023 + MoReq-Jus 2ª edição",
-      "PDTIC 2024-2026 do TRT4",
-      "Backup e recuperação de dados ( + gestão de incidentes)",
-      "OWASP Top 10:2025 + desenvolvimento seguro"
-    ],
-    "correta": 4,
-    "trechoFonte": "Conexões de Controle de acesso: autenticação, autorização, auditoria…: Autenticação: SSO, Keycloak, OAuth2 (RFC 6749) e boas práticas (RFC 9700) · Active Directory (AD DS) · OWASP Top 10:2025 + desenvolvimento seguro · Portaria CNJ nº 162/2021 — Protocolos e Manuais da ENSEC-PJ.",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-fcc-0719",
-    "fichaId": "controle-acesso",
-    "fichaTitulo": "Controle de acesso: autenticação, autorização, auditoria (AAA), RBAC, MFA",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em estudo preparatório para o TRT da 4ª Região (Segurança da Informação), considerando especificamente o conteúdo de \"Controle de acesso: autenticação, autorização, auditoria…\", assinale a alternativa CORRETA:",
-    "alternativas": [
-      "O que é: o framework de gerenciamento de serviços (e agora de produtos) digitais, mantido pela PeopleCert. A ITIL (Version 5) foi lançada com o ITIL Foundation em…",
-      "Conexão: declaração ≠ tratado → dudh (declaração) vs. pidcp (tratado).",
-      "Legados (inseguros): WEP, WPA.",
-      "Declaração Universal dos Direitos Humanos — Base do sistema; \"todos nascem livres e iguais em dignidade e direitos\"",
-      "MFA: dois ou mais fatores de categorias diferentes — algo que você sabe (senha), tem (token, celular), é (biometria). O CNJ determinou MFA para acesso a sistemas…"
-    ],
-    "correta": 4,
-    "trechoFonte": "MFA: dois ou mais fatores de categorias diferentes — algo que você sabe (senha), tem (token, celular), é (biometria). O CNJ determinou MFA para acesso a sistemas judiciais sensíveis (Portaria CNJ nº 140, de 22/04/2024); o tema entrou na pauta do Comitê de Governança de TIC do TRT4 em 26/04/2024.",
-    "dificuldade": 3,
-    "isBossStyle": true
-  },
-  {
-    "id": "q-mc-0720",
-    "fichaId": "ataques-malware",
-    "fichaTitulo": "Ataques, ameaças e códigos maliciosos",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em Segurança da Informação, qual alternativa descreve corretamente \"Ataques, ameaças e códigos maliciosos\"?",
-    "alternativas": [
-      "DNS – registros: A (IPv4), AAAA (IPv6), CNAME (apelido), MX (servidor de e-mail), NS (servidor autoritativo), PTR (reverso IP → nome), SOA (autoridade da zona)…",
-      "modelo formado por camadas de neurônios artificiais (entrada → ocultas → saída); cada neurônio soma entradas ponderadas por pesos + viés e aplica uma função de…",
-      "JPA (hoje Jakarta Persistence): especificação Java para mapeamento objeto-relacional (ORM) — classes viram tabelas (@Entity, @Id).",
-      "DoS / DDoS: esgotar recursos para negar serviço; DDoS usa muitas origens (frequentemente uma botnet).",
-      "LLM: modelo que prevê o próximo token (ou sequência de tokens) — um token pode ser uma palavra, um pedaço de palavra ou um caractere. Ganham dos modelos antigos…"
-    ],
-    "correta": 3,
-    "trechoFonte": "DoS / DDoS: esgotar recursos para negar serviço; DDoS usa muitas origens (frequentemente uma botnet).",
-    "dificuldade": 1
-  },
-  {
-    "id": "q-lac-0721",
-    "fichaId": "ataques-malware",
-    "fichaTitulo": "Ataques, ameaças e códigos maliciosos",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "lacuna",
-    "enunciado": "Complete a lacuna conforme a ficha \"Ataques, ameaças e códigos maliciosos\": \"________: esgotar recursos para negar serviço; DDoS usa muitas origens (frequentemente uma botnet).\"",
-    "alternativas": [
-      "grupos",
-      "Sanções (art. 52)",
-      "implantável",
-      "DoS / DDoS",
-      "portal com interface nacional única"
-    ],
-    "correta": 3,
-    "trechoFonte": "DoS / DDoS: esgotar recursos para negar serviço; DDoS usa muitas origens (frequentemente uma botnet).",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ass-0722",
-    "fichaId": "ataques-malware",
-    "fichaTitulo": "Ataques, ameaças e códigos maliciosos",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "associacao",
-    "enunciado": "Associe o trecho abaixo ao tópico correspondente de Segurança da Informação: \"🔵 Spoofing (falsificação de origem: IP, ARP, e-mail), flood (inundação, ex.: SYN flood).\"",
-    "alternativas": [
-      "Backup e recuperação de dados ( + gestão de incidentes)",
-      "Zabbix, Prometheus, Grafana, ELK e Fluentd ( Técnico: ELK)",
-      "Jakarta EE 8 (legado) e Jakarta EE 11",
-      "Ataques, ameaças e códigos maliciosos",
-      "MR-MPS-SW versão 2024 (MPS.BR)"
-    ],
-    "correta": 3,
-    "trechoFonte": "🔵 Spoofing (falsificação de origem: IP, ARP, e-mail), flood (inundação, ex.: SYN flood).",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ce-0723",
-    "fichaId": "ataques-malware",
-    "fichaTitulo": "Ataques, ameaças e códigos maliciosos",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "certo_errado",
-    "enunciado": "Julgue o item: A definição de \"Ataques, ameaças e códigos maliciosos\" corresponde a: \"Confidencialidade: só quem pode, vê. Integridade: não foi alterado indevidamente. Disponibilidade: está acessível quando precisa.\"",
-    "alternativas": [
-      "Certo",
-      "Errado"
-    ],
-    "correta": 1,
-    "trechoFonte": "DoS / DDoS: esgotar recursos para negar serviço; DDoS usa muitas origens (frequentemente uma botnet). (A afirmação trocada refere-se a Princípios: Confidencialidade, Integridade, Disponibilidade (….)",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-con-0724",
-    "fichaId": "ataques-malware",
-    "fichaTitulo": "Ataques, ameaças e códigos maliciosos",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "conexao",
-    "enunciado": "Qual das fichas abaixo possui conexão direta apontada na ficha \"Ataques, ameaças e códigos maliciosos\"?",
-    "alternativas": [
-      "ABNT NBR ISO/IEC 27005:2023 — gestão de riscos de segurança da…",
-      "Linux: Red Hat Enterprise Linux e Oracle Linux",
-      "VPN, VPN-SSL e ZTNA (Zero Trust)",
-      "Gerações (dimensões) de direitos",
-      "CI × Continuous Delivery × Continuous Deployment"
-    ],
-    "correta": 1,
-    "trechoFonte": "Conexões de Ataques, ameaças e códigos maliciosos: WSUS (Windows Server Update Services) · Linux: Red Hat Enterprise Linux e Oracle Linux.",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-fcc-0725",
-    "fichaId": "ataques-malware",
-    "fichaTitulo": "Ataques, ameaças e códigos maliciosos",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "ambos",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em estudo preparatório para o TRT da 4ª Região (Segurança da Informação), considerando especificamente o conteúdo de \"Ataques, ameaças e códigos maliciosos\", assinale a alternativa CORRETA:",
-    "alternativas": [
-      "27001 — o que é: norma de requisitos para um SGSI (Sistema de Gestão da Segurança da Informação). É a que se certifica. Título atual: \"Segurança da informação…",
-      "🔵 Teste de intrusão (pentest) e análise de vulnerabilidades: pentest explora falhas de forma autorizada (CIS Control 18); varredura de vulnerabilidades identifica…",
-      "Rede de Governança da PDPJ-Br (art. 4º):",
-      "Anexo A (2022): de 114 controles em 14 seções → 93 controles em 4 temas:",
-      "JSP (Jakarta Server Pages): construída sobre a Servlet API; páginas baseadas em tags/templates que geram HTML no servidor (modelo centrado no documento)."
-    ],
-    "correta": 1,
-    "trechoFonte": "🔵 Teste de intrusão (pentest) e análise de vulnerabilidades: pentest explora falhas de forma autorizada (CIS Control 18); varredura de vulnerabilidades identifica (CIS Control 7).",
-    "dificuldade": 3,
-    "isBossStyle": true
-  },
-  {
-    "id": "q-mc-0726",
-    "fichaId": "backup",
-    "fichaTitulo": "Backup e recuperação de dados ( + gestão de incidentes)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "tecnico",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em Segurança da Informação, qual alternativa descreve corretamente \"Backup e recuperação de dados ( + gestão de incidentes)\"?",
-    "alternativas": [
-      "Comitê de Governança de TIC (Comissão Permanente do Regimento Interno; art. 227-A):",
-      "Regra 3-2-1 (CISA): 3 cópias, em 2 tipos de mídia, 1 fora do local. Variação 3-2-1-1-0: + 1 imutável/offline + 0 erros verificados em teste de restauração.",
-      "DoS / DDoS: esgotar recursos para negar serviço; DDoS usa muitas origens (frequentemente uma botnet).",
-      "Deadlock: conjunto de processos em que cada um espera um recurso preso por outro do conjunto → ninguém anda.",
-      "institui o Modelo de Requisitos para Sistemas Informatizados de Gestão de Processos e Documentos do Poder Judiciário (MoReq-Jus) e torna obrigatório usá-lo no…"
-    ],
-    "correta": 1,
-    "trechoFonte": "Regra 3-2-1 (CISA): 3 cópias, em 2 tipos de mídia, 1 fora do local. Variação 3-2-1-1-0: + 1 imutável/offline + 0 erros verificados em teste de restauração.",
-    "dificuldade": 1
-  },
-  {
-    "id": "q-lac-0727",
-    "fichaId": "backup",
-    "fichaTitulo": "Backup e recuperação de dados ( + gestão de incidentes)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "tecnico",
-    "tipo": "lacuna",
-    "enunciado": "Complete a lacuna conforme a ficha \"Backup e recuperação de dados ( + gestão de incidentes)\": \"________: 3 cópias, em 2 tipos de mídia, 1 fora do local. Variação 3-2-1-1-0: + 1 imutável/offline + 0 erros verificados em teste de restauração.\"",
-    "alternativas": [
-      "rodando",
-      "Regra 3-2-1 (CISA)",
-      "DDL",
-      "Pacto Internacional dos Direitos Civis e Políticos",
-      "pronto para produção"
-    ],
-    "correta": 1,
-    "trechoFonte": "Regra 3-2-1 (CISA): 3 cópias, em 2 tipos de mídia, 1 fora do local. Variação 3-2-1-1-0: + 1 imutável/offline + 0 erros verificados em teste de restauração.",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ass-0728",
-    "fichaId": "backup",
-    "fichaTitulo": "Backup e recuperação de dados ( + gestão de incidentes)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "tecnico",
-    "tipo": "associacao",
-    "enunciado": "Associe o trecho abaixo ao tópico correspondente de Segurança da Informação: \"Tipos: completo; incremental (só o que mudou desde o último backup de qualquer tipo — restauração precisa do completo + todos os incrementais); diferencial (o que mudou desde o último…\"",
-    "alternativas": [
-      "ABNT NBR ISO/IEC 27001 e 27002",
-      "Convenção Americana (Pacto de São José da Costa Rica)",
-      "Backup e recuperação de dados ( + gestão de incidentes)",
-      "Jenkins",
-      "Servidor web × servidor de aplicação; internet/intranet/extrane…"
-    ],
-    "correta": 2,
-    "trechoFonte": "Tipos: completo; incremental (só o que mudou desde o último backup de qualquer tipo — restauração precisa do completo + todos os incrementais); diferencial (o que mudou desde o último completo).",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-ce-0729",
-    "fichaId": "backup",
-    "fichaTitulo": "Backup e recuperação de dados ( + gestão de incidentes)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "tecnico",
-    "tipo": "certo_errado",
-    "enunciado": "Julgue o item: A definição de \"Backup e recuperação de dados ( + gestão de incidentes)\" corresponde a: \"Confidencialidade: só quem pode, vê. Integridade: não foi alterado indevidamente. Disponibilidade: está acessível quando precisa.\"",
-    "alternativas": [
-      "Certo",
-      "Errado"
-    ],
-    "correta": 1,
-    "trechoFonte": "Regra 3-2-1 (CISA): 3 cópias, em 2 tipos de mídia, 1 fora do local. Variação 3-2-1-1-0: + 1 imutável/offline + 0 erros verificados em teste de restauração. (A afirmação trocada refere-se a Princípios: Confidencialidade, Integridade, Disponibilidade (….)",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-con-0730",
-    "fichaId": "backup",
-    "fichaTitulo": "Backup e recuperação de dados ( + gestão de incidentes)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "tecnico",
-    "tipo": "conexao",
-    "enunciado": "Qual das fichas abaixo possui conexão direta apontada na ficha \"Backup e recuperação de dados ( + gestão de incidentes)\"?",
-    "alternativas": [
-      "Sistema Interamericano de Proteção",
-      "Banco de dados: PostgreSQL e H2",
-      "Gerência de memória",
-      "Ataques, ameaças e códigos maliciosos",
-      "Código de Conduta e Valores Éticos do TRT4 (Portaria GP.TRT4…"
-    ],
-    "correta": 3,
-    "trechoFonte": "Conexões de Backup e recuperação de dados ( + gestão de incidentes): Resolução CNJ nº 396/2021 — ENSEC-PJ (Estratégia Nacional de Segurança Cibernética do Poder Judiciário) · Portaria CNJ nº 162/2021 — Protocolos e Manuais da ENSEC-PJ · Ataques, ameaças e códigos maliciosos.",
-    "dificuldade": 2
-  },
-  {
-    "id": "q-fcc-0731",
-    "fichaId": "backup",
-    "fichaTitulo": "Backup e recuperação de dados ( + gestão de incidentes)",
-    "zonaId": "06-seguranca-da-informacao",
-    "regiaoId": "fortaleza-da-muralha",
-    "cargo": "tecnico",
-    "tipo": "multipla_escolha",
-    "enunciado": "Em estudo preparatório para o TRT da 4ª Região (Segurança da Informação), considerando especificamente o conteúdo de \"Backup e recuperação de dados ( + gestão de incidentes)\", assinale a alternativa CORRETA:",
-    "alternativas": [
-      "Violência e assédio: comportamentos e práticas inaceitáveis (ou ameaças deles), de ocorrência única ou repetida, que, independentemente da intencionalidade, causem…",
-      "Princípio pro persona (pro homine): havendo duas normas, aplica-se a mais favorável à pessoa.",
-      "Ideia central: em vez de cada tribunal ter um sistema monolítico, a PDPJ-Br é um conjunto de aplicações e microsserviços mantidos de forma colaborativa por vários…",
-      "Gestão de incidentes e continuidade: preparar → detectar → conter → erradicar → recuperar → lições aprendidas. A ENSEC-PJ exige backups automatizados e segregados…",
-      "Entidade (coisa do mundo real: Processo, Parte, Advogado) — fraca quando depende de outra para existir (ex.: Movimentação de um Processo)."
-    ],
-    "correta": 3,
-    "trechoFonte": "Gestão de incidentes e continuidade: preparar → detectar → conter → erradicar → recuperar → lições aprendidas. A ENSEC-PJ exige backups automatizados e segregados e ETIR.",
-    "dificuldade": 3,
-    "isBossStyle": true
-  },
-  {
     "id": "q-mc-0732",
     "fichaId": "processos-threads",
     "fichaTitulo": "Processos, threads e escalonamento de CPU",
@@ -17161,5 +15392,3107 @@ export const QUESTIONS: Question[] = [
     "trechoFonte": "Docker empacota a aplicação + dependências numa imagem; Kubernetes orquestra (pods, deployments, services, escala); Rancher gerencia vários clusters. Detalhes no arquivo 05 (docker, kubernetes, rancher).",
     "dificuldade": 3,
     "isBossStyle": true
+  },
+  {
+    "id": "seg-cid-001",
+    "fichaId": "cid",
+    "fichaTitulo": "Princípios: Confidencialidade, Integridade, Disponibilidade ( + autenticidade e não repúdio)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "O princípio da disponibilidade diz respeito à informação",
+    "alternativas": [
+      "vista só por quem pode vê-la.",
+      "preservada de alteração indevida.",
+      "cujo autor não pode negar a autoria.",
+      "acessível quando se precisa dela.",
+      "vinda de quem diz ser o autor."
+    ],
+    "correta": 3,
+    "trechoFonte": "**Disponibilidade:** está acessível quando precisa.",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "Só quem pode, vê. Essa é a confidencialidade.",
+      "Não ter sido alterada indevidamente é a integridade.",
+      "Não poder negar a autoria é o não repúdio.",
+      "Correta. Disponibilidade é estar acessível quando se precisa.",
+      "Ser quem diz ser é a autenticidade."
+    ]
+  },
+  {
+    "id": "seg-cid-002",
+    "fichaId": "cid",
+    "fichaTitulo": "Princípios: Confidencialidade, Integridade, Disponibilidade ( + autenticidade e não repúdio)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "O princípio pelo qual o autor não pode negar a autoria denomina-se",
+    "alternativas": [
+      "não repúdio.",
+      "integridade.",
+      "disponibilidade.",
+      "confidencialidade.",
+      "autenticidade."
+    ],
+    "correta": 0,
+    "trechoFonte": "**não repúdio** (o autor não pode negar a autoria)",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "Correta. No não repúdio, o autor não pode negar a autoria.",
+      "A integridade trata de não haver alteração indevida.",
+      "A disponibilidade trata de estar acessível quando se precisa.",
+      "Na confidencialidade, só quem pode, vê.",
+      "A autenticidade trata de ser quem diz ser; a impossibilidade de negar a autoria é o não repúdio."
+    ]
+  },
+  {
+    "id": "seg-iso27005-001",
+    "fichaId": "iso-27005",
+    "fichaTitulo": "ABNT NBR ISO/IEC 27005:2023 — gestão de riscos de segurança da informação",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "A ABNT NBR ISO/IEC 27005:2023 traz orientações voltadas a",
+    "alternativas": [
+      "certificar o sistema de gestão da segurança da informação.",
+      "gerir a informação de privacidade.",
+      "detalhar como implementar cada controle de segurança.",
+      "definir a higiene cibernética essencial em grupos de implementação.",
+      "gerir riscos de segurança da informação."
+    ],
+    "correta": 4,
+    "trechoFonte": "orientações para **gerir riscos** de SI",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "A norma que se certifica, com os requisitos do SGSI, é a 27001.",
+      "A gestão da informação de privacidade é tema da 27701.",
+      "O guia que detalha os controles é a 27002.",
+      "Higiene cibernética essencial é o IG1 do CIS Controls.",
+      "Correta. A 27005 traz orientações para gerir riscos de segurança da informação."
+    ]
+  },
+  {
+    "id": "seg-iso27005-002",
+    "fichaId": "iso-27005",
+    "fichaTitulo": "ABNT NBR ISO/IEC 27005:2023 — gestão de riscos de segurança da informação",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "Na gestão de riscos de segurança da informação, é uma das opções clássicas de tratamento do risco",
+    "alternativas": [
+      "identificar.",
+      "evitar.",
+      "analisar.",
+      "monitorar.",
+      "comunicar."
+    ],
+    "correta": 1,
+    "trechoFonte": "modificar/mitigar, reter/aceitar, evitar, compartilhar/transferir.",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "Identificar riscos é atividade da gestão de riscos, não opção de tratamento.",
+      "Correta. Evitar está entre as opções clássicas, com modificar, reter e compartilhar.",
+      "Analisar riscos é atividade da gestão de riscos, não opção de tratamento.",
+      "Monitorar riscos é atividade da gestão de riscos, não opção de tratamento.",
+      "Comunicar riscos é atividade da gestão de riscos, não opção de tratamento."
+    ]
+  },
+  {
+    "id": "seg-acesso-001",
+    "fichaId": "controle-acesso",
+    "fichaTitulo": "Controle de acesso: autenticação, autorização, auditoria (AAA), RBAC, MFA",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "No modelo AAA de controle de acesso, a autorização responde à pergunta",
+    "alternativas": [
+      "o que você sabe?",
+      "quem é você?",
+      "o que pode fazer?",
+      "o que fez?",
+      "o que você tem?"
+    ],
+    "correta": 2,
+    "trechoFonte": "**Autorização** (o que pode fazer?)",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "O que você sabe é uma categoria de fator, como a senha, usada em MFA.",
+      "Quem é você? é a pergunta da autenticação.",
+      "Correta. A autorização define o que se pode fazer.",
+      "O que fez? é a pergunta da auditoria.",
+      "O que você tem é uma categoria de fator, como o token, usada em MFA."
+    ]
+  },
+  {
+    "id": "seg-acesso-002",
+    "fichaId": "controle-acesso",
+    "fichaTitulo": "Controle de acesso: autenticação, autorização, auditoria (AAA), RBAC, MFA",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "No RBAC, as permissões são atribuídas",
+    "alternativas": [
+      "a dispositivos, e os dispositivos, a usuários.",
+      "diretamente a cada usuário, sem papéis.",
+      "a fatores de autenticação, e os fatores, a usuários.",
+      "a papéis, e os papéis, a dispositivos.",
+      "a papéis, e os papéis, a usuários."
+    ],
+    "correta": 4,
+    "trechoFonte": "permissões atribuídas a **papéis**, e papéis a usuários",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "No RBAC, quem recebe as permissões são os papéis.",
+      "Entre as permissões e o usuário, o RBAC coloca os papéis.",
+      "Fatores servem à autenticação; no RBAC, as permissões são dos papéis.",
+      "As permissões vão para os papéis, mas os papéis são atribuídos a usuários.",
+      "Correta. O RBAC atribui permissões a papéis e papéis a usuários."
+    ]
+  },
+  {
+    "id": "seg-malware-001",
+    "fichaId": "ataques-malware",
+    "fichaTitulo": "Ataques, ameaças e códigos maliciosos",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "O código malicioso que sequestra dados com o uso de criptografia é o",
+    "alternativas": [
+      "rootkit.",
+      "spyware.",
+      "ransomware.",
+      "worm.",
+      "trojan."
+    ],
+    "correta": 2,
+    "trechoFonte": "**ransomware** (sequestra dados com criptografia)",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "O rootkit esconde presença.",
+      "O spyware é outro tipo de malware; quem sequestra dados com criptografia é o ransomware.",
+      "Correta. O ransomware sequestra dados com criptografia.",
+      "O worm caracteriza-se por se propagar sozinho.",
+      "O trojan caracteriza-se por vir disfarçado."
+    ]
+  },
+  {
+    "id": "seg-malware-002",
+    "fichaId": "ataques-malware",
+    "fichaTitulo": "Ataques, ameaças e códigos maliciosos",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "A fraude que usa engenharia social para obter dados pessoais e financeiros, como credenciais, é",
+    "alternativas": [
+      "o sniffer.",
+      "o phishing.",
+      "o DDoS.",
+      "o ransomware.",
+      "o worm."
+    ],
+    "correta": 1,
+    "trechoFonte": "**Phishing** é fraude que usa engenharia social para obter dados pessoais e financeiros (ex.: credenciais).",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "O sniffer captura e inspeciona tráfego.",
+      "Correta. O phishing é fraude que usa engenharia social.",
+      "O DDoS esgota recursos para negar serviço, a partir de muitas origens.",
+      "O ransomware é malware que sequestra dados com criptografia.",
+      "O worm é malware que se propaga sozinho."
+    ]
+  },
+  {
+    "id": "seg-malware-003",
+    "fichaId": "ataques-malware",
+    "fichaTitulo": "Ataques, ameaças e códigos maliciosos",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "O hardening de um servidor tem por objetivo",
+    "alternativas": [
+      "reduzir a superfície de ataque.",
+      "explorar falhas de forma autorizada.",
+      "capturar e inspecionar o tráfego.",
+      "varrer o servidor para identificar vulnerabilidades.",
+      "correlacionar eventos de várias fontes."
+    ],
+    "correta": 0,
+    "trechoFonte": "**Hardening:** reduzir a superfície de ataque",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "Correta. O hardening reduz a superfície de ataque.",
+      "Explorar falhas de forma autorizada é o teste de intrusão (pentest).",
+      "Capturar e inspecionar tráfego é o que faz um sniffer.",
+      "Identificar vulnerabilidades é o que faz a varredura.",
+      "Correlacionar eventos de várias fontes é o papel do SIEM."
+    ]
+  },
+  {
+    "id": "seg-perimetro-001",
+    "fichaId": "protecao-perimetro",
+    "fichaTitulo": "Sistemas de proteção: firewall, WAF, UTM, DMZ, Proxy, NAC, antivírus/antispam, IDS/IPS ( + SIEM)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "A sub-rede intermediária em que ficam os serviços expostos à internet, como web e e-mail, para isolar a rede interna, é denominada",
+    "alternativas": [
+      "UTM.",
+      "NAC.",
+      "DMZ.",
+      "WAF.",
+      "IPS."
+    ],
+    "correta": 2,
+    "trechoFonte": "sub-rede intermediária onde ficam serviços expostos à internet (web, e-mail), isolando a rede interna",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "UTM é um appliance que junta várias funções de proteção.",
+      "NAC controla quais dispositivos entram na rede, conforme a política.",
+      "Correta. A DMZ isola a rede interna dos serviços expostos à internet.",
+      "WAF é um firewall da camada de aplicação HTTP.",
+      "IPS detecta intrusões e tenta impedi-las."
+    ]
+  },
+  {
+    "id": "seg-perimetro-002",
+    "fichaId": "protecao-perimetro",
+    "fichaTitulo": "Sistemas de proteção: firewall, WAF, UTM, DMZ, Proxy, NAC, antivírus/antispam, IDS/IPS ( + SIEM)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "O appliance que reúne em um único equipamento funções como firewall, IPS, antivírus, filtro web e VPN é conhecido como",
+    "alternativas": [
+      "DMZ.",
+      "NAC.",
+      "forward proxy.",
+      "UTM.",
+      "WAF."
+    ],
+    "correta": 3,
+    "trechoFonte": "appliance que junta várias funções (firewall, IPS, antivírus, filtro web, VPN)",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "DMZ é uma sub-rede intermediária, não um appliance com várias funções.",
+      "NAC só deixa o dispositivo entrar na rede se cumprir a política.",
+      "O forward proxy é um intermediário de requisições, na frente dos clientes.",
+      "Correta. UTM (Unified Threat Management) junta várias funções em um appliance.",
+      "WAF é específico da camada de aplicação HTTP."
+    ]
+  },
+  {
+    "id": "seg-vpn-001",
+    "fichaId": "vpn-ztna",
+    "fichaTitulo": "VPN, VPN-SSL e ZTNA (Zero Trust)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Uma VPN consiste em",
+    "alternativas": [
+      "uma sub-rede que abriga os serviços expostos à internet.",
+      "um túnel criptografado sobre rede pública.",
+      "um firewall que bloqueia injeção e XSS em aplicações web.",
+      "um resumo unidirecional de tamanho fixo.",
+      "um intermediário que filtra a navegação dos clientes."
+    ],
+    "correta": 1,
+    "trechoFonte": "túnel criptografado sobre rede pública",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "Essa é a descrição da DMZ.",
+      "Correta. A VPN cria um túnel criptografado sobre rede pública.",
+      "Essa é a descrição do WAF.",
+      "Essa é a descrição do hash criptográfico.",
+      "Essa é a descrição do forward proxy."
+    ]
+  },
+  {
+    "id": "seg-vpn-002",
+    "fichaId": "vpn-ztna",
+    "fichaTitulo": "VPN, VPN-SSL e ZTNA (Zero Trust)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "De acordo com o modelo Zero Trust (NIST SP 800-207), a localização de um ativo na rede local da organização",
+    "alternativas": [
+      "dispensa a autenticação do dispositivo, mas não a do sujeito.",
+      "não interfere, pois a confiança vem da propriedade do dispositivo.",
+      "garante confiança se o dispositivo for da organização.",
+      "não interfere, pois apenas o sujeito é verificado.",
+      "não basta, por si só, para que ele receba confiança."
+    ],
+    "correta": 4,
+    "trechoFonte": "**nenhuma confiança implícita** é dada a ativos ou contas só pela **localização na rede** (LAN × internet)",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "O modelo exige autenticação e autorização do sujeito e do dispositivo.",
+      "A propriedade do dispositivo não gera confiança implícita.",
+      "A propriedade do dispositivo também não gera confiança implícita.",
+      "O dispositivo também é autenticado e autorizado antes de cada sessão.",
+      "Correta. Nenhuma confiança implícita é dada só pela localização na rede."
+    ]
+  },
+  {
+    "id": "seg-wifi-001",
+    "fichaId": "wifi-seguranca",
+    "fichaTitulo": "Segurança em redes sem fio",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Entre os padrões de segurança de redes sem fio, são considerados legados e inseguros",
+    "alternativas": [
+      "WEP e WPA.",
+      "WEP e WPA3.",
+      "WPA e WPA3.",
+      "WPA3 e SAE.",
+      "PMF e EAP-TLS."
+    ],
+    "correta": 0,
+    "trechoFonte": "**Legados (inseguros):** WEP, WPA.",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "Correta. WEP e WPA são os legados inseguros.",
+      "O WEP é legado, mas o WPA3 não está entre os legados.",
+      "O WPA é legado, mas o WPA3 não está entre os legados.",
+      "O SAE é o mecanismo do WPA3 no modo pessoal; nenhum dos dois é legado.",
+      "O PMF é obrigatório no WPA3, e o EAP-TLS é a opção mais forte do modo Enterprise."
+    ]
+  },
+  {
+    "id": "seg-wifi-002",
+    "fichaId": "wifi-seguranca",
+    "fichaTitulo": "Segurança em redes sem fio",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "No WPA3, o PMF, cujo uso é obrigatório, refere-se à proteção dos quadros de",
+    "alternativas": [
+      "dados.",
+      "voz.",
+      "controle.",
+      "gerência.",
+      "vídeo."
+    ],
+    "correta": 3,
+    "trechoFonte": "**PMF (quadros de gerência protegidos) obrigatório**",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "PMF designa os quadros de gerência protegidos, não os de dados.",
+      "PMF designa os quadros de gerência protegidos, não os de voz.",
+      "PMF designa os quadros de gerência protegidos, não os de controle.",
+      "Correta. PMF são os quadros de gerência protegidos, obrigatórios no WPA3.",
+      "PMF designa os quadros de gerência protegidos, não os de vídeo."
+    ]
+  },
+  {
+    "id": "seg-tls-001",
+    "fichaId": "tls",
+    "fichaTitulo": "TLS 1.2 ( Analista: + TLS 1.3 e limitações do SSL)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "O TLS é um protocolo cuja finalidade é",
+    "alternativas": [
+      "criar um canal seguro entre dois pontos.",
+      "filtrar a navegação dos clientes em uma rede.",
+      "vincular uma chave pública a uma identidade.",
+      "impedir a entrada de dispositivos fora da política.",
+      "isolar em uma sub-rede os serviços expostos à internet."
+    ],
+    "correta": 0,
+    "trechoFonte": "protocolo que cria um **canal seguro** entre dois pontos (confidencialidade, integridade, autenticação do servidor)",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "Correta. O canal oferece confidencialidade, integridade e autenticação do servidor.",
+      "Filtrar a navegação é função do forward proxy.",
+      "Vincular chave pública a identidade é função do certificado digital.",
+      "Controlar a entrada de dispositivos na rede é função do NAC.",
+      "A sub-rede que isola serviços expostos é a DMZ."
+    ]
+  },
+  {
+    "id": "seg-tls-002",
+    "fichaId": "tls",
+    "fichaTitulo": "TLS 1.2 ( Analista: + TLS 1.3 e limitações do SSL)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "O componente do TLS responsável por proteger os dados é o",
+    "alternativas": [
+      "handshake.",
+      "certificado digital.",
+      "forward proxy.",
+      "servidor RADIUS.",
+      "record protocol."
+    ],
+    "correta": 4,
+    "trechoFonte": "**record protocol** (protege os dados)",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "O handshake negocia algoritmos e chaves e autentica.",
+      "O certificado vincula uma chave pública a uma identidade; não é um dos dois componentes do TLS.",
+      "O forward proxy é um intermediário de requisições, não um componente do TLS.",
+      "O RADIUS é o servidor usado no modo Enterprise das redes sem fio.",
+      "Correta. O record protocol protege os dados."
+    ]
+  },
+  {
+    "id": "seg-backup-001",
+    "fichaId": "backup",
+    "fichaTitulo": "Backup e recuperação de dados ( + gestão de incidentes)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "A regra 3-2-1 de backup recomenda manter",
+    "alternativas": [
+      "3 cópias, em 1 tipo de mídia, 2 fora do local.",
+      "3 locais, com 2 cópias em cada um, 1 tipo de mídia.",
+      "3 cópias, em 2 tipos de mídia, 1 fora do local.",
+      "3 tipos de mídia, com 2 cópias, 1 fora do local.",
+      "3 backups completos, 2 diferenciais e 1 incremental."
+    ],
+    "correta": 2,
+    "trechoFonte": "**3 cópias**, em **2 tipos de mídia**, **1 fora do local**",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "São 2 tipos de mídia e 1 cópia fora do local.",
+      "O 3 se refere a cópias, e o 2, a tipos de mídia.",
+      "Correta. São 3 cópias, em 2 tipos de mídia, 1 fora do local.",
+      "O 3 se refere a cópias, e o 2, a tipos de mídia.",
+      "A regra trata de cópias, mídias e local, não dos tipos de backup."
+    ]
+  },
+  {
+    "id": "seg-backup-002",
+    "fichaId": "backup",
+    "fichaTitulo": "Backup e recuperação de dados ( + gestão de incidentes)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "O backup incremental copia",
+    "alternativas": [
+      "tudo, independentemente de alterações.",
+      "só o que mudou desde o último backup completo.",
+      "só o que mudou desde o último backup diferencial.",
+      "só o que mudou desde o último backup de qualquer tipo.",
+      "tudo o que mudou desde o primeiro backup completo."
+    ],
+    "correta": 3,
+    "trechoFonte": "só o que mudou desde o último backup de qualquer tipo",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "O incremental copia só o que mudou.",
+      "Essa é a definição do backup diferencial.",
+      "A referência é o último backup de qualquer tipo, não só o diferencial.",
+      "Correta. A referência é o último backup, seja qual for o tipo.",
+      "A referência é o último backup de qualquer tipo, não o primeiro completo."
+    ]
+  },
+  {
+    "id": "seg-perimetro-007",
+    "fichaId": "protecao-perimetro",
+    "fichaTitulo": "Sistemas de proteção: firewall, WAF, UTM, DMZ, Proxy, NAC, antivírus/antispam, IDS/IPS ( + SIEM)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "certo_errado",
+    "enunciado": "Segundo o NIST SP 800-94, a prevenção de intrusão limita-se a monitorar eventos e procurar sinais de incidentes, sem tentar impedi-los.",
+    "alternativas": [
+      "Certo",
+      "Errado"
+    ],
+    "correta": 1,
+    "trechoFonte": "**prevenção** = detectar **e tentar impedir**",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "Monitorar e procurar sinais é a detecção. A prevenção detecta e também tenta impedir.",
+      "Correta. A prevenção detecta o incidente e ainda tenta impedi-lo; a detecção é que só monitora e procura sinais."
+    ]
+  },
+  {
+    "id": "seg-perimetro-008",
+    "fichaId": "protecao-perimetro",
+    "fichaTitulo": "Sistemas de proteção: firewall, WAF, UTM, DMZ, Proxy, NAC, antivírus/antispam, IDS/IPS ( + SIEM)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "certo_errado",
+    "enunciado": "O proxy é um intermediário de requisições, e o forward proxy fica na frente dos clientes.",
+    "alternativas": [
+      "Certo",
+      "Errado"
+    ],
+    "correta": 0,
+    "trechoFonte": "intermediário de requisições (o *forward proxy* fica na frente dos clientes",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "Correta. O proxy intermedeia requisições, e o forward proxy fica do lado dos clientes, onde filtra a navegação.",
+      "A afirmação está certa. O proxy é intermediário, e o forward proxy fica mesmo na frente dos clientes."
+    ]
+  },
+  {
+    "id": "seg-iso27701-001",
+    "fichaId": "iso-27701",
+    "fichaTitulo": "ABNT NBR ISO/IEC 27701 — privacidade (PIMS)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "A norma ISO/IEC 27701 tem por objeto",
+    "alternativas": [
+      "um guia de boas práticas que detalha cada controle de segurança da informação.",
+      "um sistema de gestão da segurança da informação (SGSI).",
+      "uma lista de riscos de segurança em aplicações web.",
+      "um sistema de gestão da informação de privacidade (PIMS).",
+      "um conjunto de sanções aplicáveis a quem trata dados pessoais."
+    ],
+    "correta": 3,
+    "trechoFonte": "sistema de gestão da **informação de privacidade (PIMS)**",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "O guia de boas práticas que detalha os controles é a 27002.",
+      "O SGSI é o objeto da 27001; o da 27701 é o sistema de gestão da informação de privacidade.",
+      "Riscos de aplicações web são tema do OWASP Top 10.",
+      "Correta. A 27701 trata do sistema de gestão da informação de privacidade, o PIMS.",
+      "Sanções estão na LGPD, no art. 52; a 27701 é um sistema de gestão."
+    ]
+  },
+  {
+    "id": "seg-iso27701-002",
+    "fichaId": "iso-27701",
+    "fichaTitulo": "ABNT NBR ISO/IEC 27701 — privacidade (PIMS)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "A ISO/IEC 27701 traz controles para dois papéis, que são os mesmos da LGPD. São eles",
+    "alternativas": [
+      "titular e encarregado.",
+      "controlador e operador.",
+      "controlador e titular.",
+      "operador e encarregado.",
+      "encarregado e controlador."
+    ],
+    "correta": 1,
+    "trechoFonte": "com controles para **controladores** e **operadores**",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "O titular e o encarregado não são os papéis a que a norma dirige seus controles.",
+      "Correta. A norma traz controles para controladores e operadores, os mesmos papéis da LGPD.",
+      "O controlador é um dos papéis, mas o outro é o operador, não o titular.",
+      "O operador é um dos papéis, mas o outro é o controlador, não o encarregado.",
+      "O controlador é um dos papéis, mas o outro é o operador, não o encarregado."
+    ]
+  },
+  {
+    "id": "seg-cis-controls-001",
+    "fichaId": "cis-controls",
+    "fichaTitulo": "CIS Controls v8",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "O CIS Controls v8 reúne, respectivamente, quantos controles e quantas salvaguardas?",
+    "alternativas": [
+      "18 e 93",
+      "18 e 153",
+      "20 e 56",
+      "20 e 153",
+      "93 e 114"
+    ],
+    "correta": 1,
+    "trechoFonte": "**18 controles** prioritizados do Center for Internet Security (eram 20 na v7) com **153 salvaguardas**",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "Os controles são 18, mas 93 é o número de controles do Anexo A da 27001 de 2022; as salvaguardas são 153.",
+      "Correta. São 18 controles e 153 salvaguardas.",
+      "20 era o número de controles da v7, e 56 é só o número de salvaguardas do IG1.",
+      "As salvaguardas são 153, mas 20 era o número de controles da v7.",
+      "93 e 114 são números do Anexo A da 27001, na edição de 2022 e na anterior."
+    ]
+  },
+  {
+    "id": "seg-cis-controls-002",
+    "fichaId": "cis-controls",
+    "fichaTitulo": "CIS Controls v8",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "No CIS Controls v8, o IG1 (Implementation Group 1) representa",
+    "alternativas": [
+      "o conjunto completo de salvaguardas do documento.",
+      "as salvaguardas exclusivas de testes de intrusão.",
+      "o primeiro controle da lista, o inventário de ativos.",
+      "as salvaguardas que só se aplicam depois do IG3.",
+      "a higiene cibernética essencial para toda organização."
+    ],
+    "correta": 4,
+    "trechoFonte": "**IG1 = higiene cibernética essencial:** **56** salvaguardas — o mínimo para toda organização.",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "O conjunto completo, com as 153 salvaguardas, é alcançado no IG3.",
+      "Teste de intrusão é o controle 18; o IG1 é um grupo de salvaguardas.",
+      "O inventário de ativos corporativos é o controle 1; IG é um grupo de implementação, não um controle.",
+      "A ordem é a contrária, pois o IG1 é o mínimo e os grupos seguintes acrescentam salvaguardas.",
+      "Correta. O IG1 é a higiene cibernética essencial, o mínimo para toda organização."
+    ]
+  },
+  {
+    "id": "seg-lgpd-001",
+    "fichaId": "lgpd",
+    "fichaTitulo": "LGPD — Lei nº 13.709/2018",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Segundo o art. 5º da LGPD (Lei nº 13.709/2018), dado pessoal é a informação relacionada a",
+    "alternativas": [
+      "pessoa natural identificada ou identificável.",
+      "pessoa natural identificada, apenas.",
+      "pessoa natural ou jurídica identificada.",
+      "pessoa jurídica identificada ou identificável.",
+      "qualquer pessoa, desde que trate de saúde ou biometria."
+    ],
+    "correta": 0,
+    "trechoFonte": "informação relacionada a pessoa natural identificada ou identificável",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "Correta. A definição alcança a pessoa natural identificada e também a identificável.",
+      "A pessoa identificável também está na definição.",
+      "A definição trata de pessoa natural, não de jurídica, e inclui a identificável.",
+      "A definição trata de pessoa natural.",
+      "Saúde e dado biométrico aparecem na definição de dado pessoal sensível, e a de dado pessoal não exige esses temas."
+    ]
+  },
+  {
+    "id": "seg-lgpd-002",
+    "fichaId": "lgpd",
+    "fichaTitulo": "LGPD — Lei nº 13.709/2018",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Na LGPD, quem atua como canal de comunicação entre o controlador, os titulares e a ANPD é o",
+    "alternativas": [
+      "operador.",
+      "próprio titular.",
+      "encarregado.",
+      "órgão de pesquisa.",
+      "poder público."
+    ],
+    "correta": 2,
+    "trechoFonte": "canal de comunicação entre controlador, titulares e a ANPD",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "O operador executa o tratamento em nome do controlador.",
+      "O titular é uma das partes com quem o canal se comunica.",
+      "Correta. O encarregado (DPO) é o canal entre controlador, titulares e ANPD.",
+      "Órgão de pesquisa aparece em uma das bases legais, a de estudos.",
+      "O poder público trata dados para cumprir finalidade pública e deve indicar encarregado, que é o canal."
+    ]
+  },
+  {
+    "id": "seg-iso27001-001",
+    "fichaId": "iso-27001",
+    "fichaTitulo": "ABNT NBR ISO/IEC 27001 e 27002",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "A ABNT NBR ISO/IEC 27001 é uma norma de",
+    "alternativas": [
+      "requisitos para um Sistema de Gestão da Segurança da Informação (SGSI).",
+      "boas práticas que detalham a implementação de cada controle.",
+      "requisitos para um sistema de gestão da informação de privacidade (PIMS).",
+      "orientações para gerir riscos de segurança da informação.",
+      "catálogo de riscos de aplicações web."
+    ],
+    "correta": 0,
+    "trechoFonte": "norma de **requisitos** para um **SGSI (Sistema de Gestão da Segurança da Informação)**",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "Correta. A 27001 traz os requisitos do SGSI.",
+      "Esse é o papel da 27002, o guia de boas práticas.",
+      "Sistema de gestão da informação de privacidade é o tema da 27701.",
+      "Não é a definição da 27001, que é uma norma de requisitos do SGSI.",
+      "Riscos de aplicações web são tema do OWASP Top 10."
+    ]
+  },
+  {
+    "id": "seg-iso27001-002",
+    "fichaId": "iso-27001",
+    "fichaTitulo": "ABNT NBR ISO/IEC 27001 e 27002",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "O documento definido como guia de boas práticas, que detalha os controles com definição, propósito e forma de implementação, é a ABNT NBR ISO/IEC",
+    "alternativas": [
+      "27001",
+      "27002",
+      "27005",
+      "27701",
+      "12207"
+    ],
+    "correta": 1,
+    "trechoFonte": "**guia de boas práticas** que detalha os controles (definição, propósito, como implementar)",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "A 27001 é a norma de requisitos do SGSI.",
+      "Correta. A 27002 é o guia de boas práticas que detalha os controles.",
+      "O guia de boas práticas que detalha os controles é a 27002.",
+      "A 27701 trata de gestão da informação de privacidade.",
+      "A 12207 trata de processos de ciclo de vida de software."
+    ]
+  },
+  {
+    "id": "seg-iso27001-003",
+    "fichaId": "iso-27001",
+    "fichaTitulo": "ABNT NBR ISO/IEC 27001 e 27002",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Quantos controles compõem o Anexo A da ISO/IEC 27001 na edição de 2022?",
+    "alternativas": [
+      "34",
+      "37",
+      "58",
+      "93",
+      "114"
+    ],
+    "correta": 3,
+    "trechoFonte": "de 114 controles em 14 seções → **93 controles em 4 temas**",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "34 é a quantidade de controles tecnológicos.",
+      "37 é a quantidade de controles organizacionais.",
+      "58 é a quantidade de controles atualizados entre os 93.",
+      "Correta. São 93 controles em 4 temas.",
+      "114 era a quantidade da versão anterior, em 14 seções."
+    ]
+  },
+  {
+    "id": "seg-iso27001-004",
+    "fichaId": "iso-27001",
+    "fichaTitulo": "ABNT NBR ISO/IEC 27001 e 27002",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "No Anexo A da ISO/IEC 27001, edição de 2022, o tema dos controles organizacionais reúne quantos controles?",
+    "alternativas": [
+      "8",
+      "14",
+      "34",
+      "37",
+      "93"
+    ],
+    "correta": 3,
+    "trechoFonte": "| Organizacionais (5) | 37 |",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "8 é a quantidade do tema Pessoas.",
+      "14 é a quantidade do tema Físicos.",
+      "34 é a quantidade do tema Tecnológicos.",
+      "Correta. O tema Organizacionais reúne 37 controles.",
+      "93 é o total dos quatro temas."
+    ]
+  },
+  {
+    "id": "seg-owasp-001",
+    "fichaId": "owasp",
+    "fichaTitulo": "OWASP Top 10:2025 + desenvolvimento seguro",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "No OWASP Top 10:2025, o SSRF foi absorvido por qual categoria?",
+    "alternativas": [
+      "A01 – Broken Access Control",
+      "A02 – Security Misconfiguration",
+      "A05 – Injection",
+      "A06 – Insecure Design",
+      "A10 – Mishandling of Exceptional Conditions"
+    ],
+    "correta": 0,
+    "trechoFonte": "Continua 1º; **absorveu SSRF**; inclui BOLA/BFLA de APIs",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "Correta. A01 continua em primeiro e absorveu o SSRF.",
+      "A A02 subiu do 5º para o 2º lugar, mas não é a que absorveu o SSRF.",
+      "A A05 caiu do 3º lugar; o SSRF foi para a A01.",
+      "A A06 caiu do 4º lugar; o SSRF foi para a A01.",
+      "A A10 é nova e trata de condições excepcionais; o SSRF foi para a A01."
+    ]
+  },
+  {
+    "id": "seg-owasp-002",
+    "fichaId": "owasp",
+    "fichaTitulo": "OWASP Top 10:2025 + desenvolvimento seguro",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "No OWASP Top 10:2025, a categoria nova que amplia a ideia de \"componentes vulneráveis e desatualizados\" é",
+    "alternativas": [
+      "Security Misconfiguration",
+      "Software Supply Chain Failures",
+      "Software or Data Integrity Failures",
+      "Insecure Design",
+      "Mishandling of Exceptional Conditions"
+    ],
+    "correta": 1,
+    "trechoFonte": "| A03 | **Software Supply Chain Failures** | **Nova** (amplia \"componentes vulneráveis e desatualizados\") |",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "É a A02, que subiu do 5º para o 2º lugar.",
+      "Correta. É a A03, marcada como nova na edição de 2025.",
+      "É a A08; a ampliação de componentes vulneráveis está na A03.",
+      "É a A06, que caiu do 4º lugar.",
+      "Também é nova (A10), mas trata de falhar aberto e de erro mal tratado."
+    ]
+  },
+  {
+    "id": "seg-owasp-003",
+    "fichaId": "owasp",
+    "fichaTitulo": "OWASP Top 10:2025 + desenvolvimento seguro",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Um sistema que \"falha aberto\" e trata mal os erros se encaixa em qual categoria do OWASP Top 10:2025?",
+    "alternativas": [
+      "A04 – Cryptographic Failures",
+      "A05 – Injection",
+      "A07 – Authentication Failures",
+      "A08 – Software or Data Integrity Failures",
+      "A10 – Mishandling of Exceptional Conditions"
+    ],
+    "correta": 4,
+    "trechoFonte": "**Mishandling of Exceptional Conditions** | **Nova** (falhar aberto, erro mal tratado)",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "A A04 reúne falhas criptográficas.",
+      "A A05 reúne falhas de injeção.",
+      "A A07 reúne falhas de autenticação.",
+      "A A08 reúne falhas de integridade de software ou dados.",
+      "Correta. A A10 trata de falhar aberto e de erro mal tratado."
+    ]
+  },
+  {
+    "id": "seg-owasp-004",
+    "fichaId": "owasp",
+    "fichaTitulo": "OWASP Top 10:2025 + desenvolvimento seguro",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "No OWASP Top 10:2025, o que mudou no nome da categoria A09, sobre registro de eventos de segurança?",
+    "alternativas": [
+      "\"Logging\" virou \"Tracing\".",
+      "\"Security\" virou \"Privacy\".",
+      "\"Monitoring\" virou \"Alerting\".",
+      "\"Failures\" virou \"Risks\".",
+      "\"Alerting\" virou \"Monitoring\"."
+    ],
+    "correta": 2,
+    "trechoFonte": "\"Monitoring\" virou \"Alerting\"",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "\"Logging\" continua no nome Security Logging & Alerting Failures.",
+      "\"Security\" continua no nome Security Logging & Alerting Failures.",
+      "Correta. O nome passou a usar \"Alerting\" no lugar de \"Monitoring\".",
+      "\"Failures\" continua no nome Security Logging & Alerting Failures.",
+      "A troca foi no sentido contrário."
+    ]
+  },
+  {
+    "id": "seg-owasp-005",
+    "fichaId": "owasp",
+    "fichaTitulo": "OWASP Top 10:2025 + desenvolvimento seguro",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Qual categoria subiu do 5º para o 2º lugar no OWASP Top 10:2025?",
+    "alternativas": [
+      "Broken Access Control",
+      "Cryptographic Failures",
+      "Injection",
+      "Security Misconfiguration",
+      "Insecure Design"
+    ],
+    "correta": 3,
+    "trechoFonte": "| A02 | **Security Misconfiguration** | Subiu do 5º para o 2º |",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "Continua em 1º lugar.",
+      "Caiu do 2º lugar.",
+      "Caiu do 3º lugar.",
+      "Correta. Security Misconfiguration é a A02.",
+      "Caiu do 4º lugar."
+    ]
+  },
+  {
+    "id": "seg-criptografia-001",
+    "fichaId": "criptografia",
+    "fichaTitulo": "Criptografia, hashes, certificados e assinaturas digitais",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Na criptografia simétrica, a cifragem e a decifragem usam",
+    "alternativas": [
+      "a chave pública do remetente e a privada do destinatário.",
+      "a mesma chave.",
+      "a chave pública do destinatário e a privada dele.",
+      "apenas um resumo de tamanho fixo, sem chave.",
+      "duas chaves públicas."
+    ],
+    "correta": 1,
+    "trechoFonte": "**mesma chave** para cifrar e decifrar",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "Par de chaves é próprio da criptografia assimétrica.",
+      "Correta. A mesma chave cifra e decifra.",
+      "Essa é a lógica da criptografia assimétrica.",
+      "Resumo de tamanho fixo descreve o hash criptográfico.",
+      "A simétrica não usa par de chaves; usa uma mesma chave."
+    ]
+  },
+  {
+    "id": "seg-criptografia-002",
+    "fichaId": "criptografia",
+    "fichaTitulo": "Criptografia, hashes, certificados e assinaturas digitais",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Uma função de hash criptográfico, como o SHA-256, caracteriza-se por produzir um resumo",
+    "alternativas": [
+      "de tamanho variável e reversível com a chave privada.",
+      "de tamanho fixo e unidirecional, ligado à integridade.",
+      "reversível com a mesma chave usada para gerá-lo.",
+      "que vincula uma chave pública a uma identidade.",
+      "cifrado com a chave pública do destinatário."
+    ],
+    "correta": 1,
+    "trechoFonte": "resumo de tamanho fixo, unidirecional (ex.: SHA-256) → **integridade**",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "O resumo tem tamanho fixo e é unidirecional.",
+      "Correta. É um resumo de tamanho fixo e unidirecional, usado para integridade.",
+      "Usar a mesma chave para cifrar e decifrar descreve a criptografia simétrica; o hash é unidirecional.",
+      "Vincular chave pública a identidade é papel do certificado digital.",
+      "Cifrar com a chave pública do destinatário descreve a criptografia assimétrica."
+    ]
+  },
+  {
+    "id": "seg-criptografia-003",
+    "fichaId": "criptografia",
+    "fichaTitulo": "Criptografia, hashes, certificados e assinaturas digitais",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Na assinatura digital, o hash do documento é cifrado com a",
+    "alternativas": [
+      "chave pública do destinatário.",
+      "chave privada do destinatário.",
+      "chave pública do autor.",
+      "chave privada do autor.",
+      "chave simétrica compartilhada entre autor e destinatário."
+    ],
+    "correta": 3,
+    "trechoFonte": "hash do documento cifrado com a **chave privada** do autor → **autenticidade, integridade e não repúdio**",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "A chave pública do destinatário é usada para cifrar mensagens destinadas a ele.",
+      "A chave privada do destinatário decifra o que foi cifrado com a pública dele.",
+      "A assinatura usa a chave privada do autor, não a pública.",
+      "Correta. Isso dá autenticidade, integridade e não repúdio.",
+      "Chave compartilhada é própria da criptografia simétrica."
+    ]
+  },
+  {
+    "id": "seg-criptografia-004",
+    "fichaId": "criptografia",
+    "fichaTitulo": "Criptografia, hashes, certificados e assinaturas digitais",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "O certificado digital tem a função de",
+    "alternativas": [
+      "cifrar dados com uma única chave compartilhada.",
+      "gerar um resumo unidirecional do documento.",
+      "vincular uma chave pública a uma identidade.",
+      "distribuir a chave privada do titular.",
+      "substituir a Autoridade Certificadora."
+    ],
+    "correta": 2,
+    "trechoFonte": "vincula uma chave pública a uma identidade, assinado por uma **Autoridade Certificadora (AC)**",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "Isso descreve a criptografia simétrica.",
+      "Isso descreve o hash criptográfico.",
+      "Correta. O vínculo é assinado por uma Autoridade Certificadora (AC).",
+      "O certificado trata da chave pública, não da privada.",
+      "O certificado é assinado por uma Autoridade Certificadora."
+    ]
+  },
+  {
+    "id": "seg-criptografia-005",
+    "fichaId": "criptografia",
+    "fichaTitulo": "Criptografia, hashes, certificados e assinaturas digitais",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "Na cadeia da ICP-Brasil, a Autoridade Certificadora Raiz é",
+    "alternativas": [
+      "o CNJ.",
+      "a ANPD.",
+      "o ITI.",
+      "a Autoridade de Registro.",
+      "o NIST."
+    ],
+    "correta": 2,
+    "trechoFonte": "Cadeia: **AC Raiz (o ITI)** → ACs → Autoridades de Registro (AR).",
+    "dificuldade": 1,
+    "origem": "autoral",
+    "explicacoes": [
+      "A AC Raiz da ICP-Brasil é o ITI.",
+      "A AC Raiz da ICP-Brasil é o ITI.",
+      "Correta. A cadeia parte da AC Raiz, que é o ITI.",
+      "As Autoridades de Registro vêm depois das ACs na cadeia.",
+      "O NIST aparece na ficha como origem dos padrões pós-quânticos, não como AC Raiz."
+    ]
+  },
+  {
+    "id": "seg-cid-003",
+    "fichaId": "cid",
+    "fichaTitulo": "Princípios: Confidencialidade, Integridade, Disponibilidade ( + autenticidade e não repúdio)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Em um tribunal, foram registradas três ocorrências. I. Um valor gravado em um processo foi alterado indevidamente. II. O sistema ficou fora do ar quando os usuários precisavam dele. III. Um documento sigiloso foi visto por quem não podia vê-lo. Os princípios violados em I, II e III são, respectivamente,",
+    "alternativas": [
+      "confidencialidade, integridade e disponibilidade.",
+      "integridade, disponibilidade e confidencialidade.",
+      "disponibilidade, integridade e confidencialidade.",
+      "integridade, confidencialidade e disponibilidade.",
+      "confidencialidade, disponibilidade e integridade."
+    ],
+    "correta": 1,
+    "trechoFonte": "**Confidencialidade:** só quem pode, vê. **Integridade:** não foi alterado indevidamente. **Disponibilidade:** está acessível quando precisa.",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "A alteração indevida viola a integridade, a queda do sistema viola a disponibilidade, e a visão sem permissão viola a confidencialidade.",
+      "Correta. Alteração indevida, falta de acesso quando se precisa e visão por quem não pode, nessa ordem.",
+      "I e II estão trocadas, pois a alteração indevida viola a integridade, e a queda viola a disponibilidade.",
+      "II e III estão trocadas, pois a queda viola a disponibilidade, e a visão sem permissão viola a confidencialidade.",
+      "I e III estão trocadas, pois a alteração viola a integridade, e a visão sem permissão viola a confidencialidade."
+    ]
+  },
+  {
+    "id": "seg-cid-004",
+    "fichaId": "cid",
+    "fichaTitulo": "Princípios: Confidencialidade, Integridade, Disponibilidade ( + autenticidade e não repúdio)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Um órgão quer confirmar que o remetente de um documento é quem diz ser e quer impedir que o autor negue, mais tarde, a autoria. Esses objetivos correspondem, respectivamente, a",
+    "alternativas": [
+      "não repúdio e autenticidade.",
+      "integridade e não repúdio.",
+      "autenticidade e integridade.",
+      "confidencialidade e autenticidade.",
+      "autenticidade e não repúdio."
+    ],
+    "correta": 4,
+    "trechoFonte": "**autenticidade** (é quem diz ser) e **não repúdio** (o autor não pode negar a autoria)",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "Os dois estão trocados, pois confirmar quem diz ser é autenticidade, e impedir a negação da autoria é não repúdio.",
+      "O segundo está certo, mas o primeiro é autenticidade; integridade é não haver alteração indevida.",
+      "O primeiro está certo, mas o segundo é não repúdio; integridade é não haver alteração indevida.",
+      "Confidencialidade é só quem pode ver; o primeiro objetivo é autenticidade, e o segundo, não repúdio.",
+      "Correta. Ser quem diz ser é autenticidade, e não poder negar a autoria é não repúdio."
+    ]
+  },
+  {
+    "id": "seg-iso27005-003",
+    "fichaId": "iso-27005",
+    "fichaTitulo": "ABNT NBR ISO/IEC 27005:2023 — gestão de riscos de segurança da informação",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "Quanto à sua relação com a ISO/IEC 27001, a 27005",
+    "alternativas": [
+      "apoia a 27001, com orientações para gerir riscos.",
+      "substitui a 27001 na certificação do SGSI.",
+      "detalha como implementar cada controle do Anexo A da 27001.",
+      "estende a 27001 à informação de privacidade.",
+      "fixa os requisitos do SGSI, que a 27001 apenas exemplifica."
+    ],
+    "correta": 0,
+    "trechoFonte": "orientações para **gerir riscos** de SI, apoiando a 27001",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "Correta. A 27005 orienta a gestão de riscos, apoiando a 27001.",
+      "A norma que se certifica é a 27001; a 27005 a apoia com orientações sobre riscos.",
+      "O guia que detalha os controles é a 27002.",
+      "Privacidade é tema da 27701, que na edição de 2019 era extensão da 27001 e da 27002.",
+      "Os requisitos do SGSI estão na 27001; a 27005 traz orientações."
+    ]
+  },
+  {
+    "id": "seg-iso27005-004",
+    "fichaId": "iso-27005",
+    "fichaTitulo": "ABNT NBR ISO/IEC 27005:2023 — gestão de riscos de segurança da informação",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "Um plano de riscos usa os verbos mitigar, aceitar e transferir. Nas opções clássicas de tratamento do risco, esses verbos equivalem, respectivamente, a",
+    "alternativas": [
+      "reter, modificar e compartilhar.",
+      "modificar, evitar e compartilhar.",
+      "evitar, reter e modificar.",
+      "modificar, reter e compartilhar.",
+      "modificar, compartilhar e evitar."
+    ],
+    "correta": 3,
+    "trechoFonte": "modificar/mitigar, reter/aceitar, evitar, compartilhar/transferir.",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "Os dois primeiros estão trocados, pois mitigar equivale a modificar, e aceitar, a reter.",
+      "Aceitar equivale a reter; evitar é outra opção.",
+      "Mitigar equivale a modificar, e transferir, a compartilhar.",
+      "Correta. Os pares são modificar/mitigar, reter/aceitar e compartilhar/transferir.",
+      "Aceitar equivale a reter, e transferir, a compartilhar."
+    ]
+  },
+  {
+    "id": "seg-acesso-003",
+    "fichaId": "controle-acesso",
+    "fichaTitulo": "Controle de acesso: autenticação, autorização, auditoria (AAA), RBAC, MFA",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "É exemplo de autenticação multifator (MFA) a exigência de",
+    "alternativas": [
+      "duas senhas diferentes.",
+      "senha e biometria.",
+      "biometria da digital e da face.",
+      "token e celular.",
+      "uma mesma senha, em duas telas."
+    ],
+    "correta": 1,
+    "trechoFonte": "dois ou mais fatores de categorias diferentes — algo que você **sabe** (senha), **tem** (token, celular), **é** (biometria).",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "As duas senhas são da mesma categoria, algo que você sabe.",
+      "Correta. Senha é algo que você sabe, e biometria, algo que você é; as categorias são diferentes.",
+      "As duas biometrias são da mesma categoria, algo que você é.",
+      "Token e celular são da mesma categoria, algo que você tem.",
+      "A senha é um só fator, da categoria algo que você sabe."
+    ]
+  },
+  {
+    "id": "seg-acesso-004",
+    "fichaId": "controle-acesso",
+    "fichaTitulo": "Controle de acesso: autenticação, autorização, auditoria (AAA), RBAC, MFA",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Um sistema executa três tarefas. I. Registra quais documentos cada usuário excluiu. II. Confirma a identidade do usuário no login. III. Verifica se o usuário tem permissão para excluir um documento. No modelo AAA, as tarefas I, II e III correspondem, respectivamente, a",
+    "alternativas": [
+      "autorização, autenticação e auditoria.",
+      "auditoria, autorização e autenticação.",
+      "autenticação, autorização e auditoria.",
+      "autorização, auditoria e autenticação.",
+      "auditoria, autenticação e autorização."
+    ],
+    "correta": 4,
+    "trechoFonte": "**Autenticação** (quem é você?), **Autorização** (o que pode fazer?), **Auditoria/Accounting** (o que fez?).",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "I e III estão trocadas, pois registrar o que fez é auditoria, e verificar o que pode fazer é autorização.",
+      "II e III estão trocadas, pois confirmar quem é o usuário é autenticação, e verificar o que pode fazer é autorização.",
+      "Registrar o que fez é auditoria, confirmar quem é o usuário é autenticação, e verificar o que pode fazer é autorização.",
+      "Registrar o que fez é auditoria, confirmar quem é o usuário é autenticação, e verificar o que pode fazer é autorização.",
+      "Correta. O que fez é auditoria, quem é você é autenticação, e o que pode fazer é autorização."
+    ]
+  },
+  {
+    "id": "seg-malware-004",
+    "fichaId": "ataques-malware",
+    "fichaTitulo": "Ataques, ameaças e códigos maliciosos",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Na comparação entre vírus e worm, é correto afirmar que",
+    "alternativas": [
+      "o vírus se propaga sozinho, e o worm precisa de hospedeiro.",
+      "o vírus esconde presença, e o worm sequestra dados.",
+      "o vírus precisa de hospedeiro, e o worm se propaga sozinho.",
+      "ambos precisam de hospedeiro.",
+      "ambos se propagam sozinhos, sem hospedeiro."
+    ],
+    "correta": 2,
+    "trechoFonte": "vírus (precisa de hospedeiro), worm (se propaga sozinho)",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "As características estão trocadas.",
+      "Esconder presença caracteriza o rootkit, e sequestrar dados, o ransomware.",
+      "Correta. O vírus precisa de hospedeiro; o worm se propaga sozinho.",
+      "O worm se propaga sozinho; quem precisa de hospedeiro é o vírus.",
+      "O vírus precisa de hospedeiro; só o worm, dos dois, se propaga sozinho."
+    ]
+  },
+  {
+    "id": "seg-malware-005",
+    "fichaId": "ataques-malware",
+    "fichaTitulo": "Ataques, ameaças e códigos maliciosos",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "O ataque DDoS distingue-se do DoS por",
+    "alternativas": [
+      "buscar a negação do serviço, o que o DoS não faz.",
+      "sequestrar os dados com criptografia.",
+      "dispensar o esgotamento de recursos.",
+      "usar muitas origens, frequentemente uma botnet.",
+      "partir de uma só origem."
+    ],
+    "correta": 3,
+    "trechoFonte": "DDoS usa muitas origens (frequentemente uma **botnet**).",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "Os dois buscam negar serviço.",
+      "Sequestrar dados com criptografia caracteriza o ransomware.",
+      "Os dois esgotam recursos para negar serviço.",
+      "Correta. O DDoS usa muitas origens, frequentemente uma botnet.",
+      "O que marca o DDoS são as muitas origens."
+    ]
+  },
+  {
+    "id": "seg-malware-006",
+    "fichaId": "ataques-malware",
+    "fichaTitulo": "Ataques, ameaças e códigos maliciosos",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "Em um ataque, um invasor falsificou o endereço IP de origem dos pacotes. Em outro, inundou um servidor com pacotes SYN. As técnicas correspondem, respectivamente, a",
+    "alternativas": [
+      "flood e spoofing.",
+      "spoofing e phishing.",
+      "spoofing e flood.",
+      "sniffer e flood.",
+      "phishing e spoofing."
+    ],
+    "correta": 2,
+    "trechoFonte": "**Spoofing** (falsificação de origem: IP, ARP, e-mail), **flood** (inundação, ex.: SYN flood).",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "As técnicas estão trocadas, pois falsificar a origem é spoofing, e inundar é flood.",
+      "A primeira está certa, mas inundar com SYN é flood; phishing é fraude com engenharia social.",
+      "Correta. Falsificar a origem é spoofing, e inundar com SYN é flood.",
+      "A segunda está certa, mas sniffer captura e inspeciona tráfego; falsificar a origem é spoofing.",
+      "Phishing é fraude com engenharia social; falsificar a origem é spoofing, e inundar com SYN é flood."
+    ]
+  },
+  {
+    "id": "seg-owasp-006",
+    "fichaId": "owasp",
+    "fichaTitulo": "OWASP Top 10:2025 + desenvolvimento seguro",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Na programação defensiva, o uso de consultas parametrizadas é uma medida dirigida contra o risco tratado em qual categoria do OWASP Top 10:2025?",
+    "alternativas": [
+      "A02 – Security Misconfiguration",
+      "A03 – Software Supply Chain Failures",
+      "A04 – Cryptographic Failures",
+      "A09 – Security Logging & Alerting Failures",
+      "A05 – Injection"
+    ],
+    "correta": 4,
+    "trechoFonte": "usar consultas parametrizadas (contra injeção)",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "A A02 trata de configuração; consultas parametrizadas são contra injeção.",
+      "A A03 amplia a ideia de componentes vulneráveis e desatualizados; consultas parametrizadas são contra injeção.",
+      "A A04 trata de falhas criptográficas; consultas parametrizadas são contra injeção.",
+      "A A09 trata de registro e alerta; consultas parametrizadas são contra injeção.",
+      "Correta. Consultas parametrizadas são usadas contra injeção."
+    ]
+  },
+  {
+    "id": "seg-owasp-007",
+    "fichaId": "owasp",
+    "fichaTitulo": "OWASP Top 10:2025 + desenvolvimento seguro",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Na comparação com a edição anterior, são categorias novas do OWASP Top 10:2025",
+    "alternativas": [
+      "Security Misconfiguration e Insecure Design.",
+      "Software Supply Chain Failures e Security Logging & Alerting Failures.",
+      "Software Supply Chain Failures e Mishandling of Exceptional Conditions.",
+      "Broken Access Control e Mishandling of Exceptional Conditions.",
+      "Cryptographic Failures e Injection."
+    ],
+    "correta": 2,
+    "trechoFonte": "| A10 | **Mishandling of Exceptional Conditions** | **Nova** (falhar aberto, erro mal tratado) |",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "Security Misconfiguration subiu do 5º lugar, e Insecure Design caiu do 4º; já existiam.",
+      "A primeira é nova, mas a segunda só trocou \"Monitoring\" por \"Alerting\" no nome.",
+      "Correta. São a A03 e a A10, marcadas como novas.",
+      "A segunda é nova, mas Broken Access Control continua em 1º lugar.",
+      "Cryptographic Failures caiu do 2º lugar, e Injection, do 3º; já existiam."
+    ]
+  },
+  {
+    "id": "seg-owasp-008",
+    "fichaId": "owasp",
+    "fichaTitulo": "OWASP Top 10:2025 + desenvolvimento seguro",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "Sobre SDL (Security Development Lifecycle) e CLASP, é correto afirmar que",
+    "alternativas": [
+      "SDL é da OWASP e CLASP é da Microsoft; ambas embutem segurança no ciclo de vida.",
+      "SDL é da Microsoft e CLASP é da OWASP; ambas embutem segurança no ciclo de vida.",
+      "ambas são categorias novas do OWASP Top 10:2025.",
+      "SDL é da Microsoft e CLASP é da OWASP; ambas tratam só da fase de testes.",
+      "ambas são da Microsoft e tratam só da fase de codificação."
+    ],
+    "correta": 1,
+    "trechoFonte": "(*Security Development Lifecycle*, da Microsoft) e **CLASP** (OWASP): metodologias que embutem segurança em todo o ciclo de vida",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "As origens estão trocadas.",
+      "Correta. São metodologias que embutem segurança em todo o ciclo de vida.",
+      "São metodologias; as categorias novas são a A03 e a A10.",
+      "As origens estão certas, mas elas abrangem todo o ciclo de vida.",
+      "CLASP é da OWASP, e as duas abrangem todo o ciclo de vida."
+    ]
+  },
+  {
+    "id": "seg-perimetro-003",
+    "fichaId": "protecao-perimetro",
+    "fichaTitulo": "Sistemas de proteção: firewall, WAF, UTM, DMZ, Proxy, NAC, antivírus/antispam, IDS/IPS ( + SIEM)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Um tribunal quer que cada dispositivo só entre na rede se cumprir a política de segurança, usando, por exemplo, 802.1X. A solução que corresponde diretamente a esse objetivo é",
+    "alternativas": [
+      "NAC.",
+      "WAF.",
+      "DMZ.",
+      "forward proxy.",
+      "IDS."
+    ],
+    "correta": 0,
+    "trechoFonte": "só deixa o dispositivo entrar na rede se cumprir a política (ex.: com 802.1X)",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "Correta. O NAC só deixa o dispositivo entrar na rede se cumprir a política.",
+      "O WAF atua na camada de aplicação HTTP e bloqueia ataques web.",
+      "A DMZ isola a rede interna dos serviços expostos à internet.",
+      "O forward proxy intermedeia as requisições dos clientes.",
+      "O IDS monitora eventos e procura sinais de incidentes."
+    ]
+  },
+  {
+    "id": "seg-perimetro-004",
+    "fichaId": "protecao-perimetro",
+    "fichaTitulo": "Sistemas de proteção: firewall, WAF, UTM, DMZ, Proxy, NAC, antivírus/antispam, IDS/IPS ( + SIEM)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "A equipe de segurança precisa detectar incidentes cruzando os registros do firewall, dos servidores e do IDS em uma mesma solução. A tecnologia voltada a essa correlação é o",
+    "alternativas": [
+      "NAC.",
+      "WAF.",
+      "forward proxy.",
+      "SIEM.",
+      "antivírus."
+    ],
+    "correta": 3,
+    "trechoFonte": "correlaciona logs e eventos de várias fontes para detectar incidentes",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "O NAC controla a entrada de dispositivos na rede.",
+      "O WAF bloqueia ataques web na camada de aplicação HTTP.",
+      "O forward proxy intermedeia requisições e filtra a navegação.",
+      "Correta. O SIEM correlaciona logs e eventos de várias fontes.",
+      "Correlacionar logs e eventos de várias fontes é a função do SIEM."
+    ]
+  },
+  {
+    "id": "seg-vpn-003",
+    "fichaId": "vpn-ztna",
+    "fichaTitulo": "VPN, VPN-SSL e ZTNA (Zero Trust)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Ao comparar uma VPN baseada em IPSec com uma VPN-SSL, é correto afirmar que",
+    "alternativas": [
+      "a IPSec dispensa criptografia, ao contrário da VPN-SSL.",
+      "a VPN-SSL só funciona em rede privada, sem passar por rede pública.",
+      "a IPSec é geralmente usada via navegador, sem atuar na camada de rede.",
+      "as duas dependem do modelo Zero Trust para criar o túnel.",
+      "a IPSec atua na camada de rede, e a VPN-SSL usa SSL/TLS."
+    ],
+    "correta": 4,
+    "trechoFonte": "**IPSec** (camada de rede) ou **SSL/TLS** (VPN-SSL, geralmente via navegador/cliente leve)",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "A VPN é um túnel criptografado nos dois casos.",
+      "A VPN é um túnel sobre rede pública.",
+      "A descrição está trocada; navegador ou cliente leve é o uso geral da VPN-SSL.",
+      "Zero Trust é outro modelo; quem o aplica no acesso a aplicações é o ZTNA.",
+      "Correta. IPSec é da camada de rede; VPN-SSL usa SSL/TLS, geralmente via navegador ou cliente leve."
+    ]
+  },
+  {
+    "id": "seg-vpn-004",
+    "fichaId": "vpn-ztna",
+    "fichaTitulo": "VPN, VPN-SSL e ZTNA (Zero Trust)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Um órgão quer que o servidor em teletrabalho acesse apenas determinada aplicação, e não a rede interna inteira, com aplicação de Zero Trust. A solução adequada é",
+    "alternativas": [
+      "DMZ.",
+      "ZTNA.",
+      "VPN tradicional.",
+      "WAF.",
+      "UTM."
+    ],
+    "correta": 1,
+    "trechoFonte": "acesso por aplicação, não à rede inteira como na VPN tradicional",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "A DMZ é uma sub-rede para serviços expostos à internet.",
+      "Correta. No ZTNA, o acesso é por aplicação, e não à rede inteira.",
+      "A VPN tradicional dá acesso à rede inteira.",
+      "O WAF bloqueia ataques web na camada de aplicação HTTP.",
+      "O UTM junta várias funções de proteção em um appliance."
+    ]
+  },
+  {
+    "id": "seg-wifi-003",
+    "fichaId": "wifi-seguranca",
+    "fichaTitulo": "Segurança em redes sem fio",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Um órgão vai implantar sua rede sem fio no modo Enterprise. A combinação que caracteriza esse modo é",
+    "alternativas": [
+      "PSK e servidor RADIUS.",
+      "SAE, PMF e chave pré-compartilhada.",
+      "IEEE 802.1X, EAP e servidor RADIUS.",
+      "WEP, EAP e chave pré-compartilhada.",
+      "IEEE 802.1X, SAE e PSK."
+    ],
+    "correta": 2,
+    "trechoFonte": "**IEEE 802.1X** + **EAP** + servidor **RADIUS** (ex.: integrado ao Active Directory;",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "O RADIUS é do modo Enterprise, mas o PSK é do modo pessoal.",
+      "SAE e chave pré-compartilhada são do modo pessoal.",
+      "Correta. O modo Enterprise usa IEEE 802.1X, EAP e servidor RADIUS.",
+      "O EAP é do modo Enterprise, mas o WEP é legado, e a chave pré-compartilhada é do modo pessoal.",
+      "O 802.1X é do modo Enterprise, mas SAE e PSK são do modo pessoal."
+    ]
+  },
+  {
+    "id": "seg-wifi-004",
+    "fichaId": "wifi-seguranca",
+    "fichaTitulo": "Segurança em redes sem fio",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "No modo pessoal, o WPA3 diferencia-se do WPA2 por",
+    "alternativas": [
+      "adotar SAE no lugar de PSK, com sigilo direto (forward secrecy).",
+      "adotar PSK no lugar de SAE, com sigilo direto (forward secrecy).",
+      "exigir um servidor RADIUS para cada ponto de acesso.",
+      "adotar WEP no lugar de PSK, com resistência a dicionário offline.",
+      "manter PSK e tornar opcionais os quadros de gerência protegidos."
+    ],
+    "correta": 0,
+    "trechoFonte": "modo pessoal troca PSK por **SAE** (*Simultaneous Authentication of Equals*) → sigilo direto (*forward secrecy*)",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "Correta. A troca de PSK por SAE traz sigilo direto e resistência a dicionário offline.",
+      "A troca foi no sentido contrário.",
+      "O servidor RADIUS pertence ao modo Enterprise.",
+      "WEP é legado e inseguro; o WPA3 adota SAE.",
+      "O WPA3 troca PSK por SAE e torna o PMF obrigatório."
+    ]
+  },
+  {
+    "id": "seg-criptografia-006",
+    "fichaId": "criptografia",
+    "fichaTitulo": "Criptografia, hashes, certificados e assinaturas digitais",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Usando criptografia assimétrica, Ana quer enviar a Bruno uma mensagem que só ele consiga decifrar. Ana deve cifrar a mensagem com a chave",
+    "alternativas": [
+      "privada de Ana.",
+      "pública de Ana.",
+      "privada de Bruno.",
+      "pública de Bruno.",
+      "privada da Autoridade Certificadora."
+    ],
+    "correta": 3,
+    "trechoFonte": "Cifrar com a pública do destinatário → só a privada dele decifra.",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "A chave privada do autor é usada na assinatura digital.",
+      "O que é cifrado com a pública de Ana só a privada de Ana decifra.",
+      "Bruno usa a própria chave privada para decifrar; a mensagem é cifrada com a pública dele.",
+      "Correta. O que é cifrado com a pública de Bruno só a privada dele decifra.",
+      "A Autoridade Certificadora assina certificados; a mensagem é cifrada com a pública do destinatário."
+    ]
+  },
+  {
+    "id": "seg-criptografia-007",
+    "fichaId": "criptografia",
+    "fichaTitulo": "Criptografia, hashes, certificados e assinaturas digitais",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Dois setores vão trocar um grande volume de arquivos cifrados com AES. Em comparação com a criptografia assimétrica, o problema característico dessa escolha é",
+    "alternativas": [
+      "a lentidão da cifragem com chave única.",
+      "a distribuição da chave.",
+      "a necessidade de um par de chaves para cada setor.",
+      "a impossibilidade de decifrar o conteúdo depois.",
+      "a exigência de um certificado digital para cada arquivo."
+    ],
+    "correta": 1,
+    "trechoFonte": "rápida (ex.: **AES**). Problema: distribuir a chave.",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "A criptografia simétrica, da qual o AES é exemplo, é rápida.",
+      "Correta. Como a mesma chave cifra e decifra, o problema é distribuí-la.",
+      "Par de chaves é próprio da criptografia assimétrica.",
+      "A mesma chave cifra e decifra; unidirecional é o hash.",
+      "O certificado vincula uma chave pública a uma identidade; a simétrica usa uma mesma chave para cifrar e decifrar."
+    ]
+  },
+  {
+    "id": "seg-criptografia-008",
+    "fichaId": "criptografia",
+    "fichaTitulo": "Criptografia, hashes, certificados e assinaturas digitais",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "Entre os padrões de criptografia pós-quântica publicados pelo NIST em 2024, o que se destina à troca de chaves é o",
+    "alternativas": [
+      "FIPS 204, ML-DSA.",
+      "FIPS 205, SLH-DSA.",
+      "FIPS 203, ML-KEM.",
+      "FIPS 203, ML-DSA.",
+      "FIPS 204, SLH-DSA."
+    ],
+    "correta": 2,
+    "trechoFonte": "**FIPS 203 ML-KEM** (de CRYSTALS-Kyber, troca de chaves)",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "O FIPS 204, ML-DSA, é de assinatura.",
+      "O FIPS 205, SLH-DSA, é de assinatura baseada em hash.",
+      "Correta. O FIPS 203, ML-KEM, vem do CRYSTALS-Kyber e trata de troca de chaves.",
+      "O ML-DSA é o FIPS 204 e trata de assinatura.",
+      "O SLH-DSA é o FIPS 205 e trata de assinatura."
+    ]
+  },
+  {
+    "id": "seg-tls-003",
+    "fichaId": "tls",
+    "fichaTitulo": "TLS 1.2 ( Analista: + TLS 1.3 e limitações do SSL)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Em uma conexão TLS, cliente e servidor estão definindo os algoritmos e as chaves que usarão, com autenticação. Essa etapa corresponde ao",
+    "alternativas": [
+      "record protocol.",
+      "hash criptográfico.",
+      "modo Enterprise.",
+      "handshake.",
+      "túnel IPSec."
+    ],
+    "correta": 3,
+    "trechoFonte": "**handshake** (negocia algoritmos e chaves, autentica)",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "O record protocol protege os dados; a negociação é do handshake.",
+      "O hash criptográfico é um resumo unidirecional, ligado à integridade.",
+      "O modo Enterprise é de redes sem fio e usa 802.1X, EAP e RADIUS.",
+      "Correta. O handshake negocia algoritmos e chaves e autentica.",
+      "O IPSec é usado em VPN, na camada de rede."
+    ]
+  },
+  {
+    "id": "seg-tls-004",
+    "fichaId": "tls",
+    "fichaTitulo": "TLS 1.2 ( Analista: + TLS 1.3 e limitações do SSL)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "analista",
+    "tipo": "multipla_escolha",
+    "enunciado": "Em relação ao TLS 1.2, o TLS 1.3 removeu",
+    "alternativas": [
+      "a troca de chaves com sigilo direto (forward secrecy).",
+      "a troca de chaves RSA estática e DH estático.",
+      "o handshake, deixando apenas o record protocol.",
+      "a autenticação do servidor.",
+      "o record protocol, deixando apenas o handshake."
+    ],
+    "correta": 1,
+    "trechoFonte": "removeu troca de chaves **RSA estática e DH estático**",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "No TLS 1.3 ocorre o contrário; toda troca de chaves pública tem sigilo direto.",
+      "Correta. Com essa remoção, toda troca de chaves pública tem sigilo direto.",
+      "O handshake não foi removido; ficou mais rápido.",
+      "A autenticação do servidor faz parte do que o TLS oferece.",
+      "O record protocol é o componente do TLS que protege os dados."
+    ]
+  },
+  {
+    "id": "seg-backup-003",
+    "fichaId": "backup",
+    "fichaTitulo": "Backup e recuperação de dados ( + gestão de incidentes)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "Um órgão faz backup completo no domingo e backup diferencial à noite, de segunda a sexta. O backup diferencial de quarta-feira contém o que mudou",
+    "alternativas": [
+      "desde o completo de domingo.",
+      "desde o diferencial de terça-feira.",
+      "desde o diferencial de segunda-feira.",
+      "somente durante a própria quarta-feira.",
+      "desde a última restauração realizada."
+    ],
+    "correta": 0,
+    "trechoFonte": "diferencial (o que mudou desde o último completo)",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "Correta. O diferencial guarda o que mudou desde o último completo.",
+      "Considerar o último backup de qualquer tipo é próprio do incremental.",
+      "A referência do diferencial é o último completo, não outro diferencial.",
+      "A referência é o último completo, feito no domingo.",
+      "A referência é o último backup completo, não uma restauração."
+    ]
+  },
+  {
+    "id": "seg-backup-004",
+    "fichaId": "backup",
+    "fichaTitulo": "Backup e recuperação de dados ( + gestão de incidentes)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "Um órgão que já segue a regra 3-2-1 quer adotar a variação 3-2-1-1-0. Para isso, precisa acrescentar",
+    "alternativas": [
+      "1 cópia a mais no local e 0 backups incrementais.",
+      "1 backup completo por dia e 0 cópias fora do local.",
+      "1 tipo de mídia a mais e 0 cópias offline.",
+      "1 equipe de resposta a incidentes e 0 arquivos alterados desde o último backup completo.",
+      "1 cópia imutável ou offline e 0 erros verificados em teste de restauração."
+    ],
+    "correta": 4,
+    "trechoFonte": "+ 1 imutável/offline + 0 erros verificados em teste de restauração",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "O 1 é de cópia imutável ou offline, e o 0, de erros no teste de restauração.",
+      "A cópia fora do local da regra 3-2-1 continua valendo.",
+      "O 1 acrescentado é justamente a cópia imutável ou offline.",
+      "A variação trata de cópia imutável ou offline e de teste de restauração.",
+      "Correta. São 1 cópia imutável ou offline e 0 erros verificados em teste de restauração."
+    ]
+  },
+  {
+    "id": "seg-iso27001-005",
+    "fichaId": "iso-27001",
+    "fichaTitulo": "ABNT NBR ISO/IEC 27001 e 27002",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Uma equipe precisa de um documento que traga os requisitos do SGSI e de outro que explique o propósito e a forma de implementar cada controle. Esses documentos são, respectivamente,",
+    "alternativas": [
+      "a 27002 e a 27001.",
+      "a 27002 e a 27701.",
+      "a 27001 e a 27002.",
+      "a 27701 e a 27001.",
+      "a 27001 e a 27701."
+    ],
+    "correta": 2,
+    "trechoFonte": "**guia de boas práticas** que detalha os controles (definição, propósito, como implementar)",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "A ordem está trocada, pois os requisitos estão na 27001, e o detalhamento dos controles, na 27002.",
+      "A 27002 é o guia dos controles, e a 27701 trata da informação de privacidade.",
+      "Correta. A 27001 traz os requisitos do SGSI, e a 27002 detalha os controles.",
+      "A 27701 trata da informação de privacidade, e a 27001 traz os requisitos, não o detalhamento dos controles.",
+      "A 27001 traz os requisitos do SGSI, mas o guia dos controles de segurança é a 27002."
+    ]
+  },
+  {
+    "id": "seg-iso27001-006",
+    "fichaId": "iso-27001",
+    "fichaTitulo": "ABNT NBR ISO/IEC 27001 e 27002",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Quanto aos temas de controles da edição de 2022 da ISO/IEC 27001 e da 27002, a correspondência correta entre tema, cláusula da 27002 e número de controles é",
+    "alternativas": [
+      "Tecnológicos, cláusula 8, 34 controles.",
+      "Tecnológicos, cláusula 5, 37 controles.",
+      "Físicos, cláusula 7, 8 controles.",
+      "Pessoas, cláusula 6, 14 controles.",
+      "Organizacionais, cláusula 8, 37 controles."
+    ],
+    "correta": 0,
+    "trechoFonte": "| Tecnológicos (8) | 34 |",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "Correta. O tema Tecnológicos está na cláusula 8, com 34 controles.",
+      "Cláusula 5 e 37 controles são do tema Organizacionais.",
+      "A cláusula está certa, mas o tema Físicos tem 14 controles.",
+      "A cláusula está certa, mas o tema Pessoas tem 8 controles.",
+      "O número está certo, mas o tema Organizacionais está na cláusula 5."
+    ]
+  },
+  {
+    "id": "seg-iso27001-007",
+    "fichaId": "iso-27001",
+    "fichaTitulo": "ABNT NBR ISO/IEC 27001 e 27002",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "A ENSEC-PJ manda cada tribunal ter um SGSI baseado em riscos. Essa determinação é exemplo prático do objeto da",
+    "alternativas": [
+      "ISO/IEC 27002, por ser ela a norma que se certifica.",
+      "ISO/IEC 27701, por tratar da informação de privacidade.",
+      "ISO/IEC 27002, por conter os requisitos do sistema de gestão.",
+      "ISO/IEC 27001, por conter os requisitos do sistema de gestão.",
+      "ISO/IEC 27001, por ser apenas um guia de boas práticas."
+    ],
+    "correta": 3,
+    "trechoFonte": "a ENSEC-PJ manda cada tribunal ter um **SGSI baseado em riscos** — é exatamente a 27001",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "A norma que se certifica é a 27001; a 27002 é um guia de boas práticas.",
+      "A 27701 trata da informação de privacidade, e a determinação é sobre o SGSI.",
+      "A 27002 detalha os controles; os requisitos do sistema de gestão estão na 27001.",
+      "Correta. O SGSI é o objeto da 27001, que é uma norma de requisitos.",
+      "A norma está certa, mas a 27001 é de requisitos; o guia de boas práticas é a 27002."
+    ]
+  },
+  {
+    "id": "seg-iso27701-003",
+    "fichaId": "iso-27701",
+    "fichaTitulo": "ABNT NBR ISO/IEC 27701 — privacidade (PIMS)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "Na edição de 2019, a relação da ISO/IEC 27701 com a 27001 e a 27002 é a de",
+    "alternativas": [
+      "norma independente, certificável sem a 27001.",
+      "norma que substitui a 27001 e mantém a 27002.",
+      "guia que detalha apenas os controles da 27002.",
+      "norma que dispensa a existência de um SGSI.",
+      "extensão das duas, que precisa de um SGSI."
+    ],
+    "correta": 4,
+    "trechoFonte": "era uma **extensão** da 27001/27002 (precisava de SGSI)",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "A edição de 2019 era uma extensão e precisava de SGSI; não era independente.",
+      "A edição de 2019 era uma extensão da 27001 e da 27002; não substituía a 27001.",
+      "A 27701 é um sistema de gestão da informação de privacidade, e a edição de 2019 estendia também a 27001.",
+      "A edição de 2019 precisava de um SGSI.",
+      "Correta. Em 2019, era uma extensão da 27001 e da 27002 e precisava de SGSI."
+    ]
+  },
+  {
+    "id": "seg-iso27701-004",
+    "fichaId": "iso-27701",
+    "fichaTitulo": "ABNT NBR ISO/IEC 27701 — privacidade (PIMS)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "analista",
+    "tipo": "multipla_escolha",
+    "enunciado": "Na comparação com a edição de 2019, a edição de 2025 da ISO/IEC 27701 passou a ser",
+    "alternativas": [
+      "uma extensão da 27001 e da 27002.",
+      "um anexo da 27002, sem certificação própria.",
+      "uma norma independente.",
+      "um guia restrito aos controladores.",
+      "uma norma certificável só junto com a 27001."
+    ],
+    "correta": 2,
+    "trechoFonte": "virou **norma independente (stand-alone)**, certificável sem a 27001",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "Essa era a situação da edição de 2019.",
+      "A edição de 2025 é independente e certificável.",
+      "Correta. A edição de 2025 virou norma independente, certificável sem a 27001.",
+      "A norma tem controles para controladores e para operadores.",
+      "A edição de 2025 é certificável sem a 27001."
+    ]
+  },
+  {
+    "id": "seg-cis-controls-003",
+    "fichaId": "cis-controls",
+    "fichaTitulo": "CIS Controls v8",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "No CIS Controls v8, uma organização que implementa por completo o IG2, incluído o que ele herda do grupo anterior, cumpre quantas salvaguardas?",
+    "alternativas": [
+      "56",
+      "74",
+      "97",
+      "130",
+      "153"
+    ],
+    "correta": 3,
+    "trechoFonte": "+74 salvaguardas (inclui IG1)",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "56 são as salvaguardas do IG1.",
+      "74 são as que o IG2 acrescenta, sem contar as do IG1.",
+      "97 soma os acréscimos do IG2 (74) e do IG3 (23) e deixa fora as 56 do IG1.",
+      "Correta. O IG2 inclui as 56 do IG1 e acrescenta 74, o que dá 130.",
+      "153 é o total, que só se completa com o IG3."
+    ]
+  },
+  {
+    "id": "seg-cis-controls-004",
+    "fichaId": "cis-controls",
+    "fichaTitulo": "CIS Controls v8",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "No CIS Controls v8, a associação correta entre o número e o nome do controle é",
+    "alternativas": [
+      "1 – Gestão de contas.",
+      "5 – Teste de intrusão.",
+      "18 – Teste de intrusão.",
+      "18 – Inventário de ativos corporativos.",
+      "5 – Inventário de ativos corporativos."
+    ],
+    "correta": 2,
+    "trechoFonte": "1 Inventário de ativos corporativos · 5 Gestão de contas · 18 Teste de intrusão",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "O controle 1 é o Inventário de ativos corporativos; Gestão de contas é o 5.",
+      "O controle 5 é Gestão de contas; Teste de intrusão é o 18.",
+      "Correta. Teste de intrusão é o controle 18.",
+      "O Inventário de ativos corporativos é o controle 1; o 18 é Teste de intrusão.",
+      "O Inventário de ativos corporativos é o controle 1; o 5 é Gestão de contas."
+    ]
+  },
+  {
+    "id": "seg-lgpd-003",
+    "fichaId": "lgpd",
+    "fichaTitulo": "LGPD — Lei nº 13.709/2018",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Um tribunal decide como serão tratados os dados pessoais de um sistema e contrata uma empresa que executa esse tratamento em nome dele. Nos termos da LGPD, o tribunal e a empresa são, respectivamente,",
+    "alternativas": [
+      "operador e controladora.",
+      "encarregado e operadora.",
+      "controlador e encarregada.",
+      "titular e controladora.",
+      "controlador e operadora."
+    ],
+    "correta": 4,
+    "trechoFonte": "**controlador** (decide) e **operador** (executa em nome do controlador)",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "Os papéis estão trocados, pois quem decide é o controlador.",
+      "A empresa é operadora, mas o tribunal, que decide, é controlador; o encarregado é canal de comunicação.",
+      "O tribunal é controlador, mas a empresa executa em nome dele e por isso é operadora.",
+      "O tribunal decide sobre o tratamento, portanto é controlador, e a empresa é operadora.",
+      "Correta. O controlador decide, e o operador executa em nome dele."
+    ]
+  },
+  {
+    "id": "seg-lgpd-004",
+    "fichaId": "lgpd",
+    "fichaTitulo": "LGPD — Lei nº 13.709/2018",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "O cadastro de servidores de um órgão guarda os dados abaixo, todos ligados a pessoas identificadas. É dado pessoal sensível, pela definição da LGPD,",
+    "alternativas": [
+      "o número do CPF.",
+      "a filiação sindical.",
+      "o endereço residencial.",
+      "o telefone celular.",
+      "a data de nascimento."
+    ],
+    "correta": 1,
+    "trechoFonte": "origem racial ou étnica, convicção religiosa, opinião política, filiação sindical",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "É dado pessoal, mas o CPF não está na lista de dados sensíveis.",
+      "Correta. A filiação sindical está na lista de dados pessoais sensíveis.",
+      "É dado pessoal, mas o endereço não está na lista de dados sensíveis.",
+      "É dado pessoal, mas o telefone não está na lista de dados sensíveis.",
+      "É dado pessoal, mas a data de nascimento não está na lista de dados sensíveis."
+    ]
+  },
+  {
+    "id": "seg-lgpd-005",
+    "fichaId": "lgpd",
+    "fichaTitulo": "LGPD — Lei nº 13.709/2018",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Na LGPD, são, respectivamente, um princípio (art. 6º), uma base legal (art. 7º) e um direito do titular (art. 18)",
+    "alternativas": [
+      "portabilidade, necessidade e proteção do crédito.",
+      "necessidade, portabilidade e proteção do crédito.",
+      "proteção do crédito, prevenção e portabilidade.",
+      "necessidade, proteção do crédito e portabilidade.",
+      "prevenção, adequação e proteção do crédito."
+    ],
+    "correta": 3,
+    "trechoFonte": "finalidade, adequação, necessidade, livre acesso, qualidade dos dados",
+    "dificuldade": 2,
+    "origem": "autoral",
+    "explicacoes": [
+      "Portabilidade é direito do titular, necessidade é princípio e proteção do crédito é base legal.",
+      "Necessidade é princípio, mas os outros dois estão trocados, pois portabilidade é direito, e proteção do crédito, base legal.",
+      "Portabilidade é direito, mas os outros dois estão trocados, pois proteção do crédito é base legal, e prevenção, princípio.",
+      "Correta. Necessidade é princípio, proteção do crédito é base legal e portabilidade é direito.",
+      "Prevenção e adequação são princípios, e proteção do crédito é base legal, não direito."
+    ]
+  },
+  {
+    "id": "seg-cid-005",
+    "fichaId": "cid",
+    "fichaTitulo": "Princípios: Confidencialidade, Integridade, Disponibilidade ( + autenticidade e não repúdio)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Sobre os princípios de segurança da informação, considere as afirmações a seguir. I. A autenticidade e o não repúdio são exigidos pelo MoReq-Jus. II. A assinatura digital provê autenticidade, mas não o não repúdio. III. No não repúdio, o autor não pode negar a autoria. Está correto o que se afirma em",
+    "alternativas": [
+      "I, apenas.",
+      "II, apenas.",
+      "I e III, apenas.",
+      "II e III, apenas.",
+      "I, II e III."
+    ],
+    "correta": 2,
+    "trechoFonte": "**não repúdio** (o autor não pode negar a autoria) — ambos exigidos pelo [[moreq-jus]] e providos pela assinatura digital",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "A III também está certa, pois, no não repúdio, o autor não pode negar a autoria.",
+      "A II está errada, pois a assinatura digital provê os dois; a I e a III estão certas.",
+      "Correta. A II erra porque a assinatura digital provê a autenticidade e também o não repúdio.",
+      "A II está errada, pois a assinatura digital provê os dois, e a I também está certa.",
+      "A II está errada, pois a assinatura digital provê também o não repúdio."
+    ]
+  },
+  {
+    "id": "seg-cid-006",
+    "fichaId": "cid",
+    "fichaTitulo": "Princípios: Confidencialidade, Integridade, Disponibilidade ( + autenticidade e não repúdio)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Uma servidora podia ver um relatório, mas o alterou indevidamente. Durante todo o período, o relatório ficou acessível a quem precisava dele, e só o viu quem podia. Entre confidencialidade, integridade e disponibilidade, foi violada",
+    "alternativas": [
+      "a confidencialidade, apenas.",
+      "a disponibilidade, apenas.",
+      "a confidencialidade e a integridade.",
+      "a integridade, apenas.",
+      "a integridade e a disponibilidade."
+    ],
+    "correta": 3,
+    "trechoFonte": "**Integridade:** não foi alterado indevidamente.",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "Só viu o relatório quem podia; a alteração indevida viola a integridade.",
+      "O relatório ficou acessível a quem precisava; a alteração indevida viola a integridade.",
+      "A integridade foi violada, mas a confidencialidade não, pois só viu o relatório quem podia.",
+      "Correta. Houve alteração indevida; a confidencialidade e a disponibilidade foram mantidas.",
+      "A integridade foi violada, mas a disponibilidade não, pois o relatório ficou acessível."
+    ]
+  },
+  {
+    "id": "seg-iso27005-005",
+    "fichaId": "iso-27005",
+    "fichaTitulo": "ABNT NBR ISO/IEC 27005:2023 — gestão de riscos de segurança da informação",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "Um relatório apresenta, como as quatro opções clássicas de tratamento do risco, modificar, reter, monitorar e compartilhar. O relatório errou ao",
+    "alternativas": [
+      "incluir monitorar e omitir avaliar.",
+      "incluir reter e omitir evitar.",
+      "incluir modificar e omitir comunicar.",
+      "incluir compartilhar e omitir analisar.",
+      "incluir monitorar e omitir evitar."
+    ],
+    "correta": 4,
+    "trechoFonte": "modificar/mitigar, reter/aceitar, evitar, compartilhar/transferir.",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "Monitorar está mal incluído, mas avaliar também é atividade da gestão; a opção omitida é evitar.",
+      "Evitar foi mesmo omitido, mas reter é opção clássica; o intruso é monitorar.",
+      "Modificar é opção clássica, e comunicar é atividade da gestão de riscos.",
+      "Compartilhar é opção clássica, e analisar é atividade da gestão de riscos.",
+      "Correta. Monitorar é atividade da gestão de riscos, e a opção que faltou é evitar."
+    ]
+  },
+  {
+    "id": "seg-iso27005-006",
+    "fichaId": "iso-27005",
+    "fichaTitulo": "ABNT NBR ISO/IEC 27005:2023 — gestão de riscos de segurança da informação",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "Depois de analisar um risco de segurança da informação, um gestor decidiu aceitá-lo. Um consultor afirma que essa decisão não está entre as opções clássicas de tratamento do risco. A afirmação está",
+    "alternativas": [
+      "correta, pois só mitigar trata o risco.",
+      "correta, pois só evitar e transferir tratam o risco.",
+      "incorreta, pois aceitar equivale a evitar, uma das opções.",
+      "incorreta, pois aceitar equivale a reter, uma das opções.",
+      "incorreta, pois aceitar equivale a compartilhar, uma das opções."
+    ],
+    "correta": 3,
+    "trechoFonte": "modificar/mitigar, reter/aceitar, evitar, compartilhar/transferir.",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "Além de modificar/mitigar, são opções clássicas reter/aceitar, evitar e compartilhar/transferir.",
+      "Além dessas duas, são opções clássicas modificar/mitigar e reter/aceitar.",
+      "A afirmação é mesmo incorreta, mas aceitar equivale a reter; evitar é outra opção.",
+      "Correta. Aceitar equivale a reter, que é opção clássica de tratamento.",
+      "A afirmação é mesmo incorreta, mas compartilhar equivale a transferir, e aceitar, a reter."
+    ]
+  },
+  {
+    "id": "seg-acesso-005",
+    "fichaId": "controle-acesso",
+    "fichaTitulo": "Controle de acesso: autenticação, autorização, auditoria (AAA), RBAC, MFA",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Para o acesso a um sistema judicial sensível, um tribunal exige uma senha e uma frase memorizada, e entende que assim cumpre a determinação do CNJ de usar MFA (Portaria CNJ nº 140/2024). Para que o acesso passe a ter MFA, o tribunal deve",
+    "alternativas": [
+      "trocar a frase por um token.",
+      "trocar a frase por outra senha.",
+      "acrescentar uma terceira senha.",
+      "registrar o que cada usuário fez.",
+      "atribuir um papel a cada usuário."
+    ],
+    "correta": 0,
+    "trechoFonte": "dois ou mais fatores de categorias diferentes — algo que você **sabe** (senha), **tem** (token, celular), **é** (biometria). O CNJ determinou MFA para acesso a sistemas judiciais sensíveis (Portaria CNJ nº 140, de 22/04/2024)",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "Correta. Senha é algo que se sabe, e token, algo que se tem; antes, os dois fatores eram da mesma categoria.",
+      "As duas senhas são algo que se sabe, uma só categoria.",
+      "Com mais uma senha, os fatores continuam na categoria do que se sabe.",
+      "Registrar o que o usuário fez é auditoria e não acrescenta fator de outra categoria.",
+      "Atribuir papéis é RBAC e não acrescenta fator de outra categoria."
+    ]
+  },
+  {
+    "id": "seg-acesso-006",
+    "fichaId": "controle-acesso",
+    "fichaTitulo": "Controle de acesso: autenticação, autorização, auditoria (AAA), RBAC, MFA",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Em um sistema com RBAC, os papéis \"Assessor\" e \"Servidor de Secretaria\" já têm as permissões corretas. Um usuário deixa de ser assessor e passa a atuar só na secretaria; os demais continuam como estão. No modelo RBAC, o ajuste adequado é",
+    "alternativas": [
+      "trocar as permissões do papel \"Assessor\" pelas do outro papel.",
+      "dar a ele, sem papel algum, as permissões da secretaria.",
+      "trocar o papel atribuído a ele.",
+      "acrescentar ao papel \"Assessor\" as permissões da secretaria.",
+      "exigir dele um fator de autenticação a mais."
+    ],
+    "correta": 2,
+    "trechoFonte": "permissões atribuídas a **papéis**, e papéis a usuários (ex.: \"Assessor\", \"Servidor de Secretaria\").",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "O papel já tem as permissões corretas, e mudá-lo alteraria as permissões dos outros usuários com esse papel.",
+      "No RBAC, as permissões são atribuídas a papéis, e não diretamente ao usuário.",
+      "Correta. As permissões estão nos papéis, e os papéis são atribuídos aos usuários.",
+      "O papel já tem as permissões corretas, e o usuário ainda ficaria como assessor.",
+      "Fator de autenticação trata de quem é o usuário; as permissões vêm do papel."
+    ]
+  },
+  {
+    "id": "seg-malware-007",
+    "fichaId": "ataques-malware",
+    "fichaTitulo": "Ataques, ameaças e códigos maliciosos",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "A equipe de defesa de um tribunal usa o Wireshark para examinar o tráfego da rede. Um gestor quer proibi-lo, alegando que toda captura de pacotes é ataque. A alegação está",
+    "alternativas": [
+      "correta, pois o sniffer serve só ao ataque.",
+      "correta, pois o sniffer é um malware que se propaga sozinho.",
+      "incorreta, pois o sniffer não captura tráfego.",
+      "incorreta, pois o sniffer serve só à defesa.",
+      "incorreta, pois o sniffer serve à defesa e ao ataque."
+    ],
+    "correta": 4,
+    "trechoFonte": "captura e inspeciona tráfego (ex.: Wireshark) — usado na defesa e no ataque.",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "O sniffer é usado também na defesa.",
+      "O malware que se propaga sozinho é o worm; o sniffer captura e inspeciona tráfego.",
+      "O sniffer captura e inspeciona tráfego.",
+      "A alegação é mesmo incorreta, mas o sniffer é usado também no ataque.",
+      "Correta. O sniffer, como o Wireshark, é usado na defesa e no ataque."
+    ]
+  },
+  {
+    "id": "seg-malware-008",
+    "fichaId": "ataques-malware",
+    "fichaTitulo": "Ataques, ameaças e códigos maliciosos",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Um programa malicioso chegou disfarçado de jogo. Dentro dele vinham um componente que esconde a presença do invasor e outro que sequestra os dados com criptografia. O programa e os componentes, na ordem citada, correspondem a",
+    "alternativas": [
+      "trojan, rootkit e ransomware.",
+      "trojan, worm e ransomware.",
+      "rootkit, trojan e ransomware.",
+      "vírus, rootkit e spyware.",
+      "worm, ransomware e rootkit."
+    ],
+    "correta": 0,
+    "trechoFonte": "**trojan** (disfarçado), spyware, **ransomware** (sequestra dados com criptografia), rootkit (esconde presença)",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "Correta. Disfarçado é o trojan, o rootkit esconde presença, e o ransomware sequestra dados com criptografia.",
+      "O worm se propaga sozinho; quem esconde presença é o rootkit.",
+      "Os dois primeiros estão trocados, pois disfarçado é o trojan, e o rootkit esconde presença.",
+      "O disfarçado é o trojan, e quem sequestra dados com criptografia é o ransomware.",
+      "O disfarçado é o trojan; quem esconde presença é o rootkit, e quem sequestra dados, o ransomware."
+    ]
+  },
+  {
+    "id": "seg-malware-009",
+    "fichaId": "ataques-malware",
+    "fichaTitulo": "Ataques, ameaças e códigos maliciosos",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "Com autorização, a equipe X fez uma varredura que só identificou as vulnerabilidades, e a equipe Y explorou essas falhas. Quanto aos CIS Controls, os trabalhos ligam-se",
+    "alternativas": [
+      "o de X, ao 18, e o de Y, ao 7.",
+      "o de X, ao 7, e o de Y, ao 18.",
+      "os de X e de Y, ao 18.",
+      "os de X e de Y, ao 7.",
+      "o de X, ao 1, e o de Y, ao 5."
+    ],
+    "correta": 1,
+    "trechoFonte": "pentest **explora** falhas de forma autorizada (CIS Control 18); varredura de vulnerabilidades **identifica** (CIS Control 7).",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "Os controles estão trocados, pois a varredura é o CIS Control 7, e o pentest, o 18.",
+      "Correta. A varredura que identifica é o CIS Control 7, e o pentest, que explora com autorização, é o 18.",
+      "O pentest da equipe Y é o CIS Control 18, mas a varredura é o 7.",
+      "A varredura da equipe X é o CIS Control 7, mas o pentest é o 18.",
+      "O controle 1 é o inventário de ativos corporativos, e o 5, a gestão de contas."
+    ]
+  },
+  {
+    "id": "seg-owasp-009",
+    "fichaId": "owasp",
+    "fichaTitulo": "OWASP Top 10:2025 + desenvolvimento seguro",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Um relatório de segurança classificou três achados pelo OWASP Top 10:2025. I. SSRF em uma aplicação, na categoria A05 – Injection. II. BOLA em uma API, na categoria A01 – Broken Access Control. III. BFLA em uma API, na categoria A01 – Broken Access Control. Está correta a classificação de",
+    "alternativas": [
+      "I, apenas.",
+      "II, apenas.",
+      "I e III, apenas.",
+      "II e III, apenas.",
+      "I, II e III."
+    ],
+    "correta": 3,
+    "trechoFonte": "Continua 1º; **absorveu SSRF**; inclui BOLA/BFLA de APIs",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "O SSRF foi absorvido pela A01; a classificação I está errada, e II e III estão certas.",
+      "A classificação III também está certa, pois a A01 inclui BFLA de APIs.",
+      "A I está errada, pois o SSRF foi absorvido pela A01, e a II está certa.",
+      "Correta. A A01 inclui BOLA e BFLA de APIs; o SSRF também vai para ela, não para a A05.",
+      "A I está errada, pois o SSRF foi absorvido pela A01."
+    ]
+  },
+  {
+    "id": "seg-owasp-010",
+    "fichaId": "owasp",
+    "fichaTitulo": "OWASP Top 10:2025 + desenvolvimento seguro",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Quando ocorre uma exceção, uma aplicação exibe ao usuário todos os detalhes internos do erro. A prática de programação defensiva que trata diretamente esse ponto e a categoria do OWASP Top 10:2025 a que ela se liga são, respectivamente,",
+    "alternativas": [
+      "tratar exceções sem vazar detalhes; A10 – Mishandling of Exceptional Conditions.",
+      "validar toda entrada; A10 – Mishandling of Exceptional Conditions.",
+      "tratar exceções sem vazar detalhes; A03 – Software Supply Chain Failures.",
+      "usar consultas parametrizadas; A05 – Injection.",
+      "aplicar menor privilégio; A03 – Software Supply Chain Failures."
+    ],
+    "correta": 0,
+    "trechoFonte": "tratar exceções sem vazar detalhes (liga com A10)",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "Correta. Tratar exceções sem vazar detalhes se liga à A10.",
+      "A categoria está certa, mas o ponto descrito é o tratamento da exceção, não a validação de entrada.",
+      "A prática está certa, mas ela se liga à A10; a A03 trata da cadeia de suprimentos.",
+      "Consultas parametrizadas são contra injeção, que não é o caso descrito.",
+      "O ponto descrito é o tratamento da exceção, ligado à A10, e não o menor privilégio."
+    ]
+  },
+  {
+    "id": "seg-perimetro-005",
+    "fichaId": "protecao-perimetro",
+    "fichaTitulo": "Sistemas de proteção: firewall, WAF, UTM, DMZ, Proxy, NAC, antivírus/antispam, IDS/IPS ( + SIEM)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Um tribunal vai publicar um servidor web na internet e tem dois objetivos. O primeiro é colocá-lo em uma sub-rede que isole a rede interna; o segundo é bloquear injeção e XSS com um firewall próprio da camada de aplicação HTTP. Os recursos que correspondem, respectivamente, a esses objetivos são",
+    "alternativas": [
+      "DMZ e NAC.",
+      "WAF e DMZ.",
+      "NAC e WAF.",
+      "forward proxy e IDS.",
+      "DMZ e WAF."
+    ],
+    "correta": 4,
+    "trechoFonte": "firewall de **camada de aplicação HTTP** — bloqueia ataques web (injeção, XSS)",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "A DMZ atende ao primeiro objetivo, mas o NAC controla a entrada de dispositivos na rede.",
+      "Os dois recursos estão na ordem trocada.",
+      "O WAF atende ao segundo objetivo, mas o NAC não é uma sub-rede.",
+      "O forward proxy intermedeia as requisições dos clientes, e o IDS monitora eventos em busca de sinais de incidentes.",
+      "Correta. A DMZ é a sub-rede que isola a rede interna, e o WAF bloqueia ataques web na camada de aplicação HTTP."
+    ]
+  },
+  {
+    "id": "seg-perimetro-006",
+    "fichaId": "protecao-perimetro",
+    "fichaTitulo": "Sistemas de proteção: firewall, WAF, UTM, DMZ, Proxy, NAC, antivírus/antispam, IDS/IPS ( + SIEM)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Sobre IDS e IPS, considere as afirmações a seguir. I. A prevenção, além de detectar, tenta impedir o incidente. II. O método por assinatura procura padrões conhecidos. III. Esses sistemas se limitam a analisar o tráfego da rede com fio. Está correto o que se afirma em",
+    "alternativas": [
+      "I, apenas.",
+      "I e II, apenas.",
+      "II e III, apenas.",
+      "III, apenas.",
+      "I, II e III."
+    ],
+    "correta": 1,
+    "trechoFonte": "Métodos: por **assinatura** (padrões conhecidos) e por **anomalia**. Tipos: de rede, wireless, análise de comportamento de rede e de host.",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "A II também está certa, pois a assinatura trabalha com padrões conhecidos.",
+      "Correta. A III erra porque há tipos de rede, wireless, de análise de comportamento de rede e de host.",
+      "A III está errada, pois há também os tipos wireless e de host, e a I está certa.",
+      "A III está errada, pois há também os tipos wireless e de host; a I e a II estão certas.",
+      "A III está errada, pois há também os tipos wireless e de host."
+    ]
+  },
+  {
+    "id": "seg-vpn-005",
+    "fichaId": "vpn-ztna",
+    "fichaTitulo": "VPN, VPN-SSL e ZTNA (Zero Trust)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Com um notebook que pertence ao tribunal e está ligado à rede local do prédio, uma servidora pede acesso a um sistema interno. Segundo o Zero Trust (NIST SP 800-207), antes da sessão",
+    "alternativas": [
+      "basta autenticar a servidora, pois o notebook é do tribunal.",
+      "basta autenticar o notebook, pois ele está na rede local.",
+      "nenhuma verificação é necessária, pois o notebook é do tribunal e está na rede local.",
+      "a servidora e o notebook devem ser autenticados e autorizados.",
+      "a verificação só seria necessária se o pedido viesse da internet."
+    ],
+    "correta": 3,
+    "trechoFonte": "ou pela propriedade do dispositivo; autenticação e autorização de sujeito e dispositivo antes de cada sessão",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "A propriedade do dispositivo não gera confiança implícita.",
+      "A localização na rede não gera confiança implícita, e o sujeito também precisa ser verificado.",
+      "Nem a localização nem a propriedade do dispositivo geram confiança implícita.",
+      "Correta. Sujeito e dispositivo passam por autenticação e autorização antes de cada sessão.",
+      "A confiança não depende de o acesso vir da LAN ou da internet."
+    ]
+  },
+  {
+    "id": "seg-wifi-005",
+    "fichaId": "wifi-seguranca",
+    "fichaTitulo": "Segurança em redes sem fio",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Sobre a segurança de redes sem fio no modo pessoal, considere as afirmações a seguir. I. O WPA2 com PSK é vulnerável a ataque de dicionário offline. II. O WPA2 foi alvo do KRACK, em 2017. III. O WPA3 resiste a ataque de dicionário offline. Está correto o que se afirma em",
+    "alternativas": [
+      "I, apenas.",
+      "I e II, apenas.",
+      "I, II e III.",
+      "I e III, apenas.",
+      "II e III, apenas."
+    ],
+    "correta": 2,
+    "trechoFonte": "vulnerável a ataque de dicionário offline e ao **KRACK** (2017)",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "A II e a III também estão certas.",
+      "A III também está certa, pois o SAE do WPA3 traz resistência a dicionário offline.",
+      "Correta. As três afirmações estão certas.",
+      "A II também está certa, pois o WPA2 é vulnerável ao KRACK, de 2017.",
+      "A I também está certa, pois o WPA2 com PSK é vulnerável a dicionário offline."
+    ]
+  },
+  {
+    "id": "seg-wifi-006",
+    "fichaId": "wifi-seguranca",
+    "fichaTitulo": "Segurança em redes sem fio",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Um tribunal já usa Wi-Fi no modo Enterprise, com servidor RADIUS integrado ao Active Directory, e quer a opção de autenticação mais forte para esse modo. Deve adotar",
+    "alternativas": [
+      "PSK com chave mais longa.",
+      "SAE com PMF obrigatório.",
+      "WEP com servidor RADIUS.",
+      "WPA com chave pré-compartilhada.",
+      "EAP-TLS com certificados."
+    ],
+    "correta": 4,
+    "trechoFonte": "EAP-TLS com certificados é o mais forte",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "PSK é chave pré-compartilhada do modo pessoal.",
+      "SAE é do modo pessoal do WPA3, embora traga resistência a dicionário offline.",
+      "WEP é legado e inseguro.",
+      "WPA é legado e inseguro.",
+      "Correta. No modo Enterprise, EAP-TLS com certificados é o mais forte."
+    ]
+  },
+  {
+    "id": "seg-criptografia-009",
+    "fichaId": "criptografia",
+    "fichaTitulo": "Criptografia, hashes, certificados e assinaturas digitais",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Beto vai enviar a Carla um documento que só ela possa decifrar e cuja autoria ele não possa negar. Para assinar e para cifrar o documento com criptografia assimétrica, Beto deve usar, respectivamente, a chave",
+    "alternativas": [
+      "pública de Beto e a privada de Carla.",
+      "privada de Carla e a pública de Beto.",
+      "privada de Beto e a pública de Carla.",
+      "privada de Beto e a privada de Carla.",
+      "pública de Carla e a privada de Beto."
+    ],
+    "correta": 2,
+    "trechoFonte": "hash do documento cifrado com a **chave privada** do autor → **autenticidade, integridade e não repúdio**",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "A assinatura usa a chave privada do autor, e a cifragem, a pública do destinatário.",
+      "A assinatura usa a privada do autor, que é Beto, e a cifragem, a pública do destinatário, que é Carla.",
+      "Correta. A privada do autor assina, com não repúdio; o que é cifrado com a pública de Carla só a privada dela decifra.",
+      "A assinatura está certa, mas a cifragem usa a chave pública do destinatário.",
+      "Os papéis estão invertidos; a privada de Beto assina e a pública de Carla cifra."
+    ]
+  },
+  {
+    "id": "seg-criptografia-010",
+    "fichaId": "criptografia",
+    "fichaTitulo": "Criptografia, hashes, certificados e assinaturas digitais",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Um sistema publica apenas o hash SHA-256 de cada arquivo. Para obter também autenticidade e não repúdio quanto à autoria, o correto é",
+    "alternativas": [
+      "cifrar o hash com a chave pública do destinatário.",
+      "assinar digitalmente o arquivo com a chave privada do autor.",
+      "trocar o SHA-256 por um algoritmo simétrico com chave compartilhada.",
+      "aplicar ao hash uma segunda função de hash.",
+      "publicar, com o hash, a chave privada do autor."
+    ],
+    "correta": 1,
+    "trechoFonte": "hash do documento cifrado com a **chave privada** do autor → **autenticidade, integridade e não repúdio**",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "Cifrar com a pública do destinatário faz com que só ele decifre; a assinatura usa a privada do autor.",
+      "Correta. O hash serve à integridade; a assinatura dá autenticidade, integridade e não repúdio.",
+      "Na simétrica a mesma chave cifra e decifra; o não repúdio vem da assinatura com a chave privada do autor.",
+      "O hash serve à integridade; autenticidade e não repúdio vêm da assinatura digital.",
+      "A assinatura usa a chave privada do autor para cifrar o hash; ela não é publicada."
+    ]
+  },
+  {
+    "id": "seg-criptografia-011",
+    "fichaId": "criptografia",
+    "fichaTitulo": "Criptografia, hashes, certificados e assinaturas digitais",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "Uma equipe procura, entre os padrões pós-quânticos do NIST, um de assinatura que seja baseado em hash. O padrão adequado é o",
+    "alternativas": [
+      "FIPS 203 (ML-KEM).",
+      "FIPS 204 (ML-DSA).",
+      "FIPS 205 (SLH-DSA).",
+      "SHA-256.",
+      "RSA."
+    ],
+    "correta": 2,
+    "trechoFonte": "**FIPS 205 SLH-DSA** (de SPHINCS+, assinatura baseada em hash)",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "O FIPS 203 (ML-KEM) trata de troca de chaves.",
+      "O FIPS 204 (ML-DSA) é de assinatura, mas vem do Dilithium; o baseado em hash é o FIPS 205.",
+      "Correta. O FIPS 205 (SLH-DSA) vem do SPHINCS+ e é de assinatura baseada em hash.",
+      "O SHA-256 é um hash criptográfico, não um padrão pós-quântico de assinatura.",
+      "O RSA é justamente um dos algoritmos ameaçados por computadores quânticos."
+    ]
+  },
+  {
+    "id": "seg-tls-005",
+    "fichaId": "tls",
+    "fichaTitulo": "TLS 1.2 ( Analista: + TLS 1.3 e limitações do SSL)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Sobre o TLS, considere as afirmações a seguir. I. O handshake negocia algoritmos e chaves, mas a autenticação fica a cargo do record protocol. II. O canal oferece confidencialidade, mas a integridade não está entre as suas propriedades. III. O record protocol protege os dados. Está correto o que se afirma em",
+    "alternativas": [
+      "I, apenas.",
+      "III, apenas.",
+      "I e II, apenas.",
+      "II e III, apenas.",
+      "I, II e III."
+    ],
+    "correta": 1,
+    "trechoFonte": "Dois componentes: **handshake** (negocia algoritmos e chaves, autentica) e **record protocol** (protege os dados).",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "A I está errada, pois quem autentica também é o handshake; a III está certa.",
+      "Correta. O handshake também autentica, e o canal seguro inclui integridade.",
+      "A I erra ao tirar a autenticação do handshake, e a II, ao excluir a integridade.",
+      "A II está errada, pois o canal seguro inclui integridade.",
+      "A I e a II estão erradas, pois o handshake autentica e o canal inclui integridade."
+    ]
+  },
+  {
+    "id": "seg-tls-006",
+    "fichaId": "tls",
+    "fichaTitulo": "TLS 1.2 ( Analista: + TLS 1.3 e limitações do SSL)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "analista",
+    "tipo": "multipla_escolha",
+    "enunciado": "Em um servidor, estão habilitados SSL 3.0, TLS 1.0, TLS 1.1 e TLS 1.3. Entre essas versões, as que são inseguras ou foram depreciadas são",
+    "alternativas": [
+      "SSL 3.0, TLS 1.0 e TLS 1.1, apenas.",
+      "SSL 3.0, apenas.",
+      "SSL 3.0 e TLS 1.0, apenas.",
+      "TLS 1.0 e TLS 1.1, apenas.",
+      "SSL 3.0, TLS 1.0, TLS 1.1 e TLS 1.3."
+    ],
+    "correta": 0,
+    "trechoFonte": "SSL 2.0/3.0 são inseguros e não devem ser usados (TLS 1.0 e 1.1 também foram depreciados)",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "Correta. O SSL 3.0 é inseguro, e o TLS 1.0 e o 1.1 foram depreciados.",
+      "O TLS 1.0 e o TLS 1.1 também foram depreciados.",
+      "O TLS 1.1 também foi depreciado.",
+      "O SSL 3.0 também entra, pois é inseguro e não deve ser usado.",
+      "Os depreciados são o TLS 1.0 e o 1.1; o TLS 1.3 não está entre eles."
+    ]
+  },
+  {
+    "id": "seg-backup-005",
+    "fichaId": "backup",
+    "fichaTitulo": "Backup e recuperação de dados ( + gestão de incidentes)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "Um órgão fez backup completo no domingo e backups incrementais nas noites de segunda, terça e quarta-feira. Na manhã de quinta, precisou restaurar tudo até a noite de quarta. Para isso, são necessários",
+    "alternativas": [
+      "o completo e o incremental de quarta, apenas.",
+      "o incremental de quarta, apenas.",
+      "os incrementais de segunda, terça e quarta, apenas.",
+      "o completo e os incrementais de segunda, terça e quarta.",
+      "o completo e os incrementais de segunda e quarta, apenas."
+    ],
+    "correta": 3,
+    "trechoFonte": "restauração precisa do completo + todos os incrementais",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "Cada incremental guarda só o que mudou desde o backup anterior; faltariam segunda e terça.",
+      "O incremental de quarta só tem o que mudou desde o backup de terça.",
+      "Falta o completo, que é necessário na restauração.",
+      "Correta. A restauração precisa do completo e de todos os incrementais.",
+      "Falta o incremental de terça; são necessários todos."
+    ]
+  },
+  {
+    "id": "seg-backup-006",
+    "fichaId": "backup",
+    "fichaTitulo": "Backup e recuperação de dados ( + gestão de incidentes)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "Na gestão de um incidente, a equipe acabou de concluir a contenção. O próximo passo, antes da recuperação, é",
+    "alternativas": [
+      "registrar lições aprendidas.",
+      "erradicar.",
+      "preparar.",
+      "detectar.",
+      "segregar os backups."
+    ],
+    "correta": 1,
+    "trechoFonte": "preparar → detectar → conter → erradicar → recuperar → lições aprendidas",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "As lições aprendidas vêm depois da recuperação.",
+      "Correta. A ordem é conter, erradicar e recuperar.",
+      "A preparação é a primeira etapa.",
+      "A detecção vem antes da contenção.",
+      "A ENSEC-PJ exige backups segregados, mas essa não é uma das etapas; depois de conter vem erradicar."
+    ]
+  },
+  {
+    "id": "seg-iso27001-008",
+    "fichaId": "iso-27001",
+    "fichaTitulo": "ABNT NBR ISO/IEC 27001 e 27002",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Sobre os 93 controles do Anexo A da ISO/IEC 27001, edição de 2022, considere as afirmações a seguir. I. A inteligência de ameaças está entre os controles novos. II. A maior parte deles resulta de fusões de controles anteriores. III. Os controles passaram a ter atributos. Está correto o que se afirma em",
+    "alternativas": [
+      "I, apenas.",
+      "I e III, apenas.",
+      "II, apenas.",
+      "II e III, apenas.",
+      "I, II e III."
+    ],
+    "correta": 1,
+    "trechoFonte": "Dos 93: **11 novos** (ex.: **inteligência de ameaças**), 24 resultam de fusões, 58 atualizados. Os controles ganharam **atributos**.",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "A III também está certa, pois os controles ganharam atributos.",
+      "Correta. A II erra porque 24 resultam de fusões, e a maior parte, 58, são atualizados.",
+      "A II está errada, pois só 24 dos 93 resultam de fusões, e a I e a III estão certas.",
+      "A II está errada, pois só 24 dos 93 resultam de fusões, e a I também está certa.",
+      "A II está errada, pois só 24 dos 93 resultam de fusões."
+    ]
+  },
+  {
+    "id": "seg-iso27001-009",
+    "fichaId": "iso-27001",
+    "fichaTitulo": "ABNT NBR ISO/IEC 27001 e 27002",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Um gestor propõe que o órgão obtenha a certificação na ISO/IEC 27002 e use a 27001 apenas como guia para implementar os controles. A proposta está",
+    "alternativas": [
+      "correta, pois a 27002 traz os requisitos do SGSI.",
+      "correta, pois as duas normas são guias de boas práticas.",
+      "incorreta, pois nenhuma das duas normas se certifica.",
+      "incorreta, pois a certificação exige a 27701 no lugar da 27002.",
+      "incorreta, pois se certifica a 27001, e o guia é a 27002."
+    ],
+    "correta": 4,
+    "trechoFonte": "norma de **requisitos** para um **SGSI (Sistema de Gestão da Segurança da Informação)**. É a que se **certifica**.",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "Os requisitos do SGSI estão na 27001.",
+      "A 27001 é norma de requisitos; só a 27002 é guia de boas práticas.",
+      "A 27001 se certifica.",
+      "A 27701 trata da informação de privacidade; a norma de requisitos do SGSI que se certifica é a 27001.",
+      "Correta. A proposta inverte os papéis, pois a 27001 é a que se certifica e a 27002 detalha os controles."
+    ]
+  },
+  {
+    "id": "seg-iso27001-010",
+    "fichaId": "iso-27001",
+    "fichaTitulo": "ABNT NBR ISO/IEC 27001 e 27002",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Um órgão dividiu o Anexo A da ISO/IEC 27001, edição de 2022, entre as suas equipes. A uma delas couberam todos os controles dos temas Pessoas e Físicos. Essa equipe responde por",
+    "alternativas": [
+      "22 controles, das cláusulas 5 e 6 da 27002.",
+      "42 controles, das cláusulas 6 e 8 da 27002.",
+      "22 controles, das cláusulas 6 e 7 da 27002.",
+      "45 controles, das cláusulas 5 e 6 da 27002.",
+      "48 controles, das cláusulas 7 e 8 da 27002."
+    ],
+    "correta": 2,
+    "trechoFonte": "| Físicos (7) | 14 |",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "O número está certo, mas a cláusula 5 é a dos controles organizacionais.",
+      "42 é a soma de Pessoas (8) e Tecnológicos (34).",
+      "Correta. Pessoas (cláusula 6) tem 8 controles e Físicos (cláusula 7) tem 14, o que soma 22.",
+      "45 é a soma de Organizacionais (37) e Pessoas (8).",
+      "48 é a soma de Físicos (14) e Tecnológicos (34)."
+    ]
+  },
+  {
+    "id": "seg-iso27701-005",
+    "fichaId": "iso-27701",
+    "fichaTitulo": "ABNT NBR ISO/IEC 27701 — privacidade (PIMS)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Uma empresa só trata dados pessoais em nome dos seus clientes, seguindo o que eles decidem. Por isso, concluiu que a ISO/IEC 27701 não traz controles para o papel que ela exerce. A conclusão está",
+    "alternativas": [
+      "incorreta, pois há controles também para operadores.",
+      "incorreta, pois quem trata dados em nome de outro é o controlador.",
+      "correta, pois a norma só tem controles para controladores.",
+      "correta, pois a norma só tem controles para o encarregado.",
+      "correta, pois a norma não trata de dados pessoais."
+    ],
+    "correta": 0,
+    "trechoFonte": "trata dados pessoais (PII), com controles para **controladores** e **operadores**",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "Correta. A empresa exerce o papel de operadora, e a norma também traz controles para operadores.",
+      "A conclusão está incorreta, mas por outro motivo, já que o controlador é quem decide, e a empresa é operadora.",
+      "A norma tem controles para controladores e para operadores.",
+      "Os controles são para controladores e operadores; o encarregado é canal de comunicação, na LGPD.",
+      "A norma trata de dados pessoais (PII)."
+    ]
+  },
+  {
+    "id": "seg-iso27701-006",
+    "fichaId": "iso-27701",
+    "fichaTitulo": "ABNT NBR ISO/IEC 27701 — privacidade (PIMS)",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "analista",
+    "tipo": "multipla_escolha",
+    "enunciado": "Uma empresa sem certificação na ISO/IEC 27001 quer se certificar na edição de 2025 da ISO/IEC 27701. Um consultor afirma que, nessa edição, é obrigatório obter antes a certificação na 27001. A afirmação está",
+    "alternativas": [
+      "correta, pois a edição de 2025 é uma extensão da 27001 e da 27002.",
+      "incorreta, pois a edição de 2025 é certificável sem a 27001.",
+      "correta, pois só a 27001 pode ser certificada.",
+      "incorreta, pois a edição de 2025 deixou de ser certificável.",
+      "incorreta, pois a exigência da edição de 2025 recai sobre a 27002."
+    ],
+    "correta": 1,
+    "trechoFonte": "virou **norma independente (stand-alone)**, certificável sem a 27001",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "A extensão da 27001 e da 27002 era a edição de 2019.",
+      "Correta. A edição de 2025 é norma independente, certificável sem a 27001.",
+      "A edição de 2025 da 27701 também é certificável.",
+      "A afirmação do consultor está incorreta, mas a edição de 2025 é certificável.",
+      "A afirmação do consultor está incorreta, mas a edição de 2025 é independente; não passou a depender da 27002."
+    ]
+  },
+  {
+    "id": "seg-cis-controls-005",
+    "fichaId": "cis-controls",
+    "fichaTitulo": "CIS Controls v8",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "Sobre o CIS Controls v8, considere as afirmações a seguir. I. O número de controles diminuiu em relação à v7. II. Cumprir o IG3 significa cumprir apenas as 23 salvaguardas que ele acrescenta. III. O IG1 só se aplica a organizações que já cumpriram o IG2. Está correto o que se afirma em",
+    "alternativas": [
+      "I, apenas.",
+      "II, apenas.",
+      "I e II, apenas.",
+      "I e III, apenas.",
+      "II e III, apenas."
+    ],
+    "correta": 0,
+    "trechoFonte": "+23 → todas as 153.",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "Correta. Eram 20 controles na v7 e são 18 na v8; o IG3 chega às 153 salvaguardas, e o IG1 é o mínimo para toda organização.",
+      "A II está errada, pois o IG3 chega a todas as 153 salvaguardas, e a I está certa.",
+      "A II está errada, pois as 23 são só o acréscimo do IG3, que chega a todas as 153.",
+      "A III está errada, pois o IG1 é o mínimo para toda organização.",
+      "As duas estão erradas, pois o IG3 chega a todas as 153 e o IG1 é o mínimo para toda organização."
+    ]
+  },
+  {
+    "id": "seg-cis-controls-006",
+    "fichaId": "cis-controls",
+    "fichaTitulo": "CIS Controls v8",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "tecnico",
+    "tipo": "multipla_escolha",
+    "enunciado": "Um relatório descreve o CIS Controls v8 como um documento com 18 controles, 153 salvaguardas e 11 controles novos, entre eles a inteligência de ameaças, e com um primeiro grupo de implementação de 56 salvaguardas. O trecho que, na verdade, descreve o Anexo A da ISO/IEC 27001, edição de 2022, é o que cita",
+    "alternativas": [
+      "os 18 controles.",
+      "as 153 salvaguardas.",
+      "o grupo de implementação.",
+      "os 11 controles novos.",
+      "as 56 salvaguardas."
+    ],
+    "correta": 3,
+    "trechoFonte": "Dos 93: **11 novos** (ex.: **inteligência de ameaças**), 24 resultam de fusões, 58 atualizados.",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "Os 18 controles são mesmo do CIS Controls v8.",
+      "As 153 salvaguardas são mesmo do CIS Controls v8.",
+      "Os grupos de implementação são mesmo do CIS Controls v8.",
+      "Correta. Os 11 controles novos, como a inteligência de ameaças, são do Anexo A da 27001 de 2022.",
+      "As 56 salvaguardas são mesmo do IG1 do CIS Controls v8."
+    ]
+  },
+  {
+    "id": "seg-lgpd-006",
+    "fichaId": "lgpd",
+    "fichaTitulo": "LGPD — Lei nº 13.709/2018",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Um log de acesso do PJe registra o CPF das partes. Quanto à natureza desse registro e à base legal do seu tratamento, é correto afirmar que se trata de",
+    "alternativas": [
+      "dado pessoal, com base em obrigação legal ou exercício regular de direitos.",
+      "dado pessoal, que só pode ser tratado com o consentimento das partes.",
+      "dado sensível, que só pode ser tratado com consentimento destacado.",
+      "dado pessoal, com base na proteção do crédito das partes do processo.",
+      "informação que não é dado pessoal, por constar apenas de um log de sistema."
+    ],
+    "correta": 0,
+    "trechoFonte": "tratar isso tem base em **obrigação legal/exercício regular de direitos**, não em consentimento",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "Correta. O log com CPF é dado pessoal, e a base é a obrigação legal ou o exercício regular de direitos.",
+      "É dado pessoal, mas a base desse tratamento não é o consentimento.",
+      "O CPF não está na lista de dados sensíveis, e a base não é o consentimento.",
+      "É dado pessoal, mas a base é a obrigação legal ou o exercício regular de direitos, não a proteção do crédito.",
+      "O log com CPF das partes é dado pessoal, pois se relaciona a pessoas naturais identificadas ou identificáveis."
+    ]
+  },
+  {
+    "id": "seg-lgpd-007",
+    "fichaId": "lgpd",
+    "fichaTitulo": "LGPD — Lei nº 13.709/2018",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Um sistema trata a biometria dos usuários para liberar o login, sem pedir consentimento. Sendo esse tratamento indispensável, a LGPD (art. 11) admite que ele se apoie",
+    "alternativas": [
+      "no legítimo interesse do controlador.",
+      "na proteção do crédito dos usuários.",
+      "na dispensa geral para dados que não sejam de saúde.",
+      "no consentimento genérico dado em outro serviço.",
+      "na prevenção à fraude e na segurança em autenticação."
+    ],
+    "correta": 4,
+    "trechoFonte": "sem consentimento nas hipóteses indispensáveis (incluindo **prevenção à fraude e segurança em autenticação**)",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "O legítimo interesse não está entre as bases para dados sensíveis, e o dado biométrico é sensível.",
+      "A proteção do crédito não está entre as bases para dados sensíveis.",
+      "Não há dispensa geral; o dado biométrico também é sensível, e as hipóteses sem consentimento são as indispensáveis da lei.",
+      "Quando a base é o consentimento, ele precisa ser específico e destacado.",
+      "Correta. É uma das hipóteses indispensáveis em que o dado sensível pode ser tratado sem consentimento."
+    ]
+  },
+  {
+    "id": "seg-lgpd-008",
+    "fichaId": "lgpd",
+    "fichaTitulo": "LGPD — Lei nº 13.709/2018",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "Uma empresa privada cometeu uma infração à LGPD, e 2% do faturamento considerado para a sanção correspondem a R$ 80 milhões. O valor máximo da multa simples por essa infração é de",
+    "alternativas": [
+      "R$ 2 milhões.",
+      "R$ 25 milhões.",
+      "R$ 50 milhões.",
+      "R$ 80 milhões.",
+      "R$ 130 milhões."
+    ],
+    "correta": 2,
+    "trechoFonte": "multa simples de até **2% do faturamento**, limitada a **R$ 50 milhões por infração**",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "O 2 da regra é um percentual do faturamento, não um valor em milhões.",
+      "O limite é de R$ 50 milhões por infração, e não a metade disso.",
+      "Correta. A multa simples vai até 2% do faturamento, limitada a R$ 50 milhões por infração.",
+      "Os 2% passam do limite de R$ 50 milhões por infração, que prevalece.",
+      "O percentual e o limite não se somam."
+    ]
+  },
+  {
+    "id": "seg-lgpd-009",
+    "fichaId": "lgpd",
+    "fichaTitulo": "LGPD — Lei nº 13.709/2018",
+    "zonaId": "06-seguranca-da-informacao",
+    "regiaoId": "fortaleza-da-muralha",
+    "cargo": "ambos",
+    "tipo": "multipla_escolha",
+    "enunciado": "O manual de um órgão vai transcrever o que o próprio texto da LGPD (art. 48) prevê sobre a comunicação de incidentes. O manual deve dizer que a comunicação é feita",
+    "alternativas": [
+      "à ANPD, apenas, em prazo razoável, conforme definido pela autoridade.",
+      "à ANPD e ao titular, em prazo razoável, conforme definido pela autoridade.",
+      "ao titular, apenas, em prazo contado em dias pela própria lei.",
+      "à ANPD e ao titular, em prazo contado em dias pela própria lei.",
+      "ao encarregado, apenas, em prazo razoável, conforme definido pelo órgão."
+    ],
+    "correta": 1,
+    "trechoFonte": "comunicar à ANPD e ao titular \"em **prazo razoável**, conforme definido pela autoridade\" (a lei não fixa dias)",
+    "dificuldade": 3,
+    "isBossStyle": true,
+    "origem": "autoral",
+    "explicacoes": [
+      "O prazo está certo, mas o titular também é comunicado.",
+      "Correta. A comunicação é à ANPD e ao titular, em prazo razoável, conforme definido pela autoridade.",
+      "A ANPD também é comunicada, e a lei não fixa dias.",
+      "Os destinatários estão certos, mas a lei não fixa dias.",
+      "Os destinatários são a ANPD e o titular, e quem define o prazo é a autoridade."
+    ]
   }
 ];

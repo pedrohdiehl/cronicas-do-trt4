@@ -120,6 +120,10 @@ export interface Question {
   ano?: number;
   orgao?: string;
   cargoProva?: string;
+  /** 'autoral' = escrita à mão em conteudo/questoes/ e conferida contra a ficha. Ausente = gerada automaticamente. */
+  origem?: 'autoral';
+  /** Uma explicação por alternativa, na mesma ordem de `alternativas`. */
+  explicacoes?: string[];
 }
 
 export type ItemId =

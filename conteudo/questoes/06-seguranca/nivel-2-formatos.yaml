@@ -1,0 +1,59 @@
+# Associação e ordenação. Formato em ../../../CONTRATO.md.
+- id: seg-malware-010
+  tipo: associacao
+  fichas: [ataques-malware]
+  nivel: 2
+  cargo: ambos
+  origem: autoral
+  enunciado: Associe cada código malicioso à característica que o distingue.
+  pares:
+    - { item: Vírus, par: Precisa de hospedeiro }
+    - { item: Worm, par: Propaga-se sozinho }
+    - { item: Trojan, par: Vem disfarçado }
+    - { item: Ransomware, par: Sequestra dados com criptografia }
+    - { item: Rootkit, par: Esconde a presença }
+  explicacoes:
+    - O vírus depende de um hospedeiro, ao contrário do worm.
+    - O worm se propaga sozinho, sem precisar de hospedeiro.
+    - O trojan se apresenta disfarçado.
+    - O ransomware usa criptografia para sequestrar os dados.
+    - O rootkit serve para esconder a presença.
+  evidencia: 'vírus (precisa de hospedeiro), worm (se propaga sozinho), **trojan** (disfarçado), spyware, **ransomware** (sequestra dados com criptografia), rootkit (esconde presença)'
+- id: seg-owasp-011
+  tipo: ordenacao
+  fichas: [owasp]
+  nivel: 2
+  cargo: ambos
+  origem: autoral
+  enunciado: Ordene as categorias do OWASP Top 10:2025, da A01 à A04.
+  passos:
+    - Broken Access Control
+    - Security Misconfiguration
+    - Software Supply Chain Failures
+    - Cryptographic Failures
+  explicacoes:
+    - É a A01. Continua em 1º lugar e absorveu o SSRF.
+    - É a A02. Subiu do 5º para o 2º lugar.
+    - É a A03. É categoria nova, que amplia a ideia de componentes vulneráveis e desatualizados.
+    - É a A04. Caiu do 2º lugar.
+  evidencia:
+    - '| A01 | **Broken Access Control** (controle de acesso quebrado) | Continua 1º'
+    - '| A02 | **Security Misconfiguration** | Subiu do 5º para o 2º |'
+    - '| A03 | **Software Supply Chain Failures** | **Nova**'
+    - '| A04 | Cryptographic Failures | Caiu do 2º |'
+- id: seg-backup-007
+  tipo: ordenacao
+  fichas: [backup]
+  nivel: 2
+  cargo: tec
+  origem: autoral
+  enunciado: Ponha na ordem as etapas da gestão de incidentes, da primeira à última.
+  passos: [Preparar, Detectar, Conter, Erradicar, Recuperar, Lições aprendidas]
+  explicacoes:
+    - A preparação vem antes de tudo.
+    - Depois de preparar, o incidente é detectado.
+    - Detectado o incidente, ele é contido, antes de ser erradicado.
+    - A erradicação vem depois da contenção e antes da recuperação.
+    - A recuperação vem depois da erradicação.
+    - As lições aprendidas fecham a sequência, depois da recuperação.
+  evidencia: 'preparar → detectar → conter → erradicar → recuperar → lições aprendidas'

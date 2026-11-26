@@ -1,0 +1,41 @@
+# Certo/errado, associação e ordenação. Formato em ../../../CONTRATO.md.
+- id: seg-perimetro-007
+  tipo: certo-errado
+  fichas: [protecao-perimetro]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: Segundo o NIST SP 800-94, a prevenção de intrusão limita-se a monitorar eventos e procurar sinais de incidentes, sem tentar impedi-los.
+  correta: errado
+  explicacoes:
+    - Monitorar e procurar sinais é a detecção. A prevenção detecta e também tenta impedir.
+    - Correta. A prevenção detecta o incidente e ainda tenta impedi-lo; a detecção é que só monitora e procura sinais.
+  evidencia: '**prevenção** = detectar **e tentar impedir**'
+- id: seg-perimetro-008
+  tipo: certo-errado
+  fichas: [protecao-perimetro]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: O proxy é um intermediário de requisições, e o forward proxy fica na frente dos clientes.
+  correta: certo
+  explicacoes:
+    - Correta. O proxy intermedeia requisições, e o forward proxy fica do lado dos clientes, onde filtra a navegação.
+    - A afirmação está certa. O proxy é intermediário, e o forward proxy fica mesmo na frente dos clientes.
+  evidencia: 'intermediário de requisições (o *forward proxy* fica na frente dos clientes'
+- id: seg-acesso-007
+  tipo: associacao
+  fichas: [controle-acesso]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: Associe cada parte do modelo AAA de controle de acesso à pergunta a que ela responde.
+  pares:
+    - { item: Autenticação, par: "Quem é você?" }
+    - { item: Autorização, par: "O que pode fazer?" }
+    - { item: Auditoria (accounting), par: "O que fez?" }
+  explicacoes:
+    - A autenticação confirma quem é o usuário.
+    - A autorização define o que o usuário já identificado pode fazer.
+    - A auditoria registra o que o usuário fez.
+  evidencia: '**Autenticação** (quem é você?), **Autorização** (o que pode fazer?), **Auditoria/Accounting** (o que fez?)'

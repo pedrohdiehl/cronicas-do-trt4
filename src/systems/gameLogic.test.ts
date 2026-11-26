@@ -603,3 +603,51 @@ test('every region has its own central fountain and a walkable, unobstructed def
 
 
 
+
+test('authored questions (conteudo/questoes) pass the evidence check, carry one explanation per alternative and are up to date', async () => {
+  const { loadAuthoredQuestions } = await import('../../scripts/authoredQuestions');
+  const fresh = loadAuthoredQuestions(FICHAS);
+  assert.deepEqual(fresh.erros, [], `Authored questions have problems:\n${fresh.erros.join('\n')}`);
+  assert.ok(fresh.questions.length >= 110, `Expected >= 110 authored questions, got ${fresh.questions.length}`);
+
+  // src/data/questions.ts must match the YAML files: run "npm run generate:content" after editing them.
+  const inGame = new Map(QUESTIONS.filter((q) => q.origem === 'autoral').map((q) => [q.id, q]));
+  assert.equal(inGame.size, fresh.questions.length, 'questions.ts is out of date with conteudo/questoes; run npm run generate:content');
+  for (const q of fresh.questions) {
+    assert.deepEqual(inGame.get(q.id), q, `Question ${q.id} differs from its YAML; run npm run generate:content`);
+    assert.equal(q.explicacoes?.length, q.alternativas.length, `Question ${q.id} needs one explanation per alternative`);
+  }
+
+  // A ficha with authored questions no longer uses the weak generated ones.
+  const authoredFichas = new Set(fresh.questions.map((q) => q.fichaId));
+  for (const q of QUESTIONS) {
+    if (q.origem !== 'autoral' && authoredFichas.has(q.fichaId)) {
+      const count = fresh.questions.filter((a) => a.fichaId === q.fichaId).length;
+      assert.ok(count < 3, `Generated question ${q.id} still present for ficha ${q.fichaId} that has ${count} authored questions`);
+    }
+  }
+
+  // Mini-boss and boss of Segurança draw from the authored level-3 bank.
+  const state = createInitialSaveState('dupla');
+  const miniDeck = buildBattleDeck('miniboss', '06-seguranca-da-informacao', state, 42);
+  assert.ok(miniDeck.length >= 6);
+  assert.ok(miniDeck.every((q) => q.origem === 'autoral'), 'Segurança mini-boss deck should be all authored');
+});
+
+test('loading a save drops spaced-repetition entries for questions that no longer exist', async () => {
+  const { pruneOrphanQuestionRefs } = await import('./save');
+  const base = createInitialSaveState('dupla');
+  const real = QUESTIONS[0];
+  const state = {
+    ...base,
+    wrongQuestionIds: [real.id, 'q-mc-9999-removida'],
+    spacedRep: {
+      [real.id]: { questionId: real.id, fichaId: real.fichaId, zonaId: real.zonaId, consecutiveCorrect: 0, dueAfterTimestamp: 0, wrongCount: 1 },
+      'q-mc-9999-removida': { questionId: 'q-mc-9999-removida', fichaId: 'x', zonaId: 'x', consecutiveCorrect: 0, dueAfterTimestamp: 0, wrongCount: 1 },
+    },
+  };
+  const pruned = pruneOrphanQuestionRefs(state);
+  assert.deepEqual(Object.keys(pruned.spacedRep), [real.id]);
+  assert.deepEqual(pruned.wrongQuestionIds, [real.id]);
+  assert.equal(pruneOrphanQuestionRefs(base), base, 'A clean save is returned untouched');
+});

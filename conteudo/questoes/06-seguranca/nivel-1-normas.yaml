@@ -1,0 +1,116 @@
+# Banco A (ticket 17): normas e LGPD. Todas autorais, a partir das fichas.
+- id: seg-iso27701-001
+  fichas: [iso-27701]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: A norma ISO/IEC 27701 tem por objeto
+  alternativas:
+    - um guia de boas práticas que detalha cada controle de segurança da informação.
+    - um sistema de gestão da segurança da informação (SGSI).
+    - uma lista de riscos de segurança em aplicações web.
+    - um sistema de gestão da informação de privacidade (PIMS).
+    - um conjunto de sanções aplicáveis a quem trata dados pessoais.
+  correta: 3
+  explicacoes:
+    - O guia de boas práticas que detalha os controles é a 27002.
+    - O SGSI é o objeto da 27001; o da 27701 é o sistema de gestão da informação de privacidade.
+    - Riscos de aplicações web são tema do OWASP Top 10.
+    - Correta. A 27701 trata do sistema de gestão da informação de privacidade, o PIMS.
+    - Sanções estão na LGPD, no art. 52; a 27701 é um sistema de gestão.
+  evidencia: 'sistema de gestão da **informação de privacidade (PIMS)**'
+- id: seg-iso27701-002
+  fichas: [iso-27701]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: A ISO/IEC 27701 traz controles para dois papéis, que são os mesmos da LGPD. São eles
+  alternativas:
+    - titular e encarregado.
+    - controlador e operador.
+    - controlador e titular.
+    - operador e encarregado.
+    - encarregado e controlador.
+  correta: 1
+  explicacoes:
+    - O titular e o encarregado não são os papéis a que a norma dirige seus controles.
+    - Correta. A norma traz controles para controladores e operadores, os mesmos papéis da LGPD.
+    - O controlador é um dos papéis, mas o outro é o operador, não o titular.
+    - O operador é um dos papéis, mas o outro é o controlador, não o encarregado.
+    - O controlador é um dos papéis, mas o outro é o operador, não o encarregado.
+  evidencia: 'com controles para **controladores** e **operadores**'
+- id: seg-cis-controls-001
+  fichas: [cis-controls]
+  nivel: 1
+  cargo: tec
+  origem: autoral
+  enunciado: O CIS Controls v8 reúne, respectivamente, quantos controles e quantas salvaguardas?
+  alternativas: ['18 e 93', '18 e 153', '20 e 56', '20 e 153', '93 e 114']
+  correta: 1
+  explicacoes:
+    - Os controles são 18, mas 93 é o número de controles do Anexo A da 27001 de 2022; as salvaguardas são 153.
+    - Correta. São 18 controles e 153 salvaguardas.
+    - 20 era o número de controles da v7, e 56 é só o número de salvaguardas do IG1.
+    - As salvaguardas são 153, mas 20 era o número de controles da v7.
+    - 93 e 114 são números do Anexo A da 27001, na edição de 2022 e na anterior.
+  evidencia: '**18 controles** prioritizados do Center for Internet Security (eram 20 na v7) com **153 salvaguardas**'
+- id: seg-cis-controls-002
+  fichas: [cis-controls]
+  nivel: 1
+  cargo: tec
+  origem: autoral
+  enunciado: No CIS Controls v8, o IG1 (Implementation Group 1) representa
+  alternativas:
+    - o conjunto completo de salvaguardas do documento.
+    - as salvaguardas exclusivas de testes de intrusão.
+    - o primeiro controle da lista, o inventário de ativos.
+    - as salvaguardas que só se aplicam depois do IG3.
+    - a higiene cibernética essencial para toda organização.
+  correta: 4
+  explicacoes:
+    - O conjunto completo, com as 153 salvaguardas, é alcançado no IG3.
+    - Teste de intrusão é o controle 18; o IG1 é um grupo de salvaguardas.
+    - O inventário de ativos corporativos é o controle 1; IG é um grupo de implementação, não um controle.
+    - A ordem é a contrária, pois o IG1 é o mínimo e os grupos seguintes acrescentam salvaguardas.
+    - Correta. O IG1 é a higiene cibernética essencial, o mínimo para toda organização.
+  evidencia: '**IG1 = higiene cibernética essencial:** **56** salvaguardas — o mínimo para toda organização.'
+- id: seg-lgpd-001
+  fichas: [lgpd]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: Segundo o art. 5º da LGPD (Lei nº 13.709/2018), dado pessoal é a informação relacionada a
+  alternativas:
+    - pessoa natural identificada ou identificável.
+    - pessoa natural identificada, apenas.
+    - pessoa natural ou jurídica identificada.
+    - pessoa jurídica identificada ou identificável.
+    - qualquer pessoa, desde que trate de saúde ou biometria.
+  correta: 0
+  explicacoes:
+    - Correta. A definição alcança a pessoa natural identificada e também a identificável.
+    - A pessoa identificável também está na definição.
+    - A definição trata de pessoa natural, não de jurídica, e inclui a identificável.
+    - A definição trata de pessoa natural.
+    - Saúde e dado biométrico aparecem na definição de dado pessoal sensível, e a de dado pessoal não exige esses temas.
+  evidencia: 'informação relacionada a pessoa natural identificada ou identificável'
+- id: seg-lgpd-002
+  fichas: [lgpd]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: Na LGPD, quem atua como canal de comunicação entre o controlador, os titulares e a ANPD é o
+  alternativas:
+    - operador.
+    - próprio titular.
+    - encarregado.
+    - órgão de pesquisa.
+    - poder público.
+  correta: 2
+  explicacoes:
+    - O operador executa o tratamento em nome do controlador.
+    - O titular é uma das partes com quem o canal se comunica.
+    - Correta. O encarregado (DPO) é o canal entre controlador, titulares e ANPD.
+    - Órgão de pesquisa aparece em uma das bases legais, a de estudos.
+    - O poder público trata dados para cumprir finalidade pública e deve indicar encarregado, que é o canal.
+  evidencia: 'canal de comunicação entre controlador, titulares e a ANPD'

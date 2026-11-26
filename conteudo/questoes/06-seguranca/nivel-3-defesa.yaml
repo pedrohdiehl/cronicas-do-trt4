@@ -1,0 +1,301 @@
+# Banco B (ticket 18): defesa técnica. Todas autorais, a partir das fichas.
+- id: seg-owasp-009
+  fichas: [owasp]
+  nivel: 3
+  cargo: ambos
+  origem: autoral
+  enunciado: >-
+    Um relatório de segurança classificou três achados pelo OWASP Top 10:2025.
+    I. SSRF em uma aplicação, na categoria A05 – Injection.
+    II. BOLA em uma API, na categoria A01 – Broken Access Control.
+    III. BFLA em uma API, na categoria A01 – Broken Access Control.
+    Está correta a classificação de
+  alternativas:
+    - I, apenas.
+    - II, apenas.
+    - I e III, apenas.
+    - II e III, apenas.
+    - I, II e III.
+  correta: 3
+  explicacoes:
+    - O SSRF foi absorvido pela A01; a classificação I está errada, e II e III estão certas.
+    - A classificação III também está certa, pois a A01 inclui BFLA de APIs.
+    - A I está errada, pois o SSRF foi absorvido pela A01, e a II está certa.
+    - Correta. A A01 inclui BOLA e BFLA de APIs; o SSRF também vai para ela, não para a A05.
+    - A I está errada, pois o SSRF foi absorvido pela A01.
+  evidencia: 'Continua 1º; **absorveu SSRF**; inclui BOLA/BFLA de APIs'
+- id: seg-owasp-010
+  fichas: [owasp]
+  nivel: 3
+  cargo: ambos
+  origem: autoral
+  enunciado: Quando ocorre uma exceção, uma aplicação exibe ao usuário todos os detalhes internos do erro. A prática de programação defensiva que trata diretamente esse ponto e a categoria do OWASP Top 10:2025 a que ela se liga são, respectivamente,
+  alternativas:
+    - tratar exceções sem vazar detalhes; A10 – Mishandling of Exceptional Conditions.
+    - validar toda entrada; A10 – Mishandling of Exceptional Conditions.
+    - tratar exceções sem vazar detalhes; A03 – Software Supply Chain Failures.
+    - usar consultas parametrizadas; A05 – Injection.
+    - aplicar menor privilégio; A03 – Software Supply Chain Failures.
+  correta: 0
+  explicacoes:
+    - Correta. Tratar exceções sem vazar detalhes se liga à A10.
+    - A categoria está certa, mas o ponto descrito é o tratamento da exceção, não a validação de entrada.
+    - A prática está certa, mas ela se liga à A10; a A03 trata da cadeia de suprimentos.
+    - Consultas parametrizadas são contra injeção, que não é o caso descrito.
+    - O ponto descrito é o tratamento da exceção, ligado à A10, e não o menor privilégio.
+  evidencia: 'tratar exceções sem vazar detalhes (liga com A10)'
+- id: seg-perimetro-005
+  fichas: [protecao-perimetro]
+  nivel: 3
+  cargo: ambos
+  origem: autoral
+  enunciado: Um tribunal vai publicar um servidor web na internet e tem dois objetivos. O primeiro é colocá-lo em uma sub-rede que isole a rede interna; o segundo é bloquear injeção e XSS com um firewall próprio da camada de aplicação HTTP. Os recursos que correspondem, respectivamente, a esses objetivos são
+  alternativas:
+    - DMZ e NAC.
+    - WAF e DMZ.
+    - NAC e WAF.
+    - forward proxy e IDS.
+    - DMZ e WAF.
+  correta: 4
+  explicacoes:
+    - A DMZ atende ao primeiro objetivo, mas o NAC controla a entrada de dispositivos na rede.
+    - Os dois recursos estão na ordem trocada.
+    - O WAF atende ao segundo objetivo, mas o NAC não é uma sub-rede.
+    - O forward proxy intermedeia as requisições dos clientes, e o IDS monitora eventos em busca de sinais de incidentes.
+    - Correta. A DMZ é a sub-rede que isola a rede interna, e o WAF bloqueia ataques web na camada de aplicação HTTP.
+  evidencia: 'firewall de **camada de aplicação HTTP** — bloqueia ataques web (injeção, XSS)'
+- id: seg-perimetro-006
+  fichas: [protecao-perimetro]
+  nivel: 3
+  cargo: ambos
+  origem: autoral
+  enunciado: >-
+    Sobre IDS e IPS, considere as afirmações a seguir.
+    I. A prevenção, além de detectar, tenta impedir o incidente.
+    II. O método por assinatura procura padrões conhecidos.
+    III. Esses sistemas se limitam a analisar o tráfego da rede com fio.
+    Está correto o que se afirma em
+  alternativas:
+    - I, apenas.
+    - I e II, apenas.
+    - II e III, apenas.
+    - III, apenas.
+    - I, II e III.
+  correta: 1
+  explicacoes:
+    - A II também está certa, pois a assinatura trabalha com padrões conhecidos.
+    - Correta. A III erra porque há tipos de rede, wireless, de análise de comportamento de rede e de host.
+    - A III está errada, pois há também os tipos wireless e de host, e a I está certa.
+    - A III está errada, pois há também os tipos wireless e de host; a I e a II estão certas.
+    - A III está errada, pois há também os tipos wireless e de host.
+  evidencia: 'Métodos: por **assinatura** (padrões conhecidos) e por **anomalia**. Tipos: de rede, wireless, análise de comportamento de rede e de host.'
+- id: seg-vpn-005
+  fichas: [vpn-ztna]
+  nivel: 3
+  cargo: ambos
+  origem: autoral
+  enunciado: Com um notebook que pertence ao tribunal e está ligado à rede local do prédio, uma servidora pede acesso a um sistema interno. Segundo o Zero Trust (NIST SP 800-207), antes da sessão
+  alternativas:
+    - basta autenticar a servidora, pois o notebook é do tribunal.
+    - basta autenticar o notebook, pois ele está na rede local.
+    - nenhuma verificação é necessária, pois o notebook é do tribunal e está na rede local.
+    - a servidora e o notebook devem ser autenticados e autorizados.
+    - a verificação só seria necessária se o pedido viesse da internet.
+  correta: 3
+  explicacoes:
+    - A propriedade do dispositivo não gera confiança implícita.
+    - A localização na rede não gera confiança implícita, e o sujeito também precisa ser verificado.
+    - Nem a localização nem a propriedade do dispositivo geram confiança implícita.
+    - Correta. Sujeito e dispositivo passam por autenticação e autorização antes de cada sessão.
+    - A confiança não depende de o acesso vir da LAN ou da internet.
+  evidencia: 'ou pela propriedade do dispositivo; autenticação e autorização de sujeito e dispositivo antes de cada sessão'
+- id: seg-wifi-005
+  fichas: [wifi-seguranca]
+  nivel: 3
+  cargo: ambos
+  origem: autoral
+  enunciado: >-
+    Sobre a segurança de redes sem fio no modo pessoal, considere as afirmações a seguir.
+    I. O WPA2 com PSK é vulnerável a ataque de dicionário offline.
+    II. O WPA2 foi alvo do KRACK, em 2017.
+    III. O WPA3 resiste a ataque de dicionário offline.
+    Está correto o que se afirma em
+  alternativas:
+    - I, apenas.
+    - I e II, apenas.
+    - I, II e III.
+    - I e III, apenas.
+    - II e III, apenas.
+  correta: 2
+  explicacoes:
+    - A II e a III também estão certas.
+    - A III também está certa, pois o SAE do WPA3 traz resistência a dicionário offline.
+    - Correta. As três afirmações estão certas.
+    - A II também está certa, pois o WPA2 é vulnerável ao KRACK, de 2017.
+    - A I também está certa, pois o WPA2 com PSK é vulnerável a dicionário offline.
+  evidencia: 'vulnerável a ataque de dicionário offline e ao **KRACK** (2017)'
+- id: seg-wifi-006
+  fichas: [wifi-seguranca]
+  nivel: 3
+  cargo: ambos
+  origem: autoral
+  enunciado: Um tribunal já usa Wi-Fi no modo Enterprise, com servidor RADIUS integrado ao Active Directory, e quer a opção de autenticação mais forte para esse modo. Deve adotar
+  alternativas:
+    - PSK com chave mais longa.
+    - SAE com PMF obrigatório.
+    - WEP com servidor RADIUS.
+    - WPA com chave pré-compartilhada.
+    - EAP-TLS com certificados.
+  correta: 4
+  explicacoes:
+    - PSK é chave pré-compartilhada do modo pessoal.
+    - SAE é do modo pessoal do WPA3, embora traga resistência a dicionário offline.
+    - WEP é legado e inseguro.
+    - WPA é legado e inseguro.
+    - Correta. No modo Enterprise, EAP-TLS com certificados é o mais forte.
+  evidencia: 'EAP-TLS com certificados é o mais forte'
+- id: seg-criptografia-009
+  fichas: [criptografia]
+  nivel: 3
+  cargo: ambos
+  origem: autoral
+  enunciado: Beto vai enviar a Carla um documento que só ela possa decifrar e cuja autoria ele não possa negar. Para assinar e para cifrar o documento com criptografia assimétrica, Beto deve usar, respectivamente, a chave
+  alternativas:
+    - pública de Beto e a privada de Carla.
+    - privada de Carla e a pública de Beto.
+    - privada de Beto e a pública de Carla.
+    - privada de Beto e a privada de Carla.
+    - pública de Carla e a privada de Beto.
+  correta: 2
+  explicacoes:
+    - A assinatura usa a chave privada do autor, e a cifragem, a pública do destinatário.
+    - A assinatura usa a privada do autor, que é Beto, e a cifragem, a pública do destinatário, que é Carla.
+    - Correta. A privada do autor assina, com não repúdio; o que é cifrado com a pública de Carla só a privada dela decifra.
+    - A assinatura está certa, mas a cifragem usa a chave pública do destinatário.
+    - Os papéis estão invertidos; a privada de Beto assina e a pública de Carla cifra.
+  evidencia: 'hash do documento cifrado com a **chave privada** do autor → **autenticidade, integridade e não repúdio**'
+- id: seg-criptografia-010
+  fichas: [criptografia]
+  nivel: 3
+  cargo: ambos
+  origem: autoral
+  enunciado: Um sistema publica apenas o hash SHA-256 de cada arquivo. Para obter também autenticidade e não repúdio quanto à autoria, o correto é
+  alternativas:
+    - cifrar o hash com a chave pública do destinatário.
+    - assinar digitalmente o arquivo com a chave privada do autor.
+    - trocar o SHA-256 por um algoritmo simétrico com chave compartilhada.
+    - aplicar ao hash uma segunda função de hash.
+    - publicar, com o hash, a chave privada do autor.
+  correta: 1
+  explicacoes:
+    - Cifrar com a pública do destinatário faz com que só ele decifre; a assinatura usa a privada do autor.
+    - Correta. O hash serve à integridade; a assinatura dá autenticidade, integridade e não repúdio.
+    - Na simétrica a mesma chave cifra e decifra; o não repúdio vem da assinatura com a chave privada do autor.
+    - O hash serve à integridade; autenticidade e não repúdio vêm da assinatura digital.
+    - A assinatura usa a chave privada do autor para cifrar o hash; ela não é publicada.
+  evidencia: 'hash do documento cifrado com a **chave privada** do autor → **autenticidade, integridade e não repúdio**'
+- id: seg-criptografia-011
+  fichas: [criptografia]
+  nivel: 3
+  cargo: tec
+  origem: autoral
+  enunciado: Uma equipe procura, entre os padrões pós-quânticos do NIST, um de assinatura que seja baseado em hash. O padrão adequado é o
+  alternativas:
+    - FIPS 203 (ML-KEM).
+    - FIPS 204 (ML-DSA).
+    - FIPS 205 (SLH-DSA).
+    - SHA-256.
+    - RSA.
+  correta: 2
+  explicacoes:
+    - O FIPS 203 (ML-KEM) trata de troca de chaves.
+    - O FIPS 204 (ML-DSA) é de assinatura, mas vem do Dilithium; o baseado em hash é o FIPS 205.
+    - Correta. O FIPS 205 (SLH-DSA) vem do SPHINCS+ e é de assinatura baseada em hash.
+    - O SHA-256 é um hash criptográfico, não um padrão pós-quântico de assinatura.
+    - O RSA é justamente um dos algoritmos ameaçados por computadores quânticos.
+  evidencia: '**FIPS 205 SLH-DSA** (de SPHINCS+, assinatura baseada em hash)'
+- id: seg-tls-005
+  fichas: [tls]
+  nivel: 3
+  cargo: ambos
+  origem: autoral
+  enunciado: >-
+    Sobre o TLS, considere as afirmações a seguir.
+    I. O handshake negocia algoritmos e chaves, mas a autenticação fica a cargo do record protocol.
+    II. O canal oferece confidencialidade, mas a integridade não está entre as suas propriedades.
+    III. O record protocol protege os dados.
+    Está correto o que se afirma em
+  alternativas:
+    - I, apenas.
+    - III, apenas.
+    - I e II, apenas.
+    - II e III, apenas.
+    - I, II e III.
+  correta: 1
+  explicacoes:
+    - A I está errada, pois quem autentica também é o handshake; a III está certa.
+    - Correta. O handshake também autentica, e o canal seguro inclui integridade.
+    - A I erra ao tirar a autenticação do handshake, e a II, ao excluir a integridade.
+    - A II está errada, pois o canal seguro inclui integridade.
+    - A I e a II estão erradas, pois o handshake autentica e o canal inclui integridade.
+  evidencia: 'Dois componentes: **handshake** (negocia algoritmos e chaves, autentica) e **record protocol** (protege os dados).'
+- id: seg-tls-006
+  fichas: [tls]
+  nivel: 3
+  cargo: ana
+  origem: autoral
+  enunciado: Em um servidor, estão habilitados SSL 3.0, TLS 1.0, TLS 1.1 e TLS 1.3. Entre essas versões, as que são inseguras ou foram depreciadas são
+  alternativas:
+    - SSL 3.0, TLS 1.0 e TLS 1.1, apenas.
+    - SSL 3.0, apenas.
+    - SSL 3.0 e TLS 1.0, apenas.
+    - TLS 1.0 e TLS 1.1, apenas.
+    - SSL 3.0, TLS 1.0, TLS 1.1 e TLS 1.3.
+  correta: 0
+  explicacoes:
+    - Correta. O SSL 3.0 é inseguro, e o TLS 1.0 e o 1.1 foram depreciados.
+    - O TLS 1.0 e o TLS 1.1 também foram depreciados.
+    - O TLS 1.1 também foi depreciado.
+    - O SSL 3.0 também entra, pois é inseguro e não deve ser usado.
+    - Os depreciados são o TLS 1.0 e o 1.1; o TLS 1.3 não está entre eles.
+  evidencia: 'SSL 2.0/3.0 são inseguros e não devem ser usados (TLS 1.0 e 1.1 também foram depreciados)'
+- id: seg-backup-005
+  fichas: [backup]
+  nivel: 3
+  cargo: tec
+  origem: autoral
+  enunciado: Um órgão fez backup completo no domingo e backups incrementais nas noites de segunda, terça e quarta-feira. Na manhã de quinta, precisou restaurar tudo até a noite de quarta. Para isso, são necessários
+  alternativas:
+    - o completo e o incremental de quarta, apenas.
+    - o incremental de quarta, apenas.
+    - os incrementais de segunda, terça e quarta, apenas.
+    - o completo e os incrementais de segunda, terça e quarta.
+    - o completo e os incrementais de segunda e quarta, apenas.
+  correta: 3
+  explicacoes:
+    - Cada incremental guarda só o que mudou desde o backup anterior; faltariam segunda e terça.
+    - O incremental de quarta só tem o que mudou desde o backup de terça.
+    - Falta o completo, que é necessário na restauração.
+    - Correta. A restauração precisa do completo e de todos os incrementais.
+    - Falta o incremental de terça; são necessários todos.
+  evidencia: 'restauração precisa do completo + todos os incrementais'
+- id: seg-backup-006
+  fichas: [backup]
+  nivel: 3
+  cargo: tec
+  origem: autoral
+  enunciado: Na gestão de um incidente, a equipe acabou de concluir a contenção. O próximo passo, antes da recuperação, é
+  alternativas:
+    - registrar lições aprendidas.
+    - erradicar.
+    - preparar.
+    - detectar.
+    - segregar os backups.
+  correta: 1
+  explicacoes:
+    - As lições aprendidas vêm depois da recuperação.
+    - Correta. A ordem é conter, erradicar e recuperar.
+    - A preparação é a primeira etapa.
+    - A detecção vem antes da contenção.
+    - A ENSEC-PJ exige backups segregados, mas essa não é uma das etapas; depois de conter vem erradicar.
+  evidencia: 'preparar → detectar → conter → erradicar → recuperar → lições aprendidas'

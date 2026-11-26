@@ -11,6 +11,7 @@ import type {
   TablePair,
   ZonaInfo,
 } from '../src/types';
+import { loadAuthoredQuestions } from './authoredQuestions';
 
 const MD_DIR = path.resolve(process.cwd(), 'public/assets/aistudio');
 
@@ -1400,9 +1401,38 @@ function buildPontes(fichas: Ficha[]): PonteQuest[] {
   }));
 }
 
+/** Uma ficha com pelo menos este número de questões autorais deixa de usar as geradas. */
+const MIN_AUTORAIS_PARA_SUBSTITUIR = 3;
+
 function main() {
   const { zonas, fichas, aliasMap, report } = parseAllMarkdownFiles();
-  const questions = buildQuestions(fichas);
+  // As geradas são sempre montadas inteiras primeiro: os ids (q-mc-0001...) seguem um contador,
+  // e filtrar antes mudaria o id das questões seguintes e bagunçaria o progresso salvo.
+  const generated = buildQuestions(fichas);
+
+  const authored = loadAuthoredQuestions(fichas);
+  if (authored.erros.length) {
+    console.error(`\n${authored.erros.length} problema(s) nas questões autorais (conteudo/questoes):`);
+    for (const e of authored.erros) console.error(`  - ${e}`);
+    console.error('\nNada foi gravado. Corrija e rode de novo.');
+    process.exit(1);
+  }
+  const autoraisPorFicha = new Map<string, number>();
+  for (const q of authored.questions) {
+    autoraisPorFicha.set(q.fichaId, (autoraisPorFicha.get(q.fichaId) || 0) + 1);
+  }
+  const fichasSubstituidas = new Set(
+    [...autoraisPorFicha].filter(([, n]) => n >= MIN_AUTORAIS_PARA_SUBSTITUIR).map(([id]) => id)
+  );
+  const questions: Question[] = [
+    ...generated.filter((q) => !fichasSubstituidas.has(q.fichaId)),
+    ...authored.questions,
+  ];
+  for (const q of questions) {
+    if (q.enunciado.includes('⚠️') || q.trechoFonte.includes('⚠️') || q.alternativas.some((a) => a.includes('⚠️'))) {
+      throw new Error(`CRITICAL: Warning symbol ⚠️ leaked into question ${q.id} (${q.fichaId})`);
+    }
+  }
   const pontes = buildPontes(fichas);
 
   // Verify every ficha has >= 3 questions
@@ -1442,6 +1472,7 @@ export const REGION_BY_ID: Record<string, RegionInfo> = Object.fromEntries(
 `;
 
   const questionsTs = `// AUTO-GENERATED from /public/assets/aistudio/*.md — STRICTLY GROUNDED, ZERO ⚠️ QUESTIONS
+// Questões com origem "autoral" vêm de /conteudo/questoes/**/*.yaml. Edite lá e rode npm run generate:content.
 import type { Question } from '../types';
 
 export const QUESTIONS: Question[] = ${JSON.stringify(questions, null, 2)};
@@ -1471,7 +1502,17 @@ export const QUESTIONS: Question[] = ${JSON.stringify(questions, null, 2)};
   for (const m of report.mergedMultiIdHeadings) {
     console.log(`  - ${m.primary} + [${m.aliases.join(', ')}] -> "${m.titulo}"`);
   }
-  console.log(`Questions generated: ${questions.length}`, qTypeCounts);
+  console.log(`Questions total: ${questions.length}`, qTypeCounts);
+  console.log(
+    `Authored questions: ${authored.questions.length} from ${authored.arquivos} YAML file(s); ` +
+      `replaced generated questions of ${fichasSubstituidas.size} ficha(s): ${[...fichasSubstituidas].join(', ')}`
+  );
+  if (authored.pendentes.length) {
+    console.log(
+      `Authored but waiting for a new battle screen (association with pairs / ordering): ${authored.pendentes.length} — ` +
+        authored.pendentes.map((p) => `${p.id} (${p.tipo})`).join(', ')
+    );
+  }
   console.log(`Boss-style (FCC) questions: ${questions.filter((q) => q.isBossStyle).length}`);
   console.log(`Fichas with < 3 questions: ${underThree.length}`, underThree.map((f) => f.id));
   console.log(`Fichas with ⚠️ Oracle warnings: ${fichas.filter((f) => f.avisosOraculo.length > 0).length}`);

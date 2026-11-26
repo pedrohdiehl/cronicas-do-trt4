@@ -1,0 +1,196 @@
+# Banco A (ticket 17): normas e LGPD. Todas autorais, a partir das fichas.
+- id: seg-iso27001-005
+  fichas: [iso-27001]
+  nivel: 2
+  cargo: ambos
+  origem: autoral
+  enunciado: Uma equipe precisa de um documento que traga os requisitos do SGSI e de outro que explique o propósito e a forma de implementar cada controle. Esses documentos são, respectivamente,
+  alternativas:
+    - a 27002 e a 27001.
+    - a 27002 e a 27701.
+    - a 27001 e a 27002.
+    - a 27701 e a 27001.
+    - a 27001 e a 27701.
+  correta: 2
+  explicacoes:
+    - A ordem está trocada, pois os requisitos estão na 27001, e o detalhamento dos controles, na 27002.
+    - A 27002 é o guia dos controles, e a 27701 trata da informação de privacidade.
+    - Correta. A 27001 traz os requisitos do SGSI, e a 27002 detalha os controles.
+    - A 27701 trata da informação de privacidade, e a 27001 traz os requisitos, não o detalhamento dos controles.
+    - A 27001 traz os requisitos do SGSI, mas o guia dos controles de segurança é a 27002.
+  evidencia: '**guia de boas práticas** que detalha os controles (definição, propósito, como implementar)'
+- id: seg-iso27001-006
+  fichas: [iso-27001]
+  nivel: 2
+  cargo: ambos
+  origem: autoral
+  enunciado: Quanto aos temas de controles da edição de 2022 da ISO/IEC 27001 e da 27002, a correspondência correta entre tema, cláusula da 27002 e número de controles é
+  alternativas:
+    - Tecnológicos, cláusula 8, 34 controles.
+    - Tecnológicos, cláusula 5, 37 controles.
+    - Físicos, cláusula 7, 8 controles.
+    - Pessoas, cláusula 6, 14 controles.
+    - Organizacionais, cláusula 8, 37 controles.
+  correta: 0
+  explicacoes:
+    - Correta. O tema Tecnológicos está na cláusula 8, com 34 controles.
+    - Cláusula 5 e 37 controles são do tema Organizacionais.
+    - A cláusula está certa, mas o tema Físicos tem 14 controles.
+    - A cláusula está certa, mas o tema Pessoas tem 8 controles.
+    - O número está certo, mas o tema Organizacionais está na cláusula 5.
+  evidencia: '| Tecnológicos (8) | 34 |'
+- id: seg-iso27001-007
+  fichas: [iso-27001]
+  nivel: 2
+  cargo: ambos
+  origem: autoral
+  enunciado: A ENSEC-PJ manda cada tribunal ter um SGSI baseado em riscos. Essa determinação é exemplo prático do objeto da
+  alternativas:
+    - ISO/IEC 27002, por ser ela a norma que se certifica.
+    - ISO/IEC 27701, por tratar da informação de privacidade.
+    - ISO/IEC 27002, por conter os requisitos do sistema de gestão.
+    - ISO/IEC 27001, por conter os requisitos do sistema de gestão.
+    - ISO/IEC 27001, por ser apenas um guia de boas práticas.
+  correta: 3
+  explicacoes:
+    - A norma que se certifica é a 27001; a 27002 é um guia de boas práticas.
+    - A 27701 trata da informação de privacidade, e a determinação é sobre o SGSI.
+    - A 27002 detalha os controles; os requisitos do sistema de gestão estão na 27001.
+    - Correta. O SGSI é o objeto da 27001, que é uma norma de requisitos.
+    - A norma está certa, mas a 27001 é de requisitos; o guia de boas práticas é a 27002.
+  evidencia: 'a ENSEC-PJ manda cada tribunal ter um **SGSI baseado em riscos** — é exatamente a 27001'
+- id: seg-iso27701-003
+  fichas: [iso-27701]
+  nivel: 2
+  cargo: tec
+  origem: autoral
+  enunciado: Na edição de 2019, a relação da ISO/IEC 27701 com a 27001 e a 27002 é a de
+  alternativas:
+    - norma independente, certificável sem a 27001.
+    - norma que substitui a 27001 e mantém a 27002.
+    - guia que detalha apenas os controles da 27002.
+    - norma que dispensa a existência de um SGSI.
+    - extensão das duas, que precisa de um SGSI.
+  correta: 4
+  explicacoes:
+    - A edição de 2019 era uma extensão e precisava de SGSI; não era independente.
+    - A edição de 2019 era uma extensão da 27001 e da 27002; não substituía a 27001.
+    - A 27701 é um sistema de gestão da informação de privacidade, e a edição de 2019 estendia também a 27001.
+    - A edição de 2019 precisava de um SGSI.
+    - Correta. Em 2019, era uma extensão da 27001 e da 27002 e precisava de SGSI.
+  evidencia: 'era uma **extensão** da 27001/27002 (precisava de SGSI)'
+- id: seg-iso27701-004
+  fichas: [iso-27701]
+  nivel: 2
+  cargo: ana
+  origem: autoral
+  enunciado: Na comparação com a edição de 2019, a edição de 2025 da ISO/IEC 27701 passou a ser
+  alternativas:
+    - uma extensão da 27001 e da 27002.
+    - um anexo da 27002, sem certificação própria.
+    - uma norma independente.
+    - um guia restrito aos controladores.
+    - uma norma certificável só junto com a 27001.
+  correta: 2
+  explicacoes:
+    - Essa era a situação da edição de 2019.
+    - A edição de 2025 é independente e certificável.
+    - Correta. A edição de 2025 virou norma independente, certificável sem a 27001.
+    - A norma tem controles para controladores e para operadores.
+    - A edição de 2025 é certificável sem a 27001.
+  evidencia: 'virou **norma independente (stand-alone)**, certificável sem a 27001'
+- id: seg-cis-controls-003
+  fichas: [cis-controls]
+  nivel: 2
+  cargo: tec
+  origem: autoral
+  enunciado: No CIS Controls v8, uma organização que implementa por completo o IG2, incluído o que ele herda do grupo anterior, cumpre quantas salvaguardas?
+  alternativas: ['56', '74', '97', '130', '153']
+  correta: 3
+  explicacoes:
+    - 56 são as salvaguardas do IG1.
+    - 74 são as que o IG2 acrescenta, sem contar as do IG1.
+    - 97 soma os acréscimos do IG2 (74) e do IG3 (23) e deixa fora as 56 do IG1.
+    - Correta. O IG2 inclui as 56 do IG1 e acrescenta 74, o que dá 130.
+    - 153 é o total, que só se completa com o IG3.
+  evidencia: '+74 salvaguardas (inclui IG1)'
+- id: seg-cis-controls-004
+  fichas: [cis-controls]
+  nivel: 2
+  cargo: tec
+  origem: autoral
+  enunciado: No CIS Controls v8, a associação correta entre o número e o nome do controle é
+  alternativas:
+    - 1 – Gestão de contas.
+    - 5 – Teste de intrusão.
+    - 18 – Teste de intrusão.
+    - 18 – Inventário de ativos corporativos.
+    - 5 – Inventário de ativos corporativos.
+  correta: 2
+  explicacoes:
+    - O controle 1 é o Inventário de ativos corporativos; Gestão de contas é o 5.
+    - O controle 5 é Gestão de contas; Teste de intrusão é o 18.
+    - Correta. Teste de intrusão é o controle 18.
+    - O Inventário de ativos corporativos é o controle 1; o 18 é Teste de intrusão.
+    - O Inventário de ativos corporativos é o controle 1; o 5 é Gestão de contas.
+  evidencia: '1 Inventário de ativos corporativos · 5 Gestão de contas · 18 Teste de intrusão'
+- id: seg-lgpd-003
+  fichas: [lgpd]
+  nivel: 2
+  cargo: ambos
+  origem: autoral
+  enunciado: Um tribunal decide como serão tratados os dados pessoais de um sistema e contrata uma empresa que executa esse tratamento em nome dele. Nos termos da LGPD, o tribunal e a empresa são, respectivamente,
+  alternativas:
+    - operador e controladora.
+    - encarregado e operadora.
+    - controlador e encarregada.
+    - titular e controladora.
+    - controlador e operadora.
+  correta: 4
+  explicacoes:
+    - Os papéis estão trocados, pois quem decide é o controlador.
+    - A empresa é operadora, mas o tribunal, que decide, é controlador; o encarregado é canal de comunicação.
+    - O tribunal é controlador, mas a empresa executa em nome dele e por isso é operadora.
+    - O tribunal decide sobre o tratamento, portanto é controlador, e a empresa é operadora.
+    - Correta. O controlador decide, e o operador executa em nome dele.
+  evidencia: '**controlador** (decide) e **operador** (executa em nome do controlador)'
+- id: seg-lgpd-004
+  fichas: [lgpd]
+  nivel: 2
+  cargo: ambos
+  origem: autoral
+  enunciado: O cadastro de servidores de um órgão guarda os dados abaixo, todos ligados a pessoas identificadas. É dado pessoal sensível, pela definição da LGPD,
+  alternativas:
+    - o número do CPF.
+    - a filiação sindical.
+    - o endereço residencial.
+    - o telefone celular.
+    - a data de nascimento.
+  correta: 1
+  explicacoes:
+    - É dado pessoal, mas o CPF não está na lista de dados sensíveis.
+    - Correta. A filiação sindical está na lista de dados pessoais sensíveis.
+    - É dado pessoal, mas o endereço não está na lista de dados sensíveis.
+    - É dado pessoal, mas o telefone não está na lista de dados sensíveis.
+    - É dado pessoal, mas a data de nascimento não está na lista de dados sensíveis.
+  evidencia: 'origem racial ou étnica, convicção religiosa, opinião política, filiação sindical'
+- id: seg-lgpd-005
+  fichas: [lgpd]
+  nivel: 2
+  cargo: ambos
+  origem: autoral
+  enunciado: Na LGPD, são, respectivamente, um princípio (art. 6º), uma base legal (art. 7º) e um direito do titular (art. 18)
+  alternativas:
+    - portabilidade, necessidade e proteção do crédito.
+    - necessidade, portabilidade e proteção do crédito.
+    - proteção do crédito, prevenção e portabilidade.
+    - necessidade, proteção do crédito e portabilidade.
+    - prevenção, adequação e proteção do crédito.
+  correta: 3
+  explicacoes:
+    - Portabilidade é direito do titular, necessidade é princípio e proteção do crédito é base legal.
+    - Necessidade é princípio, mas os outros dois estão trocados, pois portabilidade é direito, e proteção do crédito, base legal.
+    - Portabilidade é direito, mas os outros dois estão trocados, pois proteção do crédito é base legal, e prevenção, princípio.
+    - Correta. Necessidade é princípio, proteção do crédito é base legal e portabilidade é direito.
+    - Prevenção e adequação são princípios, e proteção do crédito é base legal, não direito.
+  evidencia: 'finalidade, adequação, necessidade, livre acesso, qualidade dos dados'

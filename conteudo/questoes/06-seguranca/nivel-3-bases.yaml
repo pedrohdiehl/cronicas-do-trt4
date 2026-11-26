@@ -1,0 +1,186 @@
+# Banco C (ticket 19): fichas com fonte nova. Todas autorais, a partir das fichas.
+- id: seg-cid-005
+  fichas: [cid]
+  nivel: 3
+  cargo: ambos
+  origem: autoral
+  enunciado: >-
+    Sobre os princípios de segurança da informação, considere as afirmações a seguir.
+    I. A autenticidade e o não repúdio são exigidos pelo MoReq-Jus.
+    II. A assinatura digital provê autenticidade, mas não o não repúdio.
+    III. No não repúdio, o autor não pode negar a autoria.
+    Está correto o que se afirma em
+  alternativas:
+    - I, apenas.
+    - II, apenas.
+    - I e III, apenas.
+    - II e III, apenas.
+    - I, II e III.
+  correta: 2
+  explicacoes:
+    - A III também está certa, pois, no não repúdio, o autor não pode negar a autoria.
+    - A II está errada, pois a assinatura digital provê os dois; a I e a III estão certas.
+    - Correta. A II erra porque a assinatura digital provê a autenticidade e também o não repúdio.
+    - A II está errada, pois a assinatura digital provê os dois, e a I também está certa.
+    - A II está errada, pois a assinatura digital provê também o não repúdio.
+  evidencia: '**não repúdio** (o autor não pode negar a autoria) — ambos exigidos pelo [[moreq-jus]] e providos pela assinatura digital'
+- id: seg-cid-006
+  fichas: [cid]
+  nivel: 3
+  cargo: ambos
+  origem: autoral
+  enunciado: Uma servidora podia ver um relatório, mas o alterou indevidamente. Durante todo o período, o relatório ficou acessível a quem precisava dele, e só o viu quem podia. Entre confidencialidade, integridade e disponibilidade, foi violada
+  alternativas:
+    - a confidencialidade, apenas.
+    - a disponibilidade, apenas.
+    - a confidencialidade e a integridade.
+    - a integridade, apenas.
+    - a integridade e a disponibilidade.
+  correta: 3
+  explicacoes:
+    - Só viu o relatório quem podia; a alteração indevida viola a integridade.
+    - O relatório ficou acessível a quem precisava; a alteração indevida viola a integridade.
+    - A integridade foi violada, mas a confidencialidade não, pois só viu o relatório quem podia.
+    - Correta. Houve alteração indevida; a confidencialidade e a disponibilidade foram mantidas.
+    - A integridade foi violada, mas a disponibilidade não, pois o relatório ficou acessível.
+  evidencia: '**Integridade:** não foi alterado indevidamente.'
+- id: seg-iso27005-005
+  fichas: [iso-27005]
+  nivel: 3
+  cargo: tec
+  origem: autoral
+  enunciado: Um relatório apresenta, como as quatro opções clássicas de tratamento do risco, modificar, reter, monitorar e compartilhar. O relatório errou ao
+  alternativas:
+    - incluir monitorar e omitir avaliar.
+    - incluir reter e omitir evitar.
+    - incluir modificar e omitir comunicar.
+    - incluir compartilhar e omitir analisar.
+    - incluir monitorar e omitir evitar.
+  correta: 4
+  explicacoes:
+    - Monitorar está mal incluído, mas avaliar também é atividade da gestão; a opção omitida é evitar.
+    - Evitar foi mesmo omitido, mas reter é opção clássica; o intruso é monitorar.
+    - Modificar é opção clássica, e comunicar é atividade da gestão de riscos.
+    - Compartilhar é opção clássica, e analisar é atividade da gestão de riscos.
+    - Correta. Monitorar é atividade da gestão de riscos, e a opção que faltou é evitar.
+  evidencia: 'modificar/mitigar, reter/aceitar, evitar, compartilhar/transferir.'
+- id: seg-iso27005-006
+  fichas: [iso-27005]
+  nivel: 3
+  cargo: tec
+  origem: autoral
+  enunciado: Depois de analisar um risco de segurança da informação, um gestor decidiu aceitá-lo. Um consultor afirma que essa decisão não está entre as opções clássicas de tratamento do risco. A afirmação está
+  alternativas:
+    - correta, pois só mitigar trata o risco.
+    - correta, pois só evitar e transferir tratam o risco.
+    - incorreta, pois aceitar equivale a evitar, uma das opções.
+    - incorreta, pois aceitar equivale a reter, uma das opções.
+    - incorreta, pois aceitar equivale a compartilhar, uma das opções.
+  correta: 3
+  explicacoes:
+    - Além de modificar/mitigar, são opções clássicas reter/aceitar, evitar e compartilhar/transferir.
+    - Além dessas duas, são opções clássicas modificar/mitigar e reter/aceitar.
+    - A afirmação é mesmo incorreta, mas aceitar equivale a reter; evitar é outra opção.
+    - Correta. Aceitar equivale a reter, que é opção clássica de tratamento.
+    - A afirmação é mesmo incorreta, mas compartilhar equivale a transferir, e aceitar, a reter.
+  evidencia: 'modificar/mitigar, reter/aceitar, evitar, compartilhar/transferir.'
+- id: seg-acesso-005
+  fichas: [controle-acesso]
+  nivel: 3
+  cargo: ambos
+  origem: autoral
+  enunciado: Para o acesso a um sistema judicial sensível, um tribunal exige uma senha e uma frase memorizada, e entende que assim cumpre a determinação do CNJ de usar MFA (Portaria CNJ nº 140/2024). Para que o acesso passe a ter MFA, o tribunal deve
+  alternativas:
+    - trocar a frase por um token.
+    - trocar a frase por outra senha.
+    - acrescentar uma terceira senha.
+    - registrar o que cada usuário fez.
+    - atribuir um papel a cada usuário.
+  correta: 0
+  explicacoes:
+    - Correta. Senha é algo que se sabe, e token, algo que se tem; antes, os dois fatores eram da mesma categoria.
+    - As duas senhas são algo que se sabe, uma só categoria.
+    - Com mais uma senha, os fatores continuam na categoria do que se sabe.
+    - Registrar o que o usuário fez é auditoria e não acrescenta fator de outra categoria.
+    - Atribuir papéis é RBAC e não acrescenta fator de outra categoria.
+  evidencia: 'dois ou mais fatores de categorias diferentes — algo que você **sabe** (senha), **tem** (token, celular), **é** (biometria). O CNJ determinou MFA para acesso a sistemas judiciais sensíveis (Portaria CNJ nº 140, de 22/04/2024)'
+- id: seg-acesso-006
+  fichas: [controle-acesso]
+  nivel: 3
+  cargo: ambos
+  origem: autoral
+  enunciado: Em um sistema com RBAC, os papéis "Assessor" e "Servidor de Secretaria" já têm as permissões corretas. Um usuário deixa de ser assessor e passa a atuar só na secretaria; os demais continuam como estão. No modelo RBAC, o ajuste adequado é
+  alternativas:
+    - trocar as permissões do papel "Assessor" pelas do outro papel.
+    - dar a ele, sem papel algum, as permissões da secretaria.
+    - trocar o papel atribuído a ele.
+    - acrescentar ao papel "Assessor" as permissões da secretaria.
+    - exigir dele um fator de autenticação a mais.
+  correta: 2
+  explicacoes:
+    - O papel já tem as permissões corretas, e mudá-lo alteraria as permissões dos outros usuários com esse papel.
+    - No RBAC, as permissões são atribuídas a papéis, e não diretamente ao usuário.
+    - Correta. As permissões estão nos papéis, e os papéis são atribuídos aos usuários.
+    - O papel já tem as permissões corretas, e o usuário ainda ficaria como assessor.
+    - Fator de autenticação trata de quem é o usuário; as permissões vêm do papel.
+  evidencia: 'permissões atribuídas a **papéis**, e papéis a usuários (ex.: "Assessor", "Servidor de Secretaria").'
+- id: seg-malware-007
+  fichas: [ataques-malware]
+  nivel: 3
+  cargo: ambos
+  origem: autoral
+  enunciado: A equipe de defesa de um tribunal usa o Wireshark para examinar o tráfego da rede. Um gestor quer proibi-lo, alegando que toda captura de pacotes é ataque. A alegação está
+  alternativas:
+    - correta, pois o sniffer serve só ao ataque.
+    - correta, pois o sniffer é um malware que se propaga sozinho.
+    - incorreta, pois o sniffer não captura tráfego.
+    - incorreta, pois o sniffer serve só à defesa.
+    - incorreta, pois o sniffer serve à defesa e ao ataque.
+  correta: 4
+  explicacoes:
+    - O sniffer é usado também na defesa.
+    - O malware que se propaga sozinho é o worm; o sniffer captura e inspeciona tráfego.
+    - O sniffer captura e inspeciona tráfego.
+    - A alegação é mesmo incorreta, mas o sniffer é usado também no ataque.
+    - Correta. O sniffer, como o Wireshark, é usado na defesa e no ataque.
+  evidencia: 'captura e inspeciona tráfego (ex.: Wireshark) — usado na defesa e no ataque.'
+- id: seg-malware-008
+  fichas: [ataques-malware]
+  nivel: 3
+  cargo: ambos
+  origem: autoral
+  enunciado: Um programa malicioso chegou disfarçado de jogo. Dentro dele vinham um componente que esconde a presença do invasor e outro que sequestra os dados com criptografia. O programa e os componentes, na ordem citada, correspondem a
+  alternativas:
+    - trojan, rootkit e ransomware.
+    - trojan, worm e ransomware.
+    - rootkit, trojan e ransomware.
+    - vírus, rootkit e spyware.
+    - worm, ransomware e rootkit.
+  correta: 0
+  explicacoes:
+    - Correta. Disfarçado é o trojan, o rootkit esconde presença, e o ransomware sequestra dados com criptografia.
+    - O worm se propaga sozinho; quem esconde presença é o rootkit.
+    - Os dois primeiros estão trocados, pois disfarçado é o trojan, e o rootkit esconde presença.
+    - O disfarçado é o trojan, e quem sequestra dados com criptografia é o ransomware.
+    - O disfarçado é o trojan; quem esconde presença é o rootkit, e quem sequestra dados, o ransomware.
+  evidencia: '**trojan** (disfarçado), spyware, **ransomware** (sequestra dados com criptografia), rootkit (esconde presença)'
+- id: seg-malware-009
+  fichas: [ataques-malware]
+  nivel: 3
+  cargo: tec
+  origem: autoral
+  enunciado: Com autorização, a equipe X fez uma varredura que só identificou as vulnerabilidades, e a equipe Y explorou essas falhas. Quanto aos CIS Controls, os trabalhos ligam-se
+  alternativas:
+    - o de X, ao 18, e o de Y, ao 7.
+    - o de X, ao 7, e o de Y, ao 18.
+    - os de X e de Y, ao 18.
+    - os de X e de Y, ao 7.
+    - o de X, ao 1, e o de Y, ao 5.
+  correta: 1
+  explicacoes:
+    - Os controles estão trocados, pois a varredura é o CIS Control 7, e o pentest, o 18.
+    - Correta. A varredura que identifica é o CIS Control 7, e o pentest, que explora com autorização, é o 18.
+    - O pentest da equipe Y é o CIS Control 18, mas a varredura é o 7.
+    - A varredura da equipe X é o CIS Control 7, mas o pentest é o 18.
+    - O controle 1 é o inventário de ativos corporativos, e o 5, a gestão de contas.
+  evidencia: 'pentest **explora** falhas de forma autorizada (CIS Control 18); varredura de vulnerabilidades **identifica** (CIS Control 7).'

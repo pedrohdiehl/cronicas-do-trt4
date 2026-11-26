@@ -1,0 +1,171 @@
+# Banco C (ticket 19): fichas com fonte nova. Todas autorais, a partir das fichas.
+- id: seg-cid-001
+  fichas: [cid]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: O princípio da disponibilidade diz respeito à informação
+  alternativas:
+    - vista só por quem pode vê-la.
+    - preservada de alteração indevida.
+    - cujo autor não pode negar a autoria.
+    - acessível quando se precisa dela.
+    - vinda de quem diz ser o autor.
+  correta: 3
+  explicacoes:
+    - Só quem pode, vê. Essa é a confidencialidade.
+    - Não ter sido alterada indevidamente é a integridade.
+    - Não poder negar a autoria é o não repúdio.
+    - Correta. Disponibilidade é estar acessível quando se precisa.
+    - Ser quem diz ser é a autenticidade.
+  evidencia: '**Disponibilidade:** está acessível quando precisa.'
+- id: seg-cid-002
+  fichas: [cid]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: O princípio pelo qual o autor não pode negar a autoria denomina-se
+  alternativas:
+    - não repúdio.
+    - integridade.
+    - disponibilidade.
+    - confidencialidade.
+    - autenticidade.
+  correta: 0
+  explicacoes:
+    - Correta. No não repúdio, o autor não pode negar a autoria.
+    - A integridade trata de não haver alteração indevida.
+    - A disponibilidade trata de estar acessível quando se precisa.
+    - Na confidencialidade, só quem pode, vê.
+    - A autenticidade trata de ser quem diz ser; a impossibilidade de negar a autoria é o não repúdio.
+  evidencia: '**não repúdio** (o autor não pode negar a autoria)'
+- id: seg-iso27005-001
+  fichas: [iso-27005]
+  nivel: 1
+  cargo: tec
+  origem: autoral
+  enunciado: A ABNT NBR ISO/IEC 27005:2023 traz orientações voltadas a
+  alternativas:
+    - certificar o sistema de gestão da segurança da informação.
+    - gerir a informação de privacidade.
+    - detalhar como implementar cada controle de segurança.
+    - definir a higiene cibernética essencial em grupos de implementação.
+    - gerir riscos de segurança da informação.
+  correta: 4
+  explicacoes:
+    - A norma que se certifica, com os requisitos do SGSI, é a 27001.
+    - A gestão da informação de privacidade é tema da 27701.
+    - O guia que detalha os controles é a 27002.
+    - Higiene cibernética essencial é o IG1 do CIS Controls.
+    - Correta. A 27005 traz orientações para gerir riscos de segurança da informação.
+  evidencia: 'orientações para **gerir riscos** de SI'
+- id: seg-iso27005-002
+  fichas: [iso-27005]
+  nivel: 1
+  cargo: tec
+  origem: autoral
+  enunciado: Na gestão de riscos de segurança da informação, é uma das opções clássicas de tratamento do risco
+  alternativas: [identificar., evitar., analisar., monitorar., comunicar.]
+  correta: 1
+  explicacoes:
+    - Identificar riscos é atividade da gestão de riscos, não opção de tratamento.
+    - Correta. Evitar está entre as opções clássicas, com modificar, reter e compartilhar.
+    - Analisar riscos é atividade da gestão de riscos, não opção de tratamento.
+    - Monitorar riscos é atividade da gestão de riscos, não opção de tratamento.
+    - Comunicar riscos é atividade da gestão de riscos, não opção de tratamento.
+  evidencia: 'modificar/mitigar, reter/aceitar, evitar, compartilhar/transferir.'
+- id: seg-acesso-001
+  fichas: [controle-acesso]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: No modelo AAA de controle de acesso, a autorização responde à pergunta
+  alternativas:
+    - o que você sabe?
+    - quem é você?
+    - o que pode fazer?
+    - o que fez?
+    - o que você tem?
+  correta: 2
+  explicacoes:
+    - O que você sabe é uma categoria de fator, como a senha, usada em MFA.
+    - Quem é você? é a pergunta da autenticação.
+    - Correta. A autorização define o que se pode fazer.
+    - O que fez? é a pergunta da auditoria.
+    - O que você tem é uma categoria de fator, como o token, usada em MFA.
+  evidencia: '**Autorização** (o que pode fazer?)'
+- id: seg-acesso-002
+  fichas: [controle-acesso]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: No RBAC, as permissões são atribuídas
+  alternativas:
+    - a dispositivos, e os dispositivos, a usuários.
+    - diretamente a cada usuário, sem papéis.
+    - a fatores de autenticação, e os fatores, a usuários.
+    - a papéis, e os papéis, a dispositivos.
+    - a papéis, e os papéis, a usuários.
+  correta: 4
+  explicacoes:
+    - No RBAC, quem recebe as permissões são os papéis.
+    - Entre as permissões e o usuário, o RBAC coloca os papéis.
+    - Fatores servem à autenticação; no RBAC, as permissões são dos papéis.
+    - As permissões vão para os papéis, mas os papéis são atribuídos a usuários.
+    - Correta. O RBAC atribui permissões a papéis e papéis a usuários.
+  evidencia: 'permissões atribuídas a **papéis**, e papéis a usuários'
+- id: seg-malware-001
+  fichas: [ataques-malware]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: O código malicioso que sequestra dados com o uso de criptografia é o
+  alternativas: [rootkit., spyware., ransomware., worm., trojan.]
+  correta: 2
+  explicacoes:
+    - O rootkit esconde presença.
+    - O spyware é outro tipo de malware; quem sequestra dados com criptografia é o ransomware.
+    - Correta. O ransomware sequestra dados com criptografia.
+    - O worm caracteriza-se por se propagar sozinho.
+    - O trojan caracteriza-se por vir disfarçado.
+  evidencia: '**ransomware** (sequestra dados com criptografia)'
+- id: seg-malware-002
+  fichas: [ataques-malware]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: A fraude que usa engenharia social para obter dados pessoais e financeiros, como credenciais, é
+  alternativas:
+    - o sniffer.
+    - o phishing.
+    - o DDoS.
+    - o ransomware.
+    - o worm.
+  correta: 1
+  explicacoes:
+    - O sniffer captura e inspeciona tráfego.
+    - Correta. O phishing é fraude que usa engenharia social.
+    - O DDoS esgota recursos para negar serviço, a partir de muitas origens.
+    - O ransomware é malware que sequestra dados com criptografia.
+    - O worm é malware que se propaga sozinho.
+  evidencia: '**Phishing** é fraude que usa engenharia social para obter dados pessoais e financeiros (ex.: credenciais).'
+- id: seg-malware-003
+  fichas: [ataques-malware]
+  nivel: 1
+  cargo: tec
+  origem: autoral
+  enunciado: O hardening de um servidor tem por objetivo
+  alternativas:
+    - reduzir a superfície de ataque.
+    - explorar falhas de forma autorizada.
+    - capturar e inspecionar o tráfego.
+    - varrer o servidor para identificar vulnerabilidades.
+    - correlacionar eventos de várias fontes.
+  correta: 0
+  explicacoes:
+    - Correta. O hardening reduz a superfície de ataque.
+    - Explorar falhas de forma autorizada é o teste de intrusão (pentest).
+    - Capturar e inspecionar tráfego é o que faz um sniffer.
+    - Identificar vulnerabilidades é o que faz a varredura.
+    - Correlacionar eventos de várias fontes é o papel do SIEM.
+  evidencia: '**Hardening:** reduzir a superfície de ataque'

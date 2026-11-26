@@ -55,6 +55,39 @@ const TYPE_LABELS: Record<Question['tipo'], string> = {
   conexao: 'Conexão entre Fichas',
 };
 
+/**
+ * Mostra o trecho da ficha sem a marcação do Markdown:
+ * **negrito** vira negrito, `código` perde as crases e linha de tabela vira "a · b".
+ */
+function renderTrecho(raw: string): React.ReactNode {
+  return raw.split('\n').map((line, li) => {
+    let text = line.trim();
+    if (text.startsWith('|')) {
+      text = text
+        .split('|')
+        .map((c) => c.trim())
+        .filter(Boolean)
+        .join(' · ');
+    }
+    text = text.replace(/`([^`]+)`/g, '$1');
+    const parts = text.split(/\*\*(.+?)\*\*/g);
+    return (
+      <React.Fragment key={li}>
+        {li > 0 && <br />}
+        {parts.map((p, i) =>
+          i % 2 === 1 ? (
+            <strong key={i} className="font-bold text-white">
+              {p}
+            </strong>
+          ) : (
+            p.replace(/\*\*/g, '')
+          )
+        )}
+      </React.Fragment>
+    );
+  });
+}
+
 const DAMAGE_STAGE_LABELS: Record<0 | 1 | 2 | 3, { label: string; color: string }> = {
   0: { label: 'Intacto', color: '#cbd5e1' },
   1: { label: 'Ferido', color: '#fde047' },
@@ -496,6 +529,8 @@ export const BattleModal: React.FC<BattleModalProps> = ({
 
   const isAnswered = selectedIdx !== null;
   const wasRight = selectedIdx === currentQ.correta;
+  const hasExplanations =
+    Array.isArray(currentQ.explicacoes) && currentQ.explicacoes.length === currentQ.alternativas.length;
 
   // Dynamic speech bubble shown directly in front of the Hero/Lumina or Opponent!
   const activeSpeech: BattleSpeechPayload = useMemo(() => {
@@ -523,7 +558,9 @@ export const BattleModal: React.FC<BattleModalProps> = ({
 
   const questionOriginLabel = currentQ.isRealExam
     ? `Prova real · ${currentQ.banca || 'FCC'}${currentQ.ano ? ` ${currentQ.ano}` : ''}${currentQ.orgao ? ` · ${currentQ.orgao}` : ''}`
-    : enemy.isBoss || enemy.isMiniBoss || currentQ.isBossStyle
+    : currentQ.origem === 'autoral'
+      ? 'Questão autoral'
+      : enemy.isBoss || enemy.isMiniBoss || currentQ.isBossStyle
       ? 'Questão estilo FCC'
       : enemy.isNpcDuel
         ? 'Duelo Acadêmico'
@@ -1227,7 +1264,7 @@ export const BattleModal: React.FC<BattleModalProps> = ({
                 {lupaRevealed && !isAnswered && (
                   <div className="px-3.5 py-2 bg-[#1c1640] border border-[#a78bfa] rounded text-xs sm:text-sm text-[#ede9fe]">
                     <span className="font-bold text-[#c4b5fd]">Lupa da Fonte ({currentQ.fichaTitulo}): </span>
-                    <span>&ldquo;{currentQ.trechoFonte}&rdquo;</span>
+                    <span>&ldquo;{renderTrecho(currentQ.trechoFonte)}&rdquo;</span>
                   </div>
                 )}
 
@@ -1312,7 +1349,9 @@ export const BattleModal: React.FC<BattleModalProps> = ({
                             ? 'Resposta correta! Por quê?'
                             : shieldBlockedLast
                               ? 'Dano anulado pelo Escudo! Por quê?'
-                              : 'Resposta incorreta — confira a fonte:'}
+                              : hasExplanations
+                                ? 'Resposta incorreta — veja por quê:'
+                                : 'Resposta incorreta — confira a fonte:'}
                         </span>
                       </div>
                       <span className="font-mono-num text-xs text-[#fde68a]">
@@ -1320,8 +1359,26 @@ export const BattleModal: React.FC<BattleModalProps> = ({
                       </span>
                     </div>
 
+                    {hasExplanations && selectedIdx !== null && (
+                      <div data-testid="explicacoes" className="space-y-1 text-xs sm:text-sm leading-relaxed">
+                        {!wasRight && (
+                          <p className="text-[#fecaca]">
+                            <strong className="text-[#fca5a5]">Sua resposta ({LETTERS[selectedIdx]}):</strong>{' '}
+                            {currentQ.explicacoes![selectedIdx]}
+                          </p>
+                        )}
+                        <p className="text-[#d1fae5]">
+                          <strong className="text-[#4ade80]">
+                            {wasRight ? 'Isso mesmo' : `Correta (${LETTERS[currentQ.correta]})`}:
+                          </strong>{' '}
+                          {currentQ.explicacoes![currentQ.correta]}
+                        </p>
+                      </div>
+                    )}
+
                     <blockquote className="px-3 py-2 bg-black/45 border border-white/15 rounded text-xs sm:text-sm leading-relaxed text-[#f1ece1]">
-                      &ldquo;{currentQ.trechoFonte}&rdquo;
+                      {hasExplanations && <span className="font-bold text-[#fde68a]">Na ficha: </span>}
+                      &ldquo;{renderTrecho(currentQ.trechoFonte)}&rdquo;
                     </blockquote>
 
                     <div className="flex flex-wrap items-center justify-between gap-2">

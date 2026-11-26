@@ -1,0 +1,226 @@
+# Banco A (ticket 17): normas e LGPD. Todas autorais, a partir das fichas.
+- id: seg-iso27001-008
+  fichas: [iso-27001]
+  nivel: 3
+  cargo: ambos
+  origem: autoral
+  enunciado: >-
+    Sobre os 93 controles do Anexo A da ISO/IEC 27001, edição de 2022, considere as afirmações a seguir.
+    I. A inteligência de ameaças está entre os controles novos.
+    II. A maior parte deles resulta de fusões de controles anteriores.
+    III. Os controles passaram a ter atributos.
+    Está correto o que se afirma em
+  alternativas:
+    - I, apenas.
+    - I e III, apenas.
+    - II, apenas.
+    - II e III, apenas.
+    - I, II e III.
+  correta: 1
+  explicacoes:
+    - A III também está certa, pois os controles ganharam atributos.
+    - Correta. A II erra porque 24 resultam de fusões, e a maior parte, 58, são atualizados.
+    - A II está errada, pois só 24 dos 93 resultam de fusões, e a I e a III estão certas.
+    - A II está errada, pois só 24 dos 93 resultam de fusões, e a I também está certa.
+    - A II está errada, pois só 24 dos 93 resultam de fusões.
+  evidencia: 'Dos 93: **11 novos** (ex.: **inteligência de ameaças**), 24 resultam de fusões, 58 atualizados. Os controles ganharam **atributos**.'
+- id: seg-iso27001-009
+  fichas: [iso-27001]
+  nivel: 3
+  cargo: ambos
+  origem: autoral
+  enunciado: Um gestor propõe que o órgão obtenha a certificação na ISO/IEC 27002 e use a 27001 apenas como guia para implementar os controles. A proposta está
+  alternativas:
+    - correta, pois a 27002 traz os requisitos do SGSI.
+    - correta, pois as duas normas são guias de boas práticas.
+    - incorreta, pois nenhuma das duas normas se certifica.
+    - incorreta, pois a certificação exige a 27701 no lugar da 27002.
+    - incorreta, pois se certifica a 27001, e o guia é a 27002.
+  correta: 4
+  explicacoes:
+    - Os requisitos do SGSI estão na 27001.
+    - A 27001 é norma de requisitos; só a 27002 é guia de boas práticas.
+    - A 27001 se certifica.
+    - A 27701 trata da informação de privacidade; a norma de requisitos do SGSI que se certifica é a 27001.
+    - Correta. A proposta inverte os papéis, pois a 27001 é a que se certifica e a 27002 detalha os controles.
+  evidencia: 'norma de **requisitos** para um **SGSI (Sistema de Gestão da Segurança da Informação)**. É a que se **certifica**.'
+- id: seg-iso27001-010
+  fichas: [iso-27001]
+  nivel: 3
+  cargo: ambos
+  origem: autoral
+  enunciado: Um órgão dividiu o Anexo A da ISO/IEC 27001, edição de 2022, entre as suas equipes. A uma delas couberam todos os controles dos temas Pessoas e Físicos. Essa equipe responde por
+  alternativas:
+    - 22 controles, das cláusulas 5 e 6 da 27002.
+    - 42 controles, das cláusulas 6 e 8 da 27002.
+    - 22 controles, das cláusulas 6 e 7 da 27002.
+    - 45 controles, das cláusulas 5 e 6 da 27002.
+    - 48 controles, das cláusulas 7 e 8 da 27002.
+  correta: 2
+  explicacoes:
+    - O número está certo, mas a cláusula 5 é a dos controles organizacionais.
+    - 42 é a soma de Pessoas (8) e Tecnológicos (34).
+    - Correta. Pessoas (cláusula 6) tem 8 controles e Físicos (cláusula 7) tem 14, o que soma 22.
+    - 45 é a soma de Organizacionais (37) e Pessoas (8).
+    - 48 é a soma de Físicos (14) e Tecnológicos (34).
+  evidencia: '| Físicos (7) | 14 |'
+- id: seg-iso27701-005
+  fichas: [iso-27701]
+  nivel: 3
+  cargo: ambos
+  origem: autoral
+  enunciado: Uma empresa só trata dados pessoais em nome dos seus clientes, seguindo o que eles decidem. Por isso, concluiu que a ISO/IEC 27701 não traz controles para o papel que ela exerce. A conclusão está
+  alternativas:
+    - incorreta, pois há controles também para operadores.
+    - incorreta, pois quem trata dados em nome de outro é o controlador.
+    - correta, pois a norma só tem controles para controladores.
+    - correta, pois a norma só tem controles para o encarregado.
+    - correta, pois a norma não trata de dados pessoais.
+  correta: 0
+  explicacoes:
+    - Correta. A empresa exerce o papel de operadora, e a norma também traz controles para operadores.
+    - A conclusão está incorreta, mas por outro motivo, já que o controlador é quem decide, e a empresa é operadora.
+    - A norma tem controles para controladores e para operadores.
+    - Os controles são para controladores e operadores; o encarregado é canal de comunicação, na LGPD.
+    - A norma trata de dados pessoais (PII).
+  evidencia: 'trata dados pessoais (PII), com controles para **controladores** e **operadores**'
+- id: seg-iso27701-006
+  fichas: [iso-27701]
+  nivel: 3
+  cargo: ana
+  origem: autoral
+  enunciado: Uma empresa sem certificação na ISO/IEC 27001 quer se certificar na edição de 2025 da ISO/IEC 27701. Um consultor afirma que, nessa edição, é obrigatório obter antes a certificação na 27001. A afirmação está
+  alternativas:
+    - correta, pois a edição de 2025 é uma extensão da 27001 e da 27002.
+    - incorreta, pois a edição de 2025 é certificável sem a 27001.
+    - correta, pois só a 27001 pode ser certificada.
+    - incorreta, pois a edição de 2025 deixou de ser certificável.
+    - incorreta, pois a exigência da edição de 2025 recai sobre a 27002.
+  correta: 1
+  explicacoes:
+    - A extensão da 27001 e da 27002 era a edição de 2019.
+    - Correta. A edição de 2025 é norma independente, certificável sem a 27001.
+    - A edição de 2025 da 27701 também é certificável.
+    - A afirmação do consultor está incorreta, mas a edição de 2025 é certificável.
+    - A afirmação do consultor está incorreta, mas a edição de 2025 é independente; não passou a depender da 27002.
+  evidencia: 'virou **norma independente (stand-alone)**, certificável sem a 27001'
+- id: seg-cis-controls-005
+  fichas: [cis-controls]
+  nivel: 3
+  cargo: tec
+  origem: autoral
+  enunciado: >-
+    Sobre o CIS Controls v8, considere as afirmações a seguir.
+    I. O número de controles diminuiu em relação à v7.
+    II. Cumprir o IG3 significa cumprir apenas as 23 salvaguardas que ele acrescenta.
+    III. O IG1 só se aplica a organizações que já cumpriram o IG2.
+    Está correto o que se afirma em
+  alternativas:
+    - I, apenas.
+    - II, apenas.
+    - I e II, apenas.
+    - I e III, apenas.
+    - II e III, apenas.
+  correta: 0
+  explicacoes:
+    - Correta. Eram 20 controles na v7 e são 18 na v8; o IG3 chega às 153 salvaguardas, e o IG1 é o mínimo para toda organização.
+    - A II está errada, pois o IG3 chega a todas as 153 salvaguardas, e a I está certa.
+    - A II está errada, pois as 23 são só o acréscimo do IG3, que chega a todas as 153.
+    - A III está errada, pois o IG1 é o mínimo para toda organização.
+    - As duas estão erradas, pois o IG3 chega a todas as 153 e o IG1 é o mínimo para toda organização.
+  evidencia: '+23 → todas as 153.'
+- id: seg-cis-controls-006
+  fichas: [cis-controls, iso-27001]
+  nivel: 3
+  cargo: tec
+  origem: autoral
+  enunciado: Um relatório descreve o CIS Controls v8 como um documento com 18 controles, 153 salvaguardas e 11 controles novos, entre eles a inteligência de ameaças, e com um primeiro grupo de implementação de 56 salvaguardas. O trecho que, na verdade, descreve o Anexo A da ISO/IEC 27001, edição de 2022, é o que cita
+  alternativas:
+    - os 18 controles.
+    - as 153 salvaguardas.
+    - o grupo de implementação.
+    - os 11 controles novos.
+    - as 56 salvaguardas.
+  correta: 3
+  explicacoes:
+    - Os 18 controles são mesmo do CIS Controls v8.
+    - As 153 salvaguardas são mesmo do CIS Controls v8.
+    - Os grupos de implementação são mesmo do CIS Controls v8.
+    - Correta. Os 11 controles novos, como a inteligência de ameaças, são do Anexo A da 27001 de 2022.
+    - As 56 salvaguardas são mesmo do IG1 do CIS Controls v8.
+  evidencia: 'Dos 93: **11 novos** (ex.: **inteligência de ameaças**), 24 resultam de fusões, 58 atualizados.'
+- id: seg-lgpd-006
+  fichas: [lgpd]
+  nivel: 3
+  cargo: ambos
+  origem: autoral
+  enunciado: Um log de acesso do PJe registra o CPF das partes. Quanto à natureza desse registro e à base legal do seu tratamento, é correto afirmar que se trata de
+  alternativas:
+    - dado pessoal, com base em obrigação legal ou exercício regular de direitos.
+    - dado pessoal, que só pode ser tratado com o consentimento das partes.
+    - dado sensível, que só pode ser tratado com consentimento destacado.
+    - dado pessoal, com base na proteção do crédito das partes do processo.
+    - informação que não é dado pessoal, por constar apenas de um log de sistema.
+  correta: 0
+  explicacoes:
+    - Correta. O log com CPF é dado pessoal, e a base é a obrigação legal ou o exercício regular de direitos.
+    - É dado pessoal, mas a base desse tratamento não é o consentimento.
+    - O CPF não está na lista de dados sensíveis, e a base não é o consentimento.
+    - É dado pessoal, mas a base é a obrigação legal ou o exercício regular de direitos, não a proteção do crédito.
+    - O log com CPF das partes é dado pessoal, pois se relaciona a pessoas naturais identificadas ou identificáveis.
+  evidencia: 'tratar isso tem base em **obrigação legal/exercício regular de direitos**, não em consentimento'
+- id: seg-lgpd-007
+  fichas: [lgpd]
+  nivel: 3
+  cargo: ambos
+  origem: autoral
+  enunciado: Um sistema trata a biometria dos usuários para liberar o login, sem pedir consentimento. Sendo esse tratamento indispensável, a LGPD (art. 11) admite que ele se apoie
+  alternativas:
+    - no legítimo interesse do controlador.
+    - na proteção do crédito dos usuários.
+    - na dispensa geral para dados que não sejam de saúde.
+    - no consentimento genérico dado em outro serviço.
+    - na prevenção à fraude e na segurança em autenticação.
+  correta: 4
+  explicacoes:
+    - O legítimo interesse não está entre as bases para dados sensíveis, e o dado biométrico é sensível.
+    - A proteção do crédito não está entre as bases para dados sensíveis.
+    - Não há dispensa geral; o dado biométrico também é sensível, e as hipóteses sem consentimento são as indispensáveis da lei.
+    - Quando a base é o consentimento, ele precisa ser específico e destacado.
+    - Correta. É uma das hipóteses indispensáveis em que o dado sensível pode ser tratado sem consentimento.
+  evidencia: 'sem consentimento nas hipóteses indispensáveis (incluindo **prevenção à fraude e segurança em autenticação**)'
+- id: seg-lgpd-008
+  fichas: [lgpd]
+  nivel: 3
+  cargo: ambos
+  origem: autoral
+  enunciado: Uma empresa privada cometeu uma infração à LGPD, e 2% do faturamento considerado para a sanção correspondem a R$ 80 milhões. O valor máximo da multa simples por essa infração é de
+  alternativas: ['R$ 2 milhões.', 'R$ 25 milhões.', 'R$ 50 milhões.', 'R$ 80 milhões.', 'R$ 130 milhões.']
+  correta: 2
+  explicacoes:
+    - O 2 da regra é um percentual do faturamento, não um valor em milhões.
+    - O limite é de R$ 50 milhões por infração, e não a metade disso.
+    - Correta. A multa simples vai até 2% do faturamento, limitada a R$ 50 milhões por infração.
+    - Os 2% passam do limite de R$ 50 milhões por infração, que prevalece.
+    - O percentual e o limite não se somam.
+  evidencia: 'multa simples de até **2% do faturamento**, limitada a **R$ 50 milhões por infração**'
+- id: seg-lgpd-009
+  fichas: [lgpd]
+  nivel: 3
+  cargo: ambos
+  origem: autoral
+  enunciado: O manual de um órgão vai transcrever o que o próprio texto da LGPD (art. 48) prevê sobre a comunicação de incidentes. O manual deve dizer que a comunicação é feita
+  alternativas:
+    - à ANPD, apenas, em prazo razoável, conforme definido pela autoridade.
+    - à ANPD e ao titular, em prazo razoável, conforme definido pela autoridade.
+    - ao titular, apenas, em prazo contado em dias pela própria lei.
+    - à ANPD e ao titular, em prazo contado em dias pela própria lei.
+    - ao encarregado, apenas, em prazo razoável, conforme definido pelo órgão.
+  correta: 1
+  explicacoes:
+    - O prazo está certo, mas o titular também é comunicado.
+    - Correta. A comunicação é à ANPD e ao titular, em prazo razoável, conforme definido pela autoridade.
+    - A ANPD também é comunicada, e a lei não fixa dias.
+    - Os destinatários estão certos, mas a lei não fixa dias.
+    - Os destinatários são a ANPD e o titular, e quem define o prazo é a autoridade.
+  evidencia: 'comunicar à ANPD e ao titular "em **prazo razoável**, conforme definido pela autoridade" (a lei não fixa dias)'

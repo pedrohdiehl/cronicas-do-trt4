@@ -1,0 +1,266 @@
+# Banco piloto (ticket 05). Todas autorais, a partir das fichas.
+- id: seg-iso27001-001
+  fichas: [iso-27001]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: A ABNT NBR ISO/IEC 27001 é uma norma de
+  alternativas:
+    - requisitos para um Sistema de Gestão da Segurança da Informação (SGSI).
+    - boas práticas que detalham a implementação de cada controle.
+    - requisitos para um sistema de gestão da informação de privacidade (PIMS).
+    - orientações para gerir riscos de segurança da informação.
+    - catálogo de riscos de aplicações web.
+  correta: 0
+  explicacoes:
+    - Correta. A 27001 traz os requisitos do SGSI.
+    - Esse é o papel da 27002, o guia de boas práticas.
+    - Sistema de gestão da informação de privacidade é o tema da 27701.
+    - Não é a definição da 27001, que é uma norma de requisitos do SGSI.
+    - Riscos de aplicações web são tema do OWASP Top 10.
+  evidencia: 'norma de **requisitos** para um **SGSI (Sistema de Gestão da Segurança da Informação)**'
+- id: seg-iso27001-002
+  fichas: [iso-27001]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: O documento definido como guia de boas práticas, que detalha os controles com definição, propósito e forma de implementação, é a ABNT NBR ISO/IEC
+  alternativas: ['27001', '27002', '27005', '27701', '12207']
+  correta: 1
+  explicacoes:
+    - A 27001 é a norma de requisitos do SGSI.
+    - Correta. A 27002 é o guia de boas práticas que detalha os controles.
+    - O guia de boas práticas que detalha os controles é a 27002.
+    - A 27701 trata de gestão da informação de privacidade.
+    - A 12207 trata de processos de ciclo de vida de software.
+  evidencia: '**guia de boas práticas** que detalha os controles (definição, propósito, como implementar)'
+- id: seg-iso27001-003
+  fichas: [iso-27001]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: Quantos controles compõem o Anexo A da ISO/IEC 27001 na edição de 2022?
+  alternativas: ['34', '37', '58', '93', '114']
+  correta: 3
+  explicacoes:
+    - 34 é a quantidade de controles tecnológicos.
+    - 37 é a quantidade de controles organizacionais.
+    - 58 é a quantidade de controles atualizados entre os 93.
+    - Correta. São 93 controles em 4 temas.
+    - 114 era a quantidade da versão anterior, em 14 seções.
+  evidencia: 'de 114 controles em 14 seções → **93 controles em 4 temas**'
+- id: seg-iso27001-004
+  fichas: [iso-27001]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: No Anexo A da ISO/IEC 27001, edição de 2022, o tema dos controles organizacionais reúne quantos controles?
+  alternativas: ['8', '14', '34', '37', '93']
+  correta: 3
+  explicacoes:
+    - 8 é a quantidade do tema Pessoas.
+    - 14 é a quantidade do tema Físicos.
+    - 34 é a quantidade do tema Tecnológicos.
+    - Correta. O tema Organizacionais reúne 37 controles.
+    - 93 é o total dos quatro temas.
+  evidencia: '| Organizacionais (5) | 37 |'
+- id: seg-owasp-001
+  fichas: [owasp]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: No OWASP Top 10:2025, o SSRF foi absorvido por qual categoria?
+  alternativas:
+    - A01 – Broken Access Control
+    - A02 – Security Misconfiguration
+    - A05 – Injection
+    - A06 – Insecure Design
+    - A10 – Mishandling of Exceptional Conditions
+  correta: 0
+  explicacoes:
+    - Correta. A01 continua em primeiro e absorveu o SSRF.
+    - A A02 subiu do 5º para o 2º lugar, mas não é a que absorveu o SSRF.
+    - A A05 caiu do 3º lugar; o SSRF foi para a A01.
+    - A A06 caiu do 4º lugar; o SSRF foi para a A01.
+    - A A10 é nova e trata de condições excepcionais; o SSRF foi para a A01.
+  evidencia: 'Continua 1º; **absorveu SSRF**; inclui BOLA/BFLA de APIs'
+- id: seg-owasp-002
+  fichas: [owasp]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: No OWASP Top 10:2025, a categoria nova que amplia a ideia de "componentes vulneráveis e desatualizados" é
+  alternativas:
+    - Security Misconfiguration
+    - Software Supply Chain Failures
+    - Software or Data Integrity Failures
+    - Insecure Design
+    - Mishandling of Exceptional Conditions
+  correta: 1
+  explicacoes:
+    - É a A02, que subiu do 5º para o 2º lugar.
+    - Correta. É a A03, marcada como nova na edição de 2025.
+    - É a A08; a ampliação de componentes vulneráveis está na A03.
+    - É a A06, que caiu do 4º lugar.
+    - Também é nova (A10), mas trata de falhar aberto e de erro mal tratado.
+  evidencia: '| A03 | **Software Supply Chain Failures** | **Nova** (amplia "componentes vulneráveis e desatualizados") |'
+- id: seg-owasp-003
+  fichas: [owasp]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: Um sistema que "falha aberto" e trata mal os erros se encaixa em qual categoria do OWASP Top 10:2025?
+  alternativas:
+    - A04 – Cryptographic Failures
+    - A05 – Injection
+    - A07 – Authentication Failures
+    - A08 – Software or Data Integrity Failures
+    - A10 – Mishandling of Exceptional Conditions
+  correta: 4
+  explicacoes:
+    - A A04 reúne falhas criptográficas.
+    - A A05 reúne falhas de injeção.
+    - A A07 reúne falhas de autenticação.
+    - A A08 reúne falhas de integridade de software ou dados.
+    - Correta. A A10 trata de falhar aberto e de erro mal tratado.
+  evidencia: '**Mishandling of Exceptional Conditions** | **Nova** (falhar aberto, erro mal tratado)'
+- id: seg-owasp-004
+  fichas: [owasp]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: No OWASP Top 10:2025, o que mudou no nome da categoria A09, sobre registro de eventos de segurança?
+  alternativas:
+    - '"Logging" virou "Tracing".'
+    - '"Security" virou "Privacy".'
+    - '"Monitoring" virou "Alerting".'
+    - '"Failures" virou "Risks".'
+    - '"Alerting" virou "Monitoring".'
+  correta: 2
+  explicacoes:
+    - '"Logging" continua no nome Security Logging & Alerting Failures.'
+    - '"Security" continua no nome Security Logging & Alerting Failures.'
+    - Correta. O nome passou a usar "Alerting" no lugar de "Monitoring".
+    - '"Failures" continua no nome Security Logging & Alerting Failures.'
+    - A troca foi no sentido contrário.
+  evidencia: '"Monitoring" virou "Alerting"'
+- id: seg-owasp-005
+  fichas: [owasp]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: Qual categoria subiu do 5º para o 2º lugar no OWASP Top 10:2025?
+  alternativas:
+    - Broken Access Control
+    - Cryptographic Failures
+    - Injection
+    - Security Misconfiguration
+    - Insecure Design
+  correta: 3
+  explicacoes:
+    - Continua em 1º lugar.
+    - Caiu do 2º lugar.
+    - Caiu do 3º lugar.
+    - Correta. Security Misconfiguration é a A02.
+    - Caiu do 4º lugar.
+  evidencia: '| A02 | **Security Misconfiguration** | Subiu do 5º para o 2º |'
+- id: seg-criptografia-001
+  fichas: [criptografia]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: Na criptografia simétrica, a cifragem e a decifragem usam
+  alternativas:
+    - a chave pública do remetente e a privada do destinatário.
+    - a mesma chave.
+    - a chave pública do destinatário e a privada dele.
+    - apenas um resumo de tamanho fixo, sem chave.
+    - duas chaves públicas.
+  correta: 1
+  explicacoes:
+    - Par de chaves é próprio da criptografia assimétrica.
+    - Correta. A mesma chave cifra e decifra.
+    - Essa é a lógica da criptografia assimétrica.
+    - Resumo de tamanho fixo descreve o hash criptográfico.
+    - A simétrica não usa par de chaves; usa uma mesma chave.
+  evidencia: '**mesma chave** para cifrar e decifrar'
+- id: seg-criptografia-002
+  fichas: [criptografia]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: Uma função de hash criptográfico, como o SHA-256, caracteriza-se por produzir um resumo
+  alternativas:
+    - de tamanho variável e reversível com a chave privada.
+    - de tamanho fixo e unidirecional, ligado à integridade.
+    - reversível com a mesma chave usada para gerá-lo.
+    - que vincula uma chave pública a uma identidade.
+    - cifrado com a chave pública do destinatário.
+  correta: 1
+  explicacoes:
+    - O resumo tem tamanho fixo e é unidirecional.
+    - Correta. É um resumo de tamanho fixo e unidirecional, usado para integridade.
+    - Usar a mesma chave para cifrar e decifrar descreve a criptografia simétrica; o hash é unidirecional.
+    - Vincular chave pública a identidade é papel do certificado digital.
+    - Cifrar com a chave pública do destinatário descreve a criptografia assimétrica.
+  evidencia: 'resumo de tamanho fixo, unidirecional (ex.: SHA-256) → **integridade**'
+- id: seg-criptografia-003
+  fichas: [criptografia]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: Na assinatura digital, o hash do documento é cifrado com a
+  alternativas:
+    - chave pública do destinatário.
+    - chave privada do destinatário.
+    - chave pública do autor.
+    - chave privada do autor.
+    - chave simétrica compartilhada entre autor e destinatário.
+  correta: 3
+  explicacoes:
+    - A chave pública do destinatário é usada para cifrar mensagens destinadas a ele.
+    - A chave privada do destinatário decifra o que foi cifrado com a pública dele.
+    - A assinatura usa a chave privada do autor, não a pública.
+    - Correta. Isso dá autenticidade, integridade e não repúdio.
+    - Chave compartilhada é própria da criptografia simétrica.
+  evidencia: 'hash do documento cifrado com a **chave privada** do autor → **autenticidade, integridade e não repúdio**'
+- id: seg-criptografia-004
+  fichas: [criptografia]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: O certificado digital tem a função de
+  alternativas:
+    - cifrar dados com uma única chave compartilhada.
+    - gerar um resumo unidirecional do documento.
+    - vincular uma chave pública a uma identidade.
+    - distribuir a chave privada do titular.
+    - substituir a Autoridade Certificadora.
+  correta: 2
+  explicacoes:
+    - Isso descreve a criptografia simétrica.
+    - Isso descreve o hash criptográfico.
+    - Correta. O vínculo é assinado por uma Autoridade Certificadora (AC).
+    - O certificado trata da chave pública, não da privada.
+    - O certificado é assinado por uma Autoridade Certificadora.
+  evidencia: 'vincula uma chave pública a uma identidade, assinado por uma **Autoridade Certificadora (AC)**'
+- id: seg-criptografia-005
+  fichas: [criptografia]
+  nivel: 1
+  cargo: tec
+  origem: autoral
+  enunciado: Na cadeia da ICP-Brasil, a Autoridade Certificadora Raiz é
+  alternativas:
+    - o CNJ.
+    - a ANPD.
+    - o ITI.
+    - a Autoridade de Registro.
+    - o NIST.
+  correta: 2
+  explicacoes:
+    - A AC Raiz da ICP-Brasil é o ITI.
+    - A AC Raiz da ICP-Brasil é o ITI.
+    - Correta. A cadeia parte da AC Raiz, que é o ITI.
+    - As Autoridades de Registro vêm depois das ACs na cadeia.
+    - O NIST aparece na ficha como origem dos padrões pós-quânticos, não como AC Raiz.
+  evidencia: 'Cadeia: **AC Raiz (o ITI)** → ACs → Autoridades de Registro (AR).'

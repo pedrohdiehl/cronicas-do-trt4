@@ -1,6 +1,21 @@
 import type { PlayerClass, SaveState } from '../types';
+import { getAllQuestions } from './customDatabase';
 
 const STORAGE_KEY = 'cronicas_trt4_save_v1';
+
+/**
+ * Tira da revisão espaçada as questões que não existem mais no jogo
+ * (por exemplo, geradas que foram trocadas por questões autorais).
+ * Sem isso, elas virariam Inimigos Ressurgidos impossíveis de vencer.
+ */
+export function pruneOrphanQuestionRefs(state: SaveState): SaveState {
+  const known = new Set(getAllQuestions(state.customExamQuestions).map((q) => q.id));
+  const entries = Object.entries(state.spacedRep || {});
+  const kept = entries.filter(([id]) => known.has(id));
+  const wrong = state.wrongQuestionIds.filter((id) => known.has(id));
+  if (kept.length === entries.length && wrong.length === state.wrongQuestionIds.length) return state;
+  return { ...state, spacedRep: Object.fromEntries(kept), wrongQuestionIds: wrong };
+}
 
 export function createInitialSaveState(playerClass: PlayerClass = 'dupla'): SaveState {
   return {
@@ -67,13 +82,13 @@ export function loadSaveState(): SaveState | null {
     const parsed = JSON.parse(raw) as Partial<SaveState>;
     if (!parsed || typeof parsed !== 'object' || !parsed.playerClass) return null;
     const base = createInitialSaveState(parsed.playerClass);
-    return {
+    return pruneOrphanQuestionRefs({
       ...base,
       ...parsed,
       inventory: { ...base.inventory, ...(parsed.inventory || {}) },
       settings: { ...base.settings, ...(parsed.settings || {}) },
       stats: { ...base.stats, ...(parsed.stats || {}) },
-    };
+    });
   } catch {
     return null;
   }
@@ -113,7 +128,7 @@ export function parseImportedSaveJson(raw: string): { ok: true; state: SaveState
       settings: { ...base.settings, ...(parsed.settings || {}) },
       stats: { ...base.stats, ...(parsed.stats || {}) },
     };
-    return { ok: true, state: merged };
+    return { ok: true, state: pruneOrphanQuestionRefs(merged) };
   } catch {
     return { ok: false, error: 'Não foi possível ler o JSON do progresso.' };
   }

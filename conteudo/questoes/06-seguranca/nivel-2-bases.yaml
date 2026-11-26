@@ -1,0 +1,191 @@
+# Banco C (ticket 19): fichas com fonte nova. Todas autorais, a partir das fichas.
+- id: seg-cid-003
+  fichas: [cid]
+  nivel: 2
+  cargo: ambos
+  origem: autoral
+  enunciado: >-
+    Em um tribunal, foram registradas três ocorrências.
+    I. Um valor gravado em um processo foi alterado indevidamente.
+    II. O sistema ficou fora do ar quando os usuários precisavam dele.
+    III. Um documento sigiloso foi visto por quem não podia vê-lo.
+    Os princípios violados em I, II e III são, respectivamente,
+  alternativas:
+    - confidencialidade, integridade e disponibilidade.
+    - integridade, disponibilidade e confidencialidade.
+    - disponibilidade, integridade e confidencialidade.
+    - integridade, confidencialidade e disponibilidade.
+    - confidencialidade, disponibilidade e integridade.
+  correta: 1
+  explicacoes:
+    - A alteração indevida viola a integridade, a queda do sistema viola a disponibilidade, e a visão sem permissão viola a confidencialidade.
+    - Correta. Alteração indevida, falta de acesso quando se precisa e visão por quem não pode, nessa ordem.
+    - I e II estão trocadas, pois a alteração indevida viola a integridade, e a queda viola a disponibilidade.
+    - II e III estão trocadas, pois a queda viola a disponibilidade, e a visão sem permissão viola a confidencialidade.
+    - I e III estão trocadas, pois a alteração viola a integridade, e a visão sem permissão viola a confidencialidade.
+  evidencia: '**Confidencialidade:** só quem pode, vê. **Integridade:** não foi alterado indevidamente. **Disponibilidade:** está acessível quando precisa.'
+- id: seg-cid-004
+  fichas: [cid]
+  nivel: 2
+  cargo: ambos
+  origem: autoral
+  enunciado: Um órgão quer confirmar que o remetente de um documento é quem diz ser e quer impedir que o autor negue, mais tarde, a autoria. Esses objetivos correspondem, respectivamente, a
+  alternativas:
+    - não repúdio e autenticidade.
+    - integridade e não repúdio.
+    - autenticidade e integridade.
+    - confidencialidade e autenticidade.
+    - autenticidade e não repúdio.
+  correta: 4
+  explicacoes:
+    - Os dois estão trocados, pois confirmar quem diz ser é autenticidade, e impedir a negação da autoria é não repúdio.
+    - O segundo está certo, mas o primeiro é autenticidade; integridade é não haver alteração indevida.
+    - O primeiro está certo, mas o segundo é não repúdio; integridade é não haver alteração indevida.
+    - Confidencialidade é só quem pode ver; o primeiro objetivo é autenticidade, e o segundo, não repúdio.
+    - Correta. Ser quem diz ser é autenticidade, e não poder negar a autoria é não repúdio.
+  evidencia: '**autenticidade** (é quem diz ser) e **não repúdio** (o autor não pode negar a autoria)'
+- id: seg-iso27005-003
+  fichas: [iso-27005]
+  nivel: 2
+  cargo: tec
+  origem: autoral
+  enunciado: Quanto à sua relação com a ISO/IEC 27001, a 27005
+  alternativas:
+    - apoia a 27001, com orientações para gerir riscos.
+    - substitui a 27001 na certificação do SGSI.
+    - detalha como implementar cada controle do Anexo A da 27001.
+    - estende a 27001 à informação de privacidade.
+    - fixa os requisitos do SGSI, que a 27001 apenas exemplifica.
+  correta: 0
+  explicacoes:
+    - Correta. A 27005 orienta a gestão de riscos, apoiando a 27001.
+    - A norma que se certifica é a 27001; a 27005 a apoia com orientações sobre riscos.
+    - O guia que detalha os controles é a 27002.
+    - Privacidade é tema da 27701, que na edição de 2019 era extensão da 27001 e da 27002.
+    - Os requisitos do SGSI estão na 27001; a 27005 traz orientações.
+  evidencia: 'orientações para **gerir riscos** de SI, apoiando a 27001'
+- id: seg-iso27005-004
+  fichas: [iso-27005]
+  nivel: 2
+  cargo: tec
+  origem: autoral
+  enunciado: Um plano de riscos usa os verbos mitigar, aceitar e transferir. Nas opções clássicas de tratamento do risco, esses verbos equivalem, respectivamente, a
+  alternativas:
+    - reter, modificar e compartilhar.
+    - modificar, evitar e compartilhar.
+    - evitar, reter e modificar.
+    - modificar, reter e compartilhar.
+    - modificar, compartilhar e evitar.
+  correta: 3
+  explicacoes:
+    - Os dois primeiros estão trocados, pois mitigar equivale a modificar, e aceitar, a reter.
+    - Aceitar equivale a reter; evitar é outra opção.
+    - Mitigar equivale a modificar, e transferir, a compartilhar.
+    - Correta. Os pares são modificar/mitigar, reter/aceitar e compartilhar/transferir.
+    - Aceitar equivale a reter, e transferir, a compartilhar.
+  evidencia: 'modificar/mitigar, reter/aceitar, evitar, compartilhar/transferir.'
+- id: seg-acesso-003
+  fichas: [controle-acesso]
+  nivel: 2
+  cargo: ambos
+  origem: autoral
+  enunciado: É exemplo de autenticação multifator (MFA) a exigência de
+  alternativas:
+    - duas senhas diferentes.
+    - senha e biometria.
+    - biometria da digital e da face.
+    - token e celular.
+    - uma mesma senha, em duas telas.
+  correta: 1
+  explicacoes:
+    - As duas senhas são da mesma categoria, algo que você sabe.
+    - Correta. Senha é algo que você sabe, e biometria, algo que você é; as categorias são diferentes.
+    - As duas biometrias são da mesma categoria, algo que você é.
+    - Token e celular são da mesma categoria, algo que você tem.
+    - A senha é um só fator, da categoria algo que você sabe.
+  evidencia: 'dois ou mais fatores de categorias diferentes — algo que você **sabe** (senha), **tem** (token, celular), **é** (biometria).'
+- id: seg-acesso-004
+  fichas: [controle-acesso]
+  nivel: 2
+  cargo: ambos
+  origem: autoral
+  enunciado: >-
+    Um sistema executa três tarefas.
+    I. Registra quais documentos cada usuário excluiu.
+    II. Confirma a identidade do usuário no login.
+    III. Verifica se o usuário tem permissão para excluir um documento.
+    No modelo AAA, as tarefas I, II e III correspondem, respectivamente, a
+  alternativas:
+    - autorização, autenticação e auditoria.
+    - auditoria, autorização e autenticação.
+    - autenticação, autorização e auditoria.
+    - autorização, auditoria e autenticação.
+    - auditoria, autenticação e autorização.
+  correta: 4
+  explicacoes:
+    - I e III estão trocadas, pois registrar o que fez é auditoria, e verificar o que pode fazer é autorização.
+    - II e III estão trocadas, pois confirmar quem é o usuário é autenticação, e verificar o que pode fazer é autorização.
+    - Registrar o que fez é auditoria, confirmar quem é o usuário é autenticação, e verificar o que pode fazer é autorização.
+    - Registrar o que fez é auditoria, confirmar quem é o usuário é autenticação, e verificar o que pode fazer é autorização.
+    - Correta. O que fez é auditoria, quem é você é autenticação, e o que pode fazer é autorização.
+  evidencia: '**Autenticação** (quem é você?), **Autorização** (o que pode fazer?), **Auditoria/Accounting** (o que fez?).'
+- id: seg-malware-004
+  fichas: [ataques-malware]
+  nivel: 2
+  cargo: ambos
+  origem: autoral
+  enunciado: Na comparação entre vírus e worm, é correto afirmar que
+  alternativas:
+    - o vírus se propaga sozinho, e o worm precisa de hospedeiro.
+    - o vírus esconde presença, e o worm sequestra dados.
+    - o vírus precisa de hospedeiro, e o worm se propaga sozinho.
+    - ambos precisam de hospedeiro.
+    - ambos se propagam sozinhos, sem hospedeiro.
+  correta: 2
+  explicacoes:
+    - As características estão trocadas.
+    - Esconder presença caracteriza o rootkit, e sequestrar dados, o ransomware.
+    - Correta. O vírus precisa de hospedeiro; o worm se propaga sozinho.
+    - O worm se propaga sozinho; quem precisa de hospedeiro é o vírus.
+    - O vírus precisa de hospedeiro; só o worm, dos dois, se propaga sozinho.
+  evidencia: 'vírus (precisa de hospedeiro), worm (se propaga sozinho)'
+- id: seg-malware-005
+  fichas: [ataques-malware]
+  nivel: 2
+  cargo: ambos
+  origem: autoral
+  enunciado: O ataque DDoS distingue-se do DoS por
+  alternativas:
+    - buscar a negação do serviço, o que o DoS não faz.
+    - sequestrar os dados com criptografia.
+    - dispensar o esgotamento de recursos.
+    - usar muitas origens, frequentemente uma botnet.
+    - partir de uma só origem.
+  correta: 3
+  explicacoes:
+    - Os dois buscam negar serviço.
+    - Sequestrar dados com criptografia caracteriza o ransomware.
+    - Os dois esgotam recursos para negar serviço.
+    - Correta. O DDoS usa muitas origens, frequentemente uma botnet.
+    - O que marca o DDoS são as muitas origens.
+  evidencia: 'DDoS usa muitas origens (frequentemente uma **botnet**).'
+- id: seg-malware-006
+  fichas: [ataques-malware]
+  nivel: 2
+  cargo: tec
+  origem: autoral
+  enunciado: Em um ataque, um invasor falsificou o endereço IP de origem dos pacotes. Em outro, inundou um servidor com pacotes SYN. As técnicas correspondem, respectivamente, a
+  alternativas:
+    - flood e spoofing.
+    - spoofing e phishing.
+    - spoofing e flood.
+    - sniffer e flood.
+    - phishing e spoofing.
+  correta: 2
+  explicacoes:
+    - As técnicas estão trocadas, pois falsificar a origem é spoofing, e inundar é flood.
+    - A primeira está certa, mas inundar com SYN é flood; phishing é fraude com engenharia social.
+    - Correta. Falsificar a origem é spoofing, e inundar com SYN é flood.
+    - A segunda está certa, mas sniffer captura e inspeciona tráfego; falsificar a origem é spoofing.
+    - Phishing é fraude com engenharia social; falsificar a origem é spoofing, e inundar com SYN é flood.
+  evidencia: '**Spoofing** (falsificação de origem: IP, ARP, e-mail), **flood** (inundação, ex.: SYN flood).'

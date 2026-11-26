@@ -1,0 +1,201 @@
+# Banco B (ticket 18): defesa técnica. Todas autorais, a partir das fichas.
+- id: seg-perimetro-001
+  fichas: [protecao-perimetro]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: A sub-rede intermediária em que ficam os serviços expostos à internet, como web e e-mail, para isolar a rede interna, é denominada
+  alternativas:
+    - UTM.
+    - NAC.
+    - DMZ.
+    - WAF.
+    - IPS.
+  correta: 2
+  explicacoes:
+    - UTM é um appliance que junta várias funções de proteção.
+    - NAC controla quais dispositivos entram na rede, conforme a política.
+    - Correta. A DMZ isola a rede interna dos serviços expostos à internet.
+    - WAF é um firewall da camada de aplicação HTTP.
+    - IPS detecta intrusões e tenta impedi-las.
+  evidencia: 'sub-rede intermediária onde ficam serviços expostos à internet (web, e-mail), isolando a rede interna'
+- id: seg-perimetro-002
+  fichas: [protecao-perimetro]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: O appliance que reúne em um único equipamento funções como firewall, IPS, antivírus, filtro web e VPN é conhecido como
+  alternativas:
+    - DMZ.
+    - NAC.
+    - forward proxy.
+    - UTM.
+    - WAF.
+  correta: 3
+  explicacoes:
+    - DMZ é uma sub-rede intermediária, não um appliance com várias funções.
+    - NAC só deixa o dispositivo entrar na rede se cumprir a política.
+    - O forward proxy é um intermediário de requisições, na frente dos clientes.
+    - Correta. UTM (Unified Threat Management) junta várias funções em um appliance.
+    - WAF é específico da camada de aplicação HTTP.
+  evidencia: 'appliance que junta várias funções (firewall, IPS, antivírus, filtro web, VPN)'
+- id: seg-vpn-001
+  fichas: [vpn-ztna]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: Uma VPN consiste em
+  alternativas:
+    - uma sub-rede que abriga os serviços expostos à internet.
+    - um túnel criptografado sobre rede pública.
+    - um firewall que bloqueia injeção e XSS em aplicações web.
+    - um resumo unidirecional de tamanho fixo.
+    - um intermediário que filtra a navegação dos clientes.
+  correta: 1
+  explicacoes:
+    - Essa é a descrição da DMZ.
+    - Correta. A VPN cria um túnel criptografado sobre rede pública.
+    - Essa é a descrição do WAF.
+    - Essa é a descrição do hash criptográfico.
+    - Essa é a descrição do forward proxy.
+  evidencia: 'túnel criptografado sobre rede pública'
+- id: seg-vpn-002
+  fichas: [vpn-ztna]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: De acordo com o modelo Zero Trust (NIST SP 800-207), a localização de um ativo na rede local da organização
+  alternativas:
+    - dispensa a autenticação do dispositivo, mas não a do sujeito.
+    - não interfere, pois a confiança vem da propriedade do dispositivo.
+    - garante confiança se o dispositivo for da organização.
+    - não interfere, pois apenas o sujeito é verificado.
+    - não basta, por si só, para que ele receba confiança.
+  correta: 4
+  explicacoes:
+    - O modelo exige autenticação e autorização do sujeito e do dispositivo.
+    - A propriedade do dispositivo não gera confiança implícita.
+    - A propriedade do dispositivo também não gera confiança implícita.
+    - O dispositivo também é autenticado e autorizado antes de cada sessão.
+    - Correta. Nenhuma confiança implícita é dada só pela localização na rede.
+  evidencia: '**nenhuma confiança implícita** é dada a ativos ou contas só pela **localização na rede** (LAN × internet)'
+- id: seg-wifi-001
+  fichas: [wifi-seguranca]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: Entre os padrões de segurança de redes sem fio, são considerados legados e inseguros
+  alternativas:
+    - WEP e WPA.
+    - WEP e WPA3.
+    - WPA e WPA3.
+    - WPA3 e SAE.
+    - PMF e EAP-TLS.
+  correta: 0
+  explicacoes:
+    - Correta. WEP e WPA são os legados inseguros.
+    - O WEP é legado, mas o WPA3 não está entre os legados.
+    - O WPA é legado, mas o WPA3 não está entre os legados.
+    - O SAE é o mecanismo do WPA3 no modo pessoal; nenhum dos dois é legado.
+    - O PMF é obrigatório no WPA3, e o EAP-TLS é a opção mais forte do modo Enterprise.
+  evidencia: '**Legados (inseguros):** WEP, WPA.'
+- id: seg-wifi-002
+  fichas: [wifi-seguranca]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: No WPA3, o PMF, cujo uso é obrigatório, refere-se à proteção dos quadros de
+  alternativas:
+    - dados.
+    - voz.
+    - controle.
+    - gerência.
+    - vídeo.
+  correta: 3
+  explicacoes:
+    - PMF designa os quadros de gerência protegidos, não os de dados.
+    - PMF designa os quadros de gerência protegidos, não os de voz.
+    - PMF designa os quadros de gerência protegidos, não os de controle.
+    - Correta. PMF são os quadros de gerência protegidos, obrigatórios no WPA3.
+    - PMF designa os quadros de gerência protegidos, não os de vídeo.
+  evidencia: '**PMF (quadros de gerência protegidos) obrigatório**'
+- id: seg-tls-001
+  fichas: [tls]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: O TLS é um protocolo cuja finalidade é
+  alternativas:
+    - criar um canal seguro entre dois pontos.
+    - filtrar a navegação dos clientes em uma rede.
+    - vincular uma chave pública a uma identidade.
+    - impedir a entrada de dispositivos fora da política.
+    - isolar em uma sub-rede os serviços expostos à internet.
+  correta: 0
+  explicacoes:
+    - Correta. O canal oferece confidencialidade, integridade e autenticação do servidor.
+    - Filtrar a navegação é função do forward proxy.
+    - Vincular chave pública a identidade é função do certificado digital.
+    - Controlar a entrada de dispositivos na rede é função do NAC.
+    - A sub-rede que isola serviços expostos é a DMZ.
+  evidencia: 'protocolo que cria um **canal seguro** entre dois pontos (confidencialidade, integridade, autenticação do servidor)'
+- id: seg-tls-002
+  fichas: [tls]
+  nivel: 1
+  cargo: ambos
+  origem: autoral
+  enunciado: O componente do TLS responsável por proteger os dados é o
+  alternativas:
+    - handshake.
+    - certificado digital.
+    - forward proxy.
+    - servidor RADIUS.
+    - record protocol.
+  correta: 4
+  explicacoes:
+    - O handshake negocia algoritmos e chaves e autentica.
+    - O certificado vincula uma chave pública a uma identidade; não é um dos dois componentes do TLS.
+    - O forward proxy é um intermediário de requisições, não um componente do TLS.
+    - O RADIUS é o servidor usado no modo Enterprise das redes sem fio.
+    - Correta. O record protocol protege os dados.
+  evidencia: '**record protocol** (protege os dados)'
+- id: seg-backup-001
+  fichas: [backup]
+  nivel: 1
+  cargo: tec
+  origem: autoral
+  enunciado: A regra 3-2-1 de backup recomenda manter
+  alternativas:
+    - 3 cópias, em 1 tipo de mídia, 2 fora do local.
+    - 3 locais, com 2 cópias em cada um, 1 tipo de mídia.
+    - 3 cópias, em 2 tipos de mídia, 1 fora do local.
+    - 3 tipos de mídia, com 2 cópias, 1 fora do local.
+    - 3 backups completos, 2 diferenciais e 1 incremental.
+  correta: 2
+  explicacoes:
+    - São 2 tipos de mídia e 1 cópia fora do local.
+    - O 3 se refere a cópias, e o 2, a tipos de mídia.
+    - Correta. São 3 cópias, em 2 tipos de mídia, 1 fora do local.
+    - O 3 se refere a cópias, e o 2, a tipos de mídia.
+    - A regra trata de cópias, mídias e local, não dos tipos de backup.
+  evidencia: '**3 cópias**, em **2 tipos de mídia**, **1 fora do local**'
+- id: seg-backup-002
+  fichas: [backup]
+  nivel: 1
+  cargo: tec
+  origem: autoral
+  enunciado: O backup incremental copia
+  alternativas:
+    - tudo, independentemente de alterações.
+    - só o que mudou desde o último backup completo.
+    - só o que mudou desde o último backup diferencial.
+    - só o que mudou desde o último backup de qualquer tipo.
+    - tudo o que mudou desde o primeiro backup completo.
+  correta: 3
+  explicacoes:
+    - O incremental copia só o que mudou.
+    - Essa é a definição do backup diferencial.
+    - A referência é o último backup de qualquer tipo, não só o diferencial.
+    - Correta. A referência é o último backup, seja qual for o tipo.
+    - A referência é o último backup de qualquer tipo, não o primeiro completo.
+  evidencia: 'só o que mudou desde o último backup de qualquer tipo'

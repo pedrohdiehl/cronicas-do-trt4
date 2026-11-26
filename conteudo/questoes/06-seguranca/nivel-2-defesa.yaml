@@ -1,0 +1,321 @@
+# Banco B (ticket 18): defesa técnica. Todas autorais, a partir das fichas.
+- id: seg-owasp-006
+  fichas: [owasp]
+  nivel: 2
+  cargo: ambos
+  origem: autoral
+  enunciado: Na programação defensiva, o uso de consultas parametrizadas é uma medida dirigida contra o risco tratado em qual categoria do OWASP Top 10:2025?
+  alternativas:
+    - A02 – Security Misconfiguration
+    - A03 – Software Supply Chain Failures
+    - A04 – Cryptographic Failures
+    - A09 – Security Logging & Alerting Failures
+    - A05 – Injection
+  correta: 4
+  explicacoes:
+    - A A02 trata de configuração; consultas parametrizadas são contra injeção.
+    - A A03 amplia a ideia de componentes vulneráveis e desatualizados; consultas parametrizadas são contra injeção.
+    - A A04 trata de falhas criptográficas; consultas parametrizadas são contra injeção.
+    - A A09 trata de registro e alerta; consultas parametrizadas são contra injeção.
+    - Correta. Consultas parametrizadas são usadas contra injeção.
+  evidencia: 'usar consultas parametrizadas (contra injeção)'
+- id: seg-owasp-007
+  fichas: [owasp]
+  nivel: 2
+  cargo: ambos
+  origem: autoral
+  enunciado: Na comparação com a edição anterior, são categorias novas do OWASP Top 10:2025
+  alternativas:
+    - Security Misconfiguration e Insecure Design.
+    - Software Supply Chain Failures e Security Logging & Alerting Failures.
+    - Software Supply Chain Failures e Mishandling of Exceptional Conditions.
+    - Broken Access Control e Mishandling of Exceptional Conditions.
+    - Cryptographic Failures e Injection.
+  correta: 2
+  explicacoes:
+    - Security Misconfiguration subiu do 5º lugar, e Insecure Design caiu do 4º; já existiam.
+    - A primeira é nova, mas a segunda só trocou "Monitoring" por "Alerting" no nome.
+    - Correta. São a A03 e a A10, marcadas como novas.
+    - A segunda é nova, mas Broken Access Control continua em 1º lugar.
+    - Cryptographic Failures caiu do 2º lugar, e Injection, do 3º; já existiam.
+  evidencia: '| A10 | **Mishandling of Exceptional Conditions** | **Nova** (falhar aberto, erro mal tratado) |'
+- id: seg-owasp-008
+  fichas: [owasp]
+  nivel: 2
+  cargo: tec
+  origem: autoral
+  enunciado: Sobre SDL (Security Development Lifecycle) e CLASP, é correto afirmar que
+  alternativas:
+    - SDL é da OWASP e CLASP é da Microsoft; ambas embutem segurança no ciclo de vida.
+    - SDL é da Microsoft e CLASP é da OWASP; ambas embutem segurança no ciclo de vida.
+    - ambas são categorias novas do OWASP Top 10:2025.
+    - SDL é da Microsoft e CLASP é da OWASP; ambas tratam só da fase de testes.
+    - ambas são da Microsoft e tratam só da fase de codificação.
+  correta: 1
+  explicacoes:
+    - As origens estão trocadas.
+    - Correta. São metodologias que embutem segurança em todo o ciclo de vida.
+    - São metodologias; as categorias novas são a A03 e a A10.
+    - As origens estão certas, mas elas abrangem todo o ciclo de vida.
+    - CLASP é da OWASP, e as duas abrangem todo o ciclo de vida.
+  evidencia: '(*Security Development Lifecycle*, da Microsoft) e **CLASP** (OWASP): metodologias que embutem segurança em todo o ciclo de vida'
+- id: seg-perimetro-003
+  fichas: [protecao-perimetro]
+  nivel: 2
+  cargo: ambos
+  origem: autoral
+  enunciado: Um tribunal quer que cada dispositivo só entre na rede se cumprir a política de segurança, usando, por exemplo, 802.1X. A solução que corresponde diretamente a esse objetivo é
+  alternativas:
+    - NAC.
+    - WAF.
+    - DMZ.
+    - forward proxy.
+    - IDS.
+  correta: 0
+  explicacoes:
+    - Correta. O NAC só deixa o dispositivo entrar na rede se cumprir a política.
+    - O WAF atua na camada de aplicação HTTP e bloqueia ataques web.
+    - A DMZ isola a rede interna dos serviços expostos à internet.
+    - O forward proxy intermedeia as requisições dos clientes.
+    - O IDS monitora eventos e procura sinais de incidentes.
+  evidencia: 'só deixa o dispositivo entrar na rede se cumprir a política (ex.: com 802.1X)'
+- id: seg-perimetro-004
+  fichas: [protecao-perimetro]
+  nivel: 2
+  cargo: tec
+  origem: autoral
+  enunciado: A equipe de segurança precisa detectar incidentes cruzando os registros do firewall, dos servidores e do IDS em uma mesma solução. A tecnologia voltada a essa correlação é o
+  alternativas:
+    - NAC.
+    - WAF.
+    - forward proxy.
+    - SIEM.
+    - antivírus.
+  correta: 3
+  explicacoes:
+    - O NAC controla a entrada de dispositivos na rede.
+    - O WAF bloqueia ataques web na camada de aplicação HTTP.
+    - O forward proxy intermedeia requisições e filtra a navegação.
+    - Correta. O SIEM correlaciona logs e eventos de várias fontes.
+    - Correlacionar logs e eventos de várias fontes é a função do SIEM.
+  evidencia: 'correlaciona logs e eventos de várias fontes para detectar incidentes'
+- id: seg-vpn-003
+  fichas: [vpn-ztna]
+  nivel: 2
+  cargo: ambos
+  origem: autoral
+  enunciado: Ao comparar uma VPN baseada em IPSec com uma VPN-SSL, é correto afirmar que
+  alternativas:
+    - a IPSec dispensa criptografia, ao contrário da VPN-SSL.
+    - a VPN-SSL só funciona em rede privada, sem passar por rede pública.
+    - a IPSec é geralmente usada via navegador, sem atuar na camada de rede.
+    - as duas dependem do modelo Zero Trust para criar o túnel.
+    - a IPSec atua na camada de rede, e a VPN-SSL usa SSL/TLS.
+  correta: 4
+  explicacoes:
+    - A VPN é um túnel criptografado nos dois casos.
+    - A VPN é um túnel sobre rede pública.
+    - A descrição está trocada; navegador ou cliente leve é o uso geral da VPN-SSL.
+    - Zero Trust é outro modelo; quem o aplica no acesso a aplicações é o ZTNA.
+    - Correta. IPSec é da camada de rede; VPN-SSL usa SSL/TLS, geralmente via navegador ou cliente leve.
+  evidencia: '**IPSec** (camada de rede) ou **SSL/TLS** (VPN-SSL, geralmente via navegador/cliente leve)'
+- id: seg-vpn-004
+  fichas: [vpn-ztna]
+  nivel: 2
+  cargo: ambos
+  origem: autoral
+  enunciado: Um órgão quer que o servidor em teletrabalho acesse apenas determinada aplicação, e não a rede interna inteira, com aplicação de Zero Trust. A solução adequada é
+  alternativas:
+    - DMZ.
+    - ZTNA.
+    - VPN tradicional.
+    - WAF.
+    - UTM.
+  correta: 1
+  explicacoes:
+    - A DMZ é uma sub-rede para serviços expostos à internet.
+    - Correta. No ZTNA, o acesso é por aplicação, e não à rede inteira.
+    - A VPN tradicional dá acesso à rede inteira.
+    - O WAF bloqueia ataques web na camada de aplicação HTTP.
+    - O UTM junta várias funções de proteção em um appliance.
+  evidencia: 'acesso por aplicação, não à rede inteira como na VPN tradicional'
+- id: seg-wifi-003
+  fichas: [wifi-seguranca]
+  nivel: 2
+  cargo: ambos
+  origem: autoral
+  enunciado: Um órgão vai implantar sua rede sem fio no modo Enterprise. A combinação que caracteriza esse modo é
+  alternativas:
+    - PSK e servidor RADIUS.
+    - SAE, PMF e chave pré-compartilhada.
+    - IEEE 802.1X, EAP e servidor RADIUS.
+    - WEP, EAP e chave pré-compartilhada.
+    - IEEE 802.1X, SAE e PSK.
+  correta: 2
+  explicacoes:
+    - O RADIUS é do modo Enterprise, mas o PSK é do modo pessoal.
+    - SAE e chave pré-compartilhada são do modo pessoal.
+    - Correta. O modo Enterprise usa IEEE 802.1X, EAP e servidor RADIUS.
+    - O EAP é do modo Enterprise, mas o WEP é legado, e a chave pré-compartilhada é do modo pessoal.
+    - O 802.1X é do modo Enterprise, mas SAE e PSK são do modo pessoal.
+  evidencia: '**IEEE 802.1X** + **EAP** + servidor **RADIUS** (ex.: integrado ao Active Directory;'
+- id: seg-wifi-004
+  fichas: [wifi-seguranca]
+  nivel: 2
+  cargo: ambos
+  origem: autoral
+  enunciado: No modo pessoal, o WPA3 diferencia-se do WPA2 por
+  alternativas:
+    - adotar SAE no lugar de PSK, com sigilo direto (forward secrecy).
+    - adotar PSK no lugar de SAE, com sigilo direto (forward secrecy).
+    - exigir um servidor RADIUS para cada ponto de acesso.
+    - adotar WEP no lugar de PSK, com resistência a dicionário offline.
+    - manter PSK e tornar opcionais os quadros de gerência protegidos.
+  correta: 0
+  explicacoes:
+    - Correta. A troca de PSK por SAE traz sigilo direto e resistência a dicionário offline.
+    - A troca foi no sentido contrário.
+    - O servidor RADIUS pertence ao modo Enterprise.
+    - WEP é legado e inseguro; o WPA3 adota SAE.
+    - O WPA3 troca PSK por SAE e torna o PMF obrigatório.
+  evidencia: 'modo pessoal troca PSK por **SAE** (*Simultaneous Authentication of Equals*) → sigilo direto (*forward secrecy*)'
+- id: seg-criptografia-006
+  fichas: [criptografia]
+  nivel: 2
+  cargo: ambos
+  origem: autoral
+  enunciado: Usando criptografia assimétrica, Ana quer enviar a Bruno uma mensagem que só ele consiga decifrar. Ana deve cifrar a mensagem com a chave
+  alternativas:
+    - privada de Ana.
+    - pública de Ana.
+    - privada de Bruno.
+    - pública de Bruno.
+    - privada da Autoridade Certificadora.
+  correta: 3
+  explicacoes:
+    - A chave privada do autor é usada na assinatura digital.
+    - O que é cifrado com a pública de Ana só a privada de Ana decifra.
+    - Bruno usa a própria chave privada para decifrar; a mensagem é cifrada com a pública dele.
+    - Correta. O que é cifrado com a pública de Bruno só a privada dele decifra.
+    - A Autoridade Certificadora assina certificados; a mensagem é cifrada com a pública do destinatário.
+  evidencia: 'Cifrar com a pública do destinatário → só a privada dele decifra.'
+- id: seg-criptografia-007
+  fichas: [criptografia]
+  nivel: 2
+  cargo: ambos
+  origem: autoral
+  enunciado: Dois setores vão trocar um grande volume de arquivos cifrados com AES. Em comparação com a criptografia assimétrica, o problema característico dessa escolha é
+  alternativas:
+    - a lentidão da cifragem com chave única.
+    - a distribuição da chave.
+    - a necessidade de um par de chaves para cada setor.
+    - a impossibilidade de decifrar o conteúdo depois.
+    - a exigência de um certificado digital para cada arquivo.
+  correta: 1
+  explicacoes:
+    - A criptografia simétrica, da qual o AES é exemplo, é rápida.
+    - Correta. Como a mesma chave cifra e decifra, o problema é distribuí-la.
+    - Par de chaves é próprio da criptografia assimétrica.
+    - A mesma chave cifra e decifra; unidirecional é o hash.
+    - O certificado vincula uma chave pública a uma identidade; a simétrica usa uma mesma chave para cifrar e decifrar.
+  evidencia: 'rápida (ex.: **AES**). Problema: distribuir a chave.'
+- id: seg-criptografia-008
+  fichas: [criptografia]
+  nivel: 2
+  cargo: tec
+  origem: autoral
+  enunciado: Entre os padrões de criptografia pós-quântica publicados pelo NIST em 2024, o que se destina à troca de chaves é o
+  alternativas:
+    - FIPS 204, ML-DSA.
+    - FIPS 205, SLH-DSA.
+    - FIPS 203, ML-KEM.
+    - FIPS 203, ML-DSA.
+    - FIPS 204, SLH-DSA.
+  correta: 2
+  explicacoes:
+    - O FIPS 204, ML-DSA, é de assinatura.
+    - O FIPS 205, SLH-DSA, é de assinatura baseada em hash.
+    - Correta. O FIPS 203, ML-KEM, vem do CRYSTALS-Kyber e trata de troca de chaves.
+    - O ML-DSA é o FIPS 204 e trata de assinatura.
+    - O SLH-DSA é o FIPS 205 e trata de assinatura.
+  evidencia: '**FIPS 203 ML-KEM** (de CRYSTALS-Kyber, troca de chaves)'
+- id: seg-tls-003
+  fichas: [tls]
+  nivel: 2
+  cargo: ambos
+  origem: autoral
+  enunciado: Em uma conexão TLS, cliente e servidor estão definindo os algoritmos e as chaves que usarão, com autenticação. Essa etapa corresponde ao
+  alternativas:
+    - record protocol.
+    - hash criptográfico.
+    - modo Enterprise.
+    - handshake.
+    - túnel IPSec.
+  correta: 3
+  explicacoes:
+    - O record protocol protege os dados; a negociação é do handshake.
+    - O hash criptográfico é um resumo unidirecional, ligado à integridade.
+    - O modo Enterprise é de redes sem fio e usa 802.1X, EAP e RADIUS.
+    - Correta. O handshake negocia algoritmos e chaves e autentica.
+    - O IPSec é usado em VPN, na camada de rede.
+  evidencia: '**handshake** (negocia algoritmos e chaves, autentica)'
+- id: seg-tls-004
+  fichas: [tls]
+  nivel: 2
+  cargo: ana
+  origem: autoral
+  enunciado: Em relação ao TLS 1.2, o TLS 1.3 removeu
+  alternativas:
+    - a troca de chaves com sigilo direto (forward secrecy).
+    - a troca de chaves RSA estática e DH estático.
+    - o handshake, deixando apenas o record protocol.
+    - a autenticação do servidor.
+    - o record protocol, deixando apenas o handshake.
+  correta: 1
+  explicacoes:
+    - No TLS 1.3 ocorre o contrário; toda troca de chaves pública tem sigilo direto.
+    - Correta. Com essa remoção, toda troca de chaves pública tem sigilo direto.
+    - O handshake não foi removido; ficou mais rápido.
+    - A autenticação do servidor faz parte do que o TLS oferece.
+    - O record protocol é o componente do TLS que protege os dados.
+  evidencia: 'removeu troca de chaves **RSA estática e DH estático**'
+- id: seg-backup-003
+  fichas: [backup]
+  nivel: 2
+  cargo: tec
+  origem: autoral
+  enunciado: Um órgão faz backup completo no domingo e backup diferencial à noite, de segunda a sexta. O backup diferencial de quarta-feira contém o que mudou
+  alternativas:
+    - desde o completo de domingo.
+    - desde o diferencial de terça-feira.
+    - desde o diferencial de segunda-feira.
+    - somente durante a própria quarta-feira.
+    - desde a última restauração realizada.
+  correta: 0
+  explicacoes:
+    - Correta. O diferencial guarda o que mudou desde o último completo.
+    - Considerar o último backup de qualquer tipo é próprio do incremental.
+    - A referência do diferencial é o último completo, não outro diferencial.
+    - A referência é o último completo, feito no domingo.
+    - A referência é o último backup completo, não uma restauração.
+  evidencia: 'diferencial (o que mudou desde o último completo)'
+- id: seg-backup-004
+  fichas: [backup]
+  nivel: 2
+  cargo: tec
+  origem: autoral
+  enunciado: Um órgão que já segue a regra 3-2-1 quer adotar a variação 3-2-1-1-0. Para isso, precisa acrescentar
+  alternativas:
+    - 1 cópia a mais no local e 0 backups incrementais.
+    - 1 backup completo por dia e 0 cópias fora do local.
+    - 1 tipo de mídia a mais e 0 cópias offline.
+    - 1 equipe de resposta a incidentes e 0 arquivos alterados desde o último backup completo.
+    - 1 cópia imutável ou offline e 0 erros verificados em teste de restauração.
+  correta: 4
+  explicacoes:
+    - O 1 é de cópia imutável ou offline, e o 0, de erros no teste de restauração.
+    - A cópia fora do local da regra 3-2-1 continua valendo.
+    - O 1 acrescentado é justamente a cópia imutável ou offline.
+    - A variação trata de cópia imutável ou offline e de teste de restauração.
+    - Correta. São 1 cópia imutável ou offline e 0 erros verificados em teste de restauração.
+  evidencia: '+ 1 imutável/offline + 0 erros verificados em teste de restauração'
