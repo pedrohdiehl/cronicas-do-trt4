@@ -1,0 +1,6 @@
+{
+  "name": "Crônicas do TRT4",
+  "description": "RPG 2D de mundo aberto em pixel art para estudar para o concurso do TRT da 4ª Região (Técnico e Analista de TI) usando fichas em Markdown.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

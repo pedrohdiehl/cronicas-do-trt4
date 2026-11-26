@@ -1,0 +1,348 @@
+@import "tailwindcss";
+
+:root {
+  --font-display: 'Cinzel', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: var(--font-body);
+  background: #0e1118;
+  color: #f4efe4;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.pixelated {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* RPG Parchment & Stone framing (zero backdrop-blur over canvas) */
+.rpg-panel {
+  background: #171a24;
+  border: 2px solid #5c4d35;
+  box-shadow:
+    inset 0 0 0 2px #262b3a,
+    0 12px 32px rgba(0, 0, 0, 0.72);
+}
+
+.rpg-panel-warm {
+  background: #1d1a16;
+  border: 2px solid #8a6c3b;
+  box-shadow:
+    inset 0 0 0 2px #2f281f,
+    0 10px 28px rgba(0, 0, 0, 0.75);
+}
+
+.high-contrast .rpg-panel,
+.high-contrast .rpg-panel-warm {
+  background: #05060a !important;
+  border-color: #ffe066 !important;
+  color: #ffffff !important;
+}
+
+.high-contrast .text-muted {
+  color: #e5e7eb !important;
+}
+
+@keyframes rpgHitFlash {
+  0%, 100% { filter: brightness(1); }
+  30% { filter: brightness(3.2) saturate(0.1); }
+  65% { filter: brightness(1.8) sepia(0.8) hue-rotate(-30deg); }
+}
+
+.animate-hit-flash {
+  animation: rpgHitFlash 220ms ease-out 2;
+}
+
+@keyframes rpgMonsterRecoil {
+  0% { transform: translate3d(0, 0, 0) scale(1); filter: brightness(1); }
+  15% { transform: translate3d(16px, -6px, 0) scale(1.08, 0.92) rotate(6deg); filter: brightness(3) saturate(0.1); }
+  35% { transform: translate3d(-10px, 3px, 0) scale(0.95, 1.05) rotate(-4deg); filter: brightness(1.7) hue-rotate(-25deg); }
+  55% { transform: translate3d(10px, -2px, 0) rotate(3deg); filter: brightness(2.4); }
+  75% { transform: translate3d(-5px, 2px, 0) rotate(-2deg); }
+  100% { transform: translate3d(0, 0, 0) scale(1) rotate(0deg); filter: brightness(1); }
+}
+
+.animate-monster-hit {
+  animation: rpgMonsterRecoil 480ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes rpgHeroLunge {
+  0% { transform: translate3d(0, 0, 0); }
+  35% { transform: translate3d(44px, -6px, 0) scale(1.08); }
+  65% { transform: translate3d(38px, 0, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+.animate-hero-lunge {
+  animation: rpgHeroLunge 420ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes rpgEnemyLunge {
+  0% { transform: translate3d(0, 0, 0); }
+  35% { transform: translate3d(-44px, -4px, 0) scale(1.08); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+.animate-enemy-lunge {
+  animation: rpgEnemyLunge 400ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes rpgSlashBurst {
+  0% { opacity: 0; transform: scale(0.4) rotate(-25deg); }
+  30% { opacity: 1; transform: scale(1.25) rotate(8deg); }
+  100% { opacity: 0; transform: scale(1.55) rotate(18deg); }
+}
+
+.animate-slash-burst {
+  animation: rpgSlashBurst 380ms ease-out forwards;
+}
+
+@keyframes rpgDamageFloat {
+  0% { opacity: 0; transform: translate3d(0, 8px, 0) scale(0.8); }
+  20% { opacity: 1; transform: translate3d(0, -10px, 0) scale(1.15); }
+  80% { opacity: 1; transform: translate3d(0, -28px, 0) scale(1); }
+  100% { opacity: 0; transform: translate3d(0, -38px, 0) scale(0.95); }
+}
+
+.animate-damage-float {
+  animation: rpgDamageFloat 900ms ease-out forwards;
+}
+
+@keyframes rpgCriticalWobble {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  25% { transform: translate3d(-2px, 1px, 0) rotate(-2deg); }
+  75% { transform: translate3d(2px, -1px, 0) rotate(2deg); }
+}
+
+.animate-critical-wobble {
+  animation: rpgCriticalWobble 420ms ease-in-out infinite;
+}
+
+@keyframes rpgIdleBob {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -4px, 0); }
+}
+
+.animate-idle-bob {
+  animation: rpgIdleBob 1.6s ease-in-out infinite;
+}
+
+@keyframes rpgBattleShake {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  20% { transform: translate3d(-7px, 4px, 0); }
+  40% { transform: translate3d(7px, -4px, 0); }
+  60% { transform: translate3d(-5px, -3px, 0); }
+  80% { transform: translate3d(5px, 3px, 0); }
+}
+
+.animate-battle-shake {
+  animation: rpgBattleShake 280ms ease-out;
+}
+
+/* Classic SNES Final Fantasy Blue-Indigo Beveled Battle Menu Window */
+.ff-window {
+  background: linear-gradient(180deg, #1b2a66 0%, #111b47 58%, #0a102e 100%);
+  border: 2px solid #e7dec8;
+  box-shadow:
+    inset 0 0 0 2px #2c428c,
+    inset 0 0 18px rgba(4, 8, 26, 0.72),
+    0 6px 20px rgba(0, 0, 0, 0.72);
+  border-radius: 6px;
+}
+
+.high-contrast .ff-window {
+  background: #040712 !important;
+  border-color: #ffe066 !important;
+  box-shadow: inset 0 0 0 2px #ffe066 !important;
+}
+
+@keyframes ffBattleFlash {
+  0% { opacity: 0.92; }
+  35% { opacity: 0.25; }
+  65% { opacity: 0.85; }
+  100% { opacity: 0; }
+}
+
+.animate-battle-flash {
+  animation: ffBattleFlash 420ms ease-out forwards;
+}
+
+@keyframes ffShutterTop {
+  0% { transform: translateY(0%); }
+  35% { transform: translateY(0%); }
+  100% { transform: translateY(-102%); }
+}
+
+@keyframes ffShutterBottom {
+  0% { transform: translateY(0%); }
+  35% { transform: translateY(0%); }
+  100% { transform: translateY(102%); }
+}
+
+.animate-shutter-top {
+  animation: ffShutterTop 640ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.animate-shutter-bottom {
+  animation: ffShutterBottom 640ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes ffBannerReveal {
+  0% { opacity: 0; transform: scale(0.92); }
+  20% { opacity: 1; transform: scale(1); }
+  75% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.06); }
+}
+
+.animate-battle-banner {
+  animation: ffBannerReveal 640ms ease-out forwards;
+}
+
+@keyframes ffFairyHover {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(-3deg); }
+  25% { transform: translate3d(4px, -7px, 0) rotate(2deg); }
+  50% { transform: translate3d(0, -11px, 0) rotate(-1deg); }
+  75% { transform: translate3d(-4px, -5px, 0) rotate(3deg); }
+}
+
+.animate-fairy-hover {
+  animation: ffFairyHover 2.2s ease-in-out infinite;
+}
+
+@keyframes ffEnemyKo {
+  0% { opacity: 1; transform: translate3d(0, 0, 0) scale(1) rotate(0deg); filter: brightness(2.8); }
+  30% { opacity: 0.9; transform: translate3d(18px, -10px, 0) scale(1.06, 0.85) rotate(12deg); filter: brightness(2.2) saturate(0.2); }
+  100% { opacity: 0; transform: translate3d(34px, 18px, 0) scale(0.55) rotate(26deg); filter: brightness(0.4) saturate(0); }
+}
+
+.animate-enemy-ko {
+  animation: ffEnemyKo 480ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes ffBubblePop {
+  0% { opacity: 0; transform: translate3d(0, 6px, 0) scale(0.94); }
+  100% { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+}
+
+.animate-bubble-pop {
+  animation: ffBubblePop 180ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes ffCursorBob {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(3px); }
+}
+
+.animate-ff-cursor {
+  animation: ffCursorBob 720ms ease-in-out infinite;
+}
+
+@keyframes ffTargetBob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.animate-target-bob {
+  animation: ffTargetBob 900ms ease-in-out infinite;
+}
+
+@keyframes ffHeroAttackBlocked {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  22% { transform: translate3d(88px, -8px, 0) scale(1.08); }
+  44% { transform: translate3d(60px, -4px, 0) scale(0.94, 1.06) rotate(-7deg); }
+  72% { transform: translate3d(24px, 0, 0) rotate(-3deg); }
+  100% { transform: translate3d(0, 0, 0) scale(1) rotate(0deg); }
+}
+
+.animate-hero-attack-blocked {
+  animation: ffHeroAttackBlocked 950ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes ffEnemyGuard {
+  0% { transform: translate3d(0, 0, 0) scale(1); filter: brightness(1); }
+  22% { transform: translate3d(-14px, 0, 0) scale(1.07, 0.93); filter: brightness(1.9) saturate(0.8); }
+  58% { transform: translate3d(4px, 0, 0) scale(0.98, 1.02); filter: brightness(1.35); }
+  100% { transform: translate3d(0, 0, 0) scale(1); filter: brightness(1); }
+}
+
+.animate-enemy-guard {
+  animation: ffEnemyGuard 900ms ease-out;
+}
+
+@keyframes ffBlockShield {
+  0% { opacity: 0; transform: scale(0.45); }
+  18% { opacity: 1; transform: scale(1.16); }
+  78% { opacity: 0.95; transform: scale(1.02); }
+  100% { opacity: 0; transform: scale(1.22); }
+}
+
+.animate-block-shield {
+  animation: ffBlockShield 980ms ease-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-battle-shake,
+  .animate-hit-flash,
+  .animate-monster-hit,
+  .animate-hero-lunge,
+  .animate-enemy-lunge,
+  .animate-slash-burst,
+  .animate-damage-float,
+  .animate-critical-wobble,
+  .animate-idle-bob,
+  .animate-battle-flash,
+  .animate-shutter-top,
+  .animate-shutter-bottom,
+  .animate-battle-banner,
+  .animate-fairy-hover,
+  .animate-enemy-ko,
+  .animate-bubble-pop,
+  .animate-ff-cursor,
+  .animate-target-bob,
+  .animate-hero-attack-blocked,
+  .animate-enemy-guard,
+  .animate-block-shield {
+    animation: none !important;
+  }
+}
+
+/* Custom subtle scrollbars for Grimório & Modals */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #12151e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b4030;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #736044;
+}
