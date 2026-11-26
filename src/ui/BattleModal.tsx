@@ -31,6 +31,8 @@ import {
   type BattleSpeechPayload,
 } from '../systems/battleFormation';
 import { ITEM_DEFS } from '../systems/gameLogic';
+import { stripRichText } from '../systems/richText';
+import { RichText } from './RichText';
 import type { ItemId, Question, SaveState } from '../types';
 import type { WorldEnemy } from '../world/worldMap';
 
@@ -121,6 +123,8 @@ export const BattleModal: React.FC<BattleModalProps> = ({
 
   const [qIdx, setQIdx] = useState(0);
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
+  // Depois de responder, o enunciado encolhe; clicar nele mostra o texto inteiro de novo.
+  const [enunciadoAberto, setEnunciadoAberto] = useState(false);
   const [eliminated, setEliminated] = useState<number[]>([]);
   const [shieldActive, setShieldActive] = useState(false);
   const [lupaRevealed, setLupaRevealed] = useState(false);
@@ -275,6 +279,7 @@ export const BattleModal: React.FC<BattleModalProps> = ({
   useEffect(() => {
     clearChoreoTimers();
     setSelectedIdx(null);
+    setEnunciadoAberto(false);
     setEliminated([]);
     setLupaRevealed(false);
     setShieldBlockedLast(false);
@@ -531,6 +536,8 @@ export const BattleModal: React.FC<BattleModalProps> = ({
   const wasRight = selectedIdx === currentQ.correta;
   const hasExplanations =
     Array.isArray(currentQ.explicacoes) && currentQ.explicacoes.length === currentQ.alternativas.length;
+  const prova = currentQ.prova;
+  const outroTribunal = prova?.escopo === 'paralelo' ? prova.trt : null;
 
   // Dynamic speech bubble shown directly in front of the Hero/Lumina or Opponent!
   const activeSpeech: BattleSpeechPayload = useMemo(() => {
@@ -556,7 +563,9 @@ export const BattleModal: React.FC<BattleModalProps> = ({
     });
   }, [itemCallout, isAnswered, enemy, currentQ, qIdx, squad, wasRight, wrongBeat, shieldBlockedLast]);
 
-  const questionOriginLabel = currentQ.isRealExam
+  const questionOriginLabel = prova
+    ? `Prova real FCC · ${prova.label}`
+    : currentQ.isRealExam
     ? `Prova real · ${currentQ.banca || 'FCC'}${currentQ.ano ? ` ${currentQ.ano}` : ''}${currentQ.orgao ? ` · ${currentQ.orgao}` : ''}`
     : currentQ.origem === 'autoral'
       ? 'Questão autoral'
@@ -1251,19 +1260,30 @@ export const BattleModal: React.FC<BattleModalProps> = ({
                   <span className="font-mono-num text-[#94a3b8]">Ficha [[{currentQ.fichaId}]]</span>
                 </div>
 
-                {/* Question Enunciado */}
+                {outroTribunal !== null && (
+                  <div className="px-3 py-1.5 rounded border border-[#f59e0b]/70 bg-[#3a2508]/80 text-xs text-[#fde68a]">
+                    <strong>Atenção:</strong> esta questão cobra a regra do TRT-{outroTribunal}, não a do TRT-4. Serve de
+                    treino; a regra que vale para a sua prova está na ficha.
+                  </div>
+                )}
+
+                {/* Question Enunciado (questões reais trazem <u>, <mark> e quebras de linha do original) */}
                 <div
-                  className={`text-sm sm:text-[15px] leading-snug sm:leading-relaxed text-[#f8fafc] font-medium bg-[#080d24]/75 border border-[#4c62a8]/60 rounded px-3.5 ${
-                    isAnswered ? 'py-2 line-clamp-2' : 'py-2.5 lg:text-base'
+                  onClick={isAnswered ? () => setEnunciadoAberto((v) => !v) : undefined}
+                  title={isAnswered ? (enunciadoAberto ? 'Clique para encolher' : 'Clique para ver o enunciado inteiro') : undefined}
+                  className={`text-sm sm:text-[15px] leading-snug sm:leading-relaxed text-[#f8fafc] font-medium bg-[#080d24]/75 border border-[#4c62a8]/60 rounded px-3.5 whitespace-pre-line break-words ${
+                    isAnswered ? `py-2 cursor-pointer ${enunciadoAberto ? '' : 'line-clamp-2'}` : 'py-2.5 lg:text-base'
                   }`}
                 >
-                  {currentQ.enunciado}
+                  <RichText text={currentQ.enunciado} />
                 </div>
 
                 {/* Optional Lupa da Fonte excerpt */}
                 {lupaRevealed && !isAnswered && (
                   <div className="px-3.5 py-2 bg-[#1c1640] border border-[#a78bfa] rounded text-xs sm:text-sm text-[#ede9fe]">
-                    <span className="font-bold text-[#c4b5fd]">Lupa da Fonte ({currentQ.fichaTitulo}): </span>
+                    <span className="font-bold text-[#c4b5fd]">
+                      {prova ? `Lupa · ficha ligada a esta questão (${currentQ.fichaTitulo}): ` : `Lupa da Fonte (${currentQ.fichaTitulo}): `}
+                    </span>
                     <span>&ldquo;{renderTrecho(currentQ.trechoFonte)}&rdquo;</span>
                   </div>
                 )}
@@ -1299,7 +1319,9 @@ export const BattleModal: React.FC<BattleModalProps> = ({
                               {LETTERS[idx]}
                             </span>
                           </span>
-                          <span className="flex-1">{alt}</span>
+                          <span className="flex-1 whitespace-pre-line break-words">
+                            <RichText text={alt} />
+                          </span>
                         </button>
                       );
                     })}
@@ -1317,7 +1339,7 @@ export const BattleModal: React.FC<BattleModalProps> = ({
                         {LETTERS[selectedIdx ?? 0]}
                       </span>
                       <span className="truncate">
-                        <strong>Sua resposta:</strong> {currentQ.alternativas[selectedIdx ?? 0]}
+                        <strong>Sua resposta:</strong> {stripRichText(currentQ.alternativas[selectedIdx ?? 0])}
                       </span>
                     </div>
                     {!wasRight && (
@@ -1326,7 +1348,7 @@ export const BattleModal: React.FC<BattleModalProps> = ({
                           {LETTERS[currentQ.correta]}
                         </span>
                         <span className="truncate">
-                          <strong>Correta:</strong> {currentQ.alternativas[currentQ.correta]}
+                          <strong>Correta:</strong> {stripRichText(currentQ.alternativas[currentQ.correta])}
                         </span>
                       </div>
                     )}
@@ -1345,19 +1367,42 @@ export const BattleModal: React.FC<BattleModalProps> = ({
                       <div className="font-display text-sm sm:text-base font-bold flex items-center gap-2 text-[#f8fafc]">
                         <ScrollText className="w-4 h-4 text-[#fde047]" />
                         <span>
-                          {wasRight
-                            ? 'Resposta correta! Por quê?'
-                            : shieldBlockedLast
-                              ? 'Dano anulado pelo Escudo! Por quê?'
-                              : hasExplanations
-                                ? 'Resposta incorreta — veja por quê:'
-                                : 'Resposta incorreta — confira a fonte:'}
+                          {prova
+                            ? wasRight
+                              ? 'Resposta correta!'
+                              : shieldBlockedLast
+                                ? 'Dano anulado pelo Escudo!'
+                                : 'Resposta incorreta.'
+                            : wasRight
+                              ? 'Resposta correta! Por quê?'
+                              : shieldBlockedLast
+                                ? 'Dano anulado pelo Escudo! Por quê?'
+                                : hasExplanations
+                                  ? 'Resposta incorreta — veja por quê:'
+                                  : 'Resposta incorreta — confira a fonte:'}
                         </span>
                       </div>
                       <span className="font-mono-num text-xs text-[#fde68a]">
                         {currentQ.fichaTitulo} ([[{currentQ.fichaId}]])
                       </span>
                     </div>
+
+                    {prova && (
+                      <div data-testid="gabarito-oficial" className="space-y-1 text-xs sm:text-sm leading-relaxed text-[#f1ece1]">
+                        <p>
+                          <strong className="text-[#4ade80]">Gabarito oficial da FCC: {LETTERS[currentQ.correta]}</strong>
+                          <span className="text-[#cbd5e1]">
+                            {' '}
+                            · {prova.label} · questão {prova.numero}
+                          </span>
+                        </p>
+                        {outroTribunal !== null && (
+                          <p className="text-[#fde68a]">
+                            Lembrete: a regra cobrada aqui é a do TRT-{outroTribunal}. Confira a do TRT-4 na ficha.
+                          </p>
+                        )}
+                      </div>
+                    )}
 
                     {hasExplanations && selectedIdx !== null && (
                       <div data-testid="explicacoes" className="space-y-1 text-xs sm:text-sm leading-relaxed">
@@ -1377,7 +1422,11 @@ export const BattleModal: React.FC<BattleModalProps> = ({
                     )}
 
                     <blockquote className="px-3 py-2 bg-black/45 border border-white/15 rounded text-xs sm:text-sm leading-relaxed text-[#f1ece1]">
-                      {hasExplanations && <span className="font-bold text-[#fde68a]">Na ficha: </span>}
+                      {prova ? (
+                        <span className="font-bold text-[#fde68a]">Para revisar, a ficha ligada a esta questão: </span>
+                      ) : (
+                        hasExplanations && <span className="font-bold text-[#fde68a]">Na ficha: </span>
+                      )}
                       &ldquo;{renderTrecho(currentQ.trechoFonte)}&rdquo;
                     </blockquote>
 

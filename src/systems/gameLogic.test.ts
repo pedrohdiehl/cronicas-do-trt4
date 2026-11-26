@@ -621,17 +621,21 @@ test('authored questions (conteudo/questoes) pass the evidence check, carry one 
   // A ficha with authored questions no longer uses the weak generated ones.
   const authoredFichas = new Set(fresh.questions.map((q) => q.fichaId));
   for (const q of QUESTIONS) {
-    if (q.origem !== 'autoral' && authoredFichas.has(q.fichaId)) {
+    // Real exam questions (q.isRealExam) live alongside authored ones on purpose.
+    if (q.origem !== 'autoral' && !q.isRealExam && authoredFichas.has(q.fichaId)) {
       const count = fresh.questions.filter((a) => a.fichaId === q.fichaId).length;
       assert.ok(count < 3, `Generated question ${q.id} still present for ficha ${q.fichaId} that has ${count} authored questions`);
     }
   }
 
-  // Mini-boss and boss of Segurança draw from the authored level-3 bank.
+  // The non-real half of Segurança's mini-boss comes from the authored level-3 bank.
   const state = createInitialSaveState('dupla');
   const miniDeck = buildBattleDeck('miniboss', '06-seguranca-da-informacao', state, 42);
   assert.ok(miniDeck.length >= 6);
-  assert.ok(miniDeck.every((q) => q.origem === 'autoral'), 'Segurança mini-boss deck should be all authored');
+  assert.ok(
+    miniDeck.filter((q) => !q.isRealExam).every((q) => q.origem === 'autoral'),
+    'Segurança mini-boss non-real questions should be authored'
+  );
 });
 
 test('loading a save drops spaced-repetition entries for questions that no longer exist', async () => {
@@ -650,4 +654,82 @@ test('loading a save drops spaced-repetition entries for questions that no longe
   assert.deepEqual(Object.keys(pruned.spacedRep), [real.id]);
   assert.deepEqual(pruned.wrongQuestionIds, [real.id]);
   assert.equal(pruneOrphanQuestionRefs(base), base, 'A clean save is returned untouched');
+});
+
+test('real FCC exam questions (conteudo/provas) are converted untouched, linked to game fichas and up to date', async () => {
+  const { loadExamQuestions } = await import('../../scripts/examQuestions');
+  const { FICHA_ALIAS_MAP } = await import('../data/content');
+  const { EXAM_QUESTIONS } = await import('../data/examQuestions');
+  const fresh = loadExamQuestions(FICHAS, FICHA_ALIAS_MAP);
+  assert.ok(fresh.questions.length >= 600, `Expected >= 600 real questions, got ${fresh.questions.length}`);
+  assert.deepEqual(EXAM_QUESTIONS, fresh.questions, 'examQuestions.ts is out of date; run npm run generate:content');
+
+  const fichaIds = new Set(FICHAS.map((f) => f.id));
+  const inGame = QUESTIONS.filter((q) => q.prova);
+  assert.equal(inGame.length, fresh.questions.length, 'All real questions must be in QUESTIONS');
+  for (const q of inGame) {
+    assert.ok(q.id.startsWith('fcc-'), q.id);
+    assert.ok(fichaIds.has(q.fichaId), `${q.id} points to missing ficha ${q.fichaId}`);
+    assert.equal(q.alternativas.length, 5, q.id);
+    assert.ok(q.correta >= 0 && q.correta <= 4, q.id);
+    assert.equal(q.isRealExam, true);
+    assert.equal(q.isBossStyle, q.prova!.escopo === 'edital', `${q.id}: other-TRT rules must not be boss style`);
+    assert.equal(q.cargo, FICHAS.find((f) => f.id === q.fichaId)!.cargo, `${q.id}: cargo follows the ficha`);
+  }
+  assert.ok(inGame.some((q) => q.prova!.escopo === 'paralelo'), 'Expected other-TRT training questions');
+});
+
+test('mini-boss and boss mix real FCC questions with authored/FCC-style ones and never use other-TRT rules', () => {
+  const state = createInitialSaveState('dupla');
+  for (const seed of [1, 7, 42, 1234]) {
+    const mini = buildBattleDeck('miniboss', '06-seguranca-da-informacao', state, seed);
+    assert.equal(mini.length, 6);
+    assert.equal(mini.filter((q) => q.isRealExam).length, 3, 'Mini-boss: half real FCC');
+    assert.equal(mini.filter((q) => !q.isRealExam).length, 3, 'Mini-boss: half authored/FCC-style');
+
+    const boss = buildBattleDeck('boss', 'fortaleza-da-muralha', state, seed);
+    assert.equal(boss.length, 8);
+    assert.equal(boss.filter((q) => q.isRealExam).length, 4, 'Boss: half real FCC');
+
+    for (const region of REGIONS) {
+      const deck = buildBattleDeck('boss', region.id, state, seed);
+      assert.equal(deck.some((q) => q.prova?.escopo === 'paralelo'), false, `Boss of ${region.id} used another TRT's rule`);
+    }
+    for (const zona of ZONAS) {
+      const deck = buildBattleDeck('miniboss', zona.id, state, seed);
+      assert.equal(deck.some((q) => q.prova?.escopo === 'paralelo'), false, `Mini-boss of ${zona.id} used another TRT's rule`);
+      assert.equal(new Set(deck.map((q) => q.id)).size, deck.length, `Mini-boss of ${zona.id} repeated a question`);
+    }
+  }
+});
+
+test('Dominada ★ ignores real exam questions, which have their own count', async () => {
+  const { getFichaStatus, getRealExamProgress } = await import('./gameLogic');
+  const fichaId = 'regimento-trt4';
+  const own = QUESTIONS.filter((q) => q.fichaId === fichaId && !q.isRealExam);
+  const real = QUESTIONS.filter((q) => q.fichaId === fichaId && q.isRealExam);
+  assert.ok(own.length > 0 && real.length > 0);
+  const state = { ...createInitialSaveState('dupla'), correctQuestionIds: [...own.map((q) => q.id), real[0].id] };
+  assert.equal(getFichaStatus(fichaId, state, QUESTIONS), 'dominada');
+  assert.deepEqual(getRealExamProgress(fichaId, state, QUESTIONS), { total: real.length, acertadas: 1 });
+});
+
+test('rich text keeps only <u>, <mark>, <sup> and line breaks; any other tag stays literal text', async () => {
+  const { tokenizeRichText, stripRichText } = await import('./richText');
+  const tokens = tokenizeRichText('Use <script>alert(1)</script> e o termo <u>sublinhado</u><br>#include <stdio.h>');
+  assert.deepEqual(tokens, [
+    { type: 'text', text: 'Use <script>alert(1)</script> e o termo ' },
+    { type: 'open', tag: 'u' },
+    { type: 'text', text: 'sublinhado' },
+    { type: 'close', tag: 'u' },
+    { type: 'br' },
+    { type: 'text', text: '#include <stdio.h>' },
+  ]);
+  assert.equal(stripRichText('<mark>Atenção</mark>: x<sup>2</sup>'), 'Atenção: x2');
+  // Every real question keeps visible text. Some FCC statements are as short as "O Scrum",
+  // with the alternatives completing the sentence.
+  for (const q of QUESTIONS.filter((x) => x.prova)) {
+    assert.ok(stripRichText(q.enunciado).length >= 3, `${q.id} has empty visible text`);
+    for (const alt of q.alternativas) assert.ok(stripRichText(alt).length >= 1, `${q.id} has an empty alternative`);
+  }
 });

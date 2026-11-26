@@ -124,6 +124,30 @@ export interface Question {
   origem?: 'autoral';
   /** Uma explicação por alternativa, na mesma ordem de `alternativas`. */
   explicacoes?: string[];
+  /**
+   * Questão real de prova, vinda de conteudo/provas/questoes.json (texto e gabarito oficiais).
+   * O enunciado e as alternativas podem ter <u>, <mark>, <sup>, <br> e <p>; o resto é texto.
+   * Nessas questões, `trechoFonte` é a ficha ligada (para revisar), não a justificativa do gabarito.
+   */
+  prova?: ProvaInfo;
+}
+
+export interface ProvaInfo {
+  /** Chave da prova no banco, como "TRT4-2022-TJ". */
+  id: string;
+  /** "TRT-4 · 2022 · Técnico Judiciário – TI" */
+  label: string;
+  /** Número da questão na prova. */
+  numero: number;
+  trt: number;
+  /** Cargo da prova de origem (o cargo da questão no jogo segue o da ficha no edital do TRT-4). */
+  nivel: 'tec' | 'ana';
+  /** 'paralelo' = regra de outro TRT (Regimento, Código de Ética): só treino, nunca chefe. */
+  escopo: 'edital' | 'paralelo';
+  /** Id da questão no QConcursos. */
+  qid: string;
+  /** Ligação com a ficha feita automaticamente (assunto + palavras-chave) ou à mão. */
+  outrasFichas: string[];
 }
 
 export type ItemId =

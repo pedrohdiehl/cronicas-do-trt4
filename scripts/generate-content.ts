@@ -12,6 +12,7 @@ import type {
   ZonaInfo,
 } from '../src/types';
 import { loadAuthoredQuestions } from './authoredQuestions';
+import { loadExamQuestions } from './examQuestions';
 
 const MD_DIR = path.resolve(process.cwd(), 'public/assets/aistudio');
 
@@ -1428,7 +1429,14 @@ function main() {
     ...generated.filter((q) => !fichasSubstituidas.has(q.fichaId)),
     ...authored.questions,
   ];
-  for (const q of questions) {
+  // Questões reais de prova (FCC). Ficam num arquivo próprio, mas passam pelas mesmas conferências.
+  const exam = loadExamQuestions(fichas, aliasMap);
+  const idsUsados = new Set(questions.map((q) => q.id));
+  for (const q of exam.questions) {
+    if (idsUsados.has(q.id)) throw new Error(`Id repetido entre questões: ${q.id}`);
+    idsUsados.add(q.id);
+  }
+  for (const q of [...questions, ...exam.questions]) {
     if (q.enunciado.includes('⚠️') || q.trechoFonte.includes('⚠️') || q.alternativas.some((a) => a.includes('⚠️'))) {
       throw new Error(`CRITICAL: Warning symbol ⚠️ leaked into question ${q.id} (${q.fichaId})`);
     }
@@ -1473,13 +1481,26 @@ export const REGION_BY_ID: Record<string, RegionInfo> = Object.fromEntries(
 
   const questionsTs = `// AUTO-GENERATED from /public/assets/aistudio/*.md — STRICTLY GROUNDED, ZERO ⚠️ QUESTIONS
 // Questões com origem "autoral" vêm de /conteudo/questoes/**/*.yaml. Edite lá e rode npm run generate:content.
+// As questões reais de prova ficam em ./examQuestions.ts (de /conteudo/provas/questoes.json).
+import type { Question } from '../types';
+import { EXAM_QUESTIONS } from './examQuestions';
+
+const BASE_QUESTIONS: Question[] = ${JSON.stringify(questions, null, 2)};
+
+/** Geradas + autorais + reais de prova. */
+export const QUESTIONS: Question[] = [...BASE_QUESTIONS, ...EXAM_QUESTIONS];
+`;
+
+  const examTs = `// AUTO-GENERATED from /conteudo/provas/questoes.json (banco gerado em ${exam.geradoEm ?? '?'}).
+// Questões reais da FCC: enunciado, alternativas e gabarito oficiais, sem alteração. Não edite aqui.
 import type { Question } from '../types';
 
-export const QUESTIONS: Question[] = ${JSON.stringify(questions, null, 2)};
+export const EXAM_QUESTIONS: Question[] = ${JSON.stringify(exam.questions, null, 2)};
 `;
 
   fs.writeFileSync(path.resolve(process.cwd(), 'src/data/content.ts'), contentTs, 'utf8');
   fs.writeFileSync(path.resolve(process.cwd(), 'src/data/questions.ts'), questionsTs, 'utf8');
+  fs.writeFileSync(path.resolve(process.cwd(), 'src/data/examQuestions.ts'), examTs, 'utf8');
 
   const cargoCounts = {
     ambos: fichas.filter((f) => f.cargo === 'ambos').length,
@@ -1512,6 +1533,13 @@ export const QUESTIONS: Question[] = ${JSON.stringify(questions, null, 2)};
       `Authored but waiting for a new battle screen (association with pairs / ordering): ${authored.pendentes.length} — ` +
         authored.pendentes.map((p) => `${p.id} (${p.tipo})`).join(', ')
     );
+  }
+  console.log(
+    `Real exam questions (FCC): ${exam.questions.length} of ${exam.total} in the bank ` +
+      `(${exam.questions.filter((q) => q.prova?.escopo === 'paralelo').length} from other TRTs' rules, training only)`
+  );
+  for (const [motivo, n] of Object.entries(exam.fora).sort((a, b) => b[1] - a[1])) {
+    console.log(`  left out: ${n} — ${motivo}`);
   }
   console.log(`Boss-style (FCC) questions: ${questions.filter((q) => q.isBossStyle).length}`);
   console.log(`Fichas with < 3 questions: ${underThree.length}`, underThree.map((f) => f.id));

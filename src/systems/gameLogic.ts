@@ -147,7 +147,8 @@ export function getFichaStatus(
   state: SaveState,
   allQuestions: Question[] = getAllQuestions(state.customExamQuestions)
 ): FichaStatus {
-  const qs = allQuestions.filter((q) => q.fichaId === fichaId);
+  // Questões reais de prova não entram no domínio: são muitas em algumas fichas e têm contagem própria.
+  const qs = allQuestions.filter((q) => q.fichaId === fichaId && !q.isRealExam);
   const correctSet = new Set(state.correctQuestionIds);
   if (qs.length > 0 && qs.every((q) => correctSet.has(q.id))) {
     return 'dominada';
@@ -156,6 +157,22 @@ export function getFichaStatus(
     return 'estudada';
   }
   return 'nao_vista';
+}
+
+/** Questões reais de prova (FCC) de uma ficha e quantas já foram acertadas. */
+export function getRealExamProgress(
+  fichaId: string,
+  state: SaveState,
+  allQuestions: Question[] = getAllQuestions(state.customExamQuestions)
+): { total: number; acertadas: number } {
+  const qs = allQuestions.filter((q) => q.fichaId === fichaId && q.isRealExam);
+  const correctSet = new Set(state.correctQuestionIds);
+  return { total: qs.length, acertadas: qs.filter((q) => correctSet.has(q.id)).length };
+}
+
+/** Questão de regra de outro TRT (Regimento, Código de Ética): só treino. */
+export function isOtherCourtRule(q: Question): boolean {
+  return q.prova?.escopo === 'paralelo';
 }
 
 export interface MasterySummary {
@@ -311,7 +328,8 @@ export function buildBattleDeck(
     let s = (seed >>> 0) || 1;
     for (let i = out.length - 1; i > 0; i--) {
       s = (Math.imul(s, 1664525) + 1013904223) >>> 0;
-      const j = s % (i + 1);
+      // Usa os bits altos: os bits baixos desse gerador repetem em ciclos curtos e viciavam o sorteio.
+      const j = Math.floor((s / 4294967296) * (i + 1));
       [out[i], out[j]] = [out[j], out[i]];
     }
     return out;
@@ -352,40 +370,55 @@ export function buildBattleDeck(
     return [...unseen, ...seen].slice(0, 3);
   }
 
-  if (mode === 'miniboss') {
-    const realQs = allQs.filter((q) => q.isRealExam && (q.zonaId === scopeId || q.regiaoId === scopeId));
-    const fccQs = allQs.filter((q) => q.zonaId === scopeId && q.isBossStyle);
-    const otherZoneQs = allQs.filter((q) => q.zonaId === scopeId && !q.isBossStyle && q.alternativas.length >= 4);
-    const fallbackAll = allQs.filter((q) => q.isBossStyle);
-    const combined = [...shuffle(realQs), ...shuffle(fccQs), ...shuffle(otherZoneQs), ...shuffle(fallbackAll)];
-    const unique: Question[] = [];
+  // Mini-boss e chefe são "prova": metade questões reais da FCC, metade autorais/estilo FCC.
+  // Regra de outro TRT (escopo "paralelo") nunca entra aqui.
+  const provaPool = allQs.filter((q) => !isOtherCourtRule(q));
+  // Questões reais que o próprio estudante importou vêm antes das do banco.
+  const realFirst = (qs: Question[]) => [
+    ...shuffle(qs.filter((q) => !q.prova)),
+    ...shuffle(qs.filter((q) => q.prova)),
+  ];
+  const mixDeck = (real: Question[], estilo: Question[], reserva: Question[], size: number): Question[] => {
+    const deck: Question[] = [];
     const ids = new Set<string>();
-    for (const q of combined) {
-      if (!ids.has(q.id)) {
-        ids.add(q.id);
-        unique.push(q);
+    const take = (pool: Question[], limit: number) => {
+      for (const q of pool) {
+        if (deck.length >= limit) break;
+        if (!ids.has(q.id)) {
+          ids.add(q.id);
+          deck.push(q);
+        }
       }
-      if (unique.length >= 6) break;
-    }
-    return unique;
+    };
+    const metadeReal = Math.ceil(size / 2);
+    const realOrdered = realFirst(real);
+    const estiloOrdered = shuffle(estilo);
+    take(realOrdered, metadeReal);
+    take(estiloOrdered, size);
+    // Faltou de um lado? Completa com o outro e, por fim, com a reserva.
+    take(realOrdered, size);
+    take(shuffle(reserva), size);
+    return shuffle(deck);
+  };
+
+  if (mode === 'miniboss') {
+    const realQs = provaPool.filter((q) => q.isRealExam && (q.zonaId === scopeId || q.regiaoId === scopeId));
+    const estiloQs = provaPool.filter((q) => q.zonaId === scopeId && q.isBossStyle && !q.isRealExam);
+    const reserva = [
+      ...provaPool.filter((q) => q.zonaId === scopeId && !q.isBossStyle && q.alternativas.length >= 4),
+      ...provaPool.filter((q) => q.isBossStyle),
+    ];
+    return mixDeck(realQs, estiloQs, reserva, 6);
   }
 
-  // Region Boss: 8 questions mixing fichas across the region (prioritizing real exam questions, then FCC boss style)
-  const regionReal = allQs.filter((q) => q.isRealExam && q.regiaoId === scopeId);
-  const anyReal = allQs.filter((q) => q.isRealExam && q.regiaoId !== scopeId);
-  const regionBoss = allQs.filter((q) => q.regiaoId === scopeId && q.isBossStyle);
-  const regionOther = allQs.filter((q) => q.regiaoId === scopeId && !q.isBossStyle && q.alternativas.length >= 4);
-  const combined = [...shuffle(regionReal), ...shuffle(regionBoss), ...shuffle(regionOther), ...shuffle(anyReal)];
-  const unique: Question[] = [];
-  const ids = new Set<string>();
-  for (const q of combined) {
-    if (!ids.has(q.id)) {
-      ids.add(q.id);
-      unique.push(q);
-    }
-    if (unique.length >= 8) break;
-  }
-  return unique;
+  // Chefe da região: 8 questões misturando as fichas da região.
+  const regionReal = provaPool.filter((q) => q.isRealExam && q.regiaoId === scopeId);
+  const regionEstilo = provaPool.filter((q) => q.regiaoId === scopeId && q.isBossStyle && !q.isRealExam);
+  const reserva = [
+    ...provaPool.filter((q) => q.regiaoId === scopeId && !q.isBossStyle && q.alternativas.length >= 4),
+    ...provaPool.filter((q) => q.isRealExam && q.regiaoId !== scopeId),
+  ];
+  return mixDeck(regionReal, regionEstilo, reserva, 8);
 }
 
 /**

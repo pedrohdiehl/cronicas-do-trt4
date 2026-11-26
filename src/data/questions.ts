@@ -1,8 +1,10 @@
 // AUTO-GENERATED from /public/assets/aistudio/*.md — STRICTLY GROUNDED, ZERO ⚠️ QUESTIONS
 // Questões com origem "autoral" vêm de /conteudo/questoes/**/*.yaml. Edite lá e rode npm run generate:content.
+// As questões reais de prova ficam em ./examQuestions.ts (de /conteudo/provas/questoes.json).
 import type { Question } from '../types';
+import { EXAM_QUESTIONS } from './examQuestions';
 
-export const QUESTIONS: Question[] = [
+const BASE_QUESTIONS: Question[] = [
   {
     "id": "q-mc-0001",
     "fichaId": "res-cnj-400-2021",
@@ -18496,3 +18498,6 @@ export const QUESTIONS: Question[] = [
     ]
   }
 ];
+
+/** Geradas + autorais + reais de prova. */
+export const QUESTIONS: Question[] = [...BASE_QUESTIONS, ...EXAM_QUESTIONS];

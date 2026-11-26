@@ -8,6 +8,7 @@ import {
   getFichasForClass,
   getFichaStatus,
   getQuestionsForClass,
+  getRealExamProgress,
   ITEM_DEFS,
 } from '../systems/gameLogic';
 import type { Ficha, SaveState } from '../types';
@@ -119,7 +120,7 @@ export const GrimorioModal: React.FC<GrimorioModalProps> = ({
         {/* Clear progression legend explaining how Grimório works */}
         <div className="px-5 py-2 bg-[#101420] border-b border-[#262c3e] text-xs text-[#cbd5e1] flex flex-wrap items-center justify-between gap-2">
           <span>
-            <strong className="text-[#f5d76e]">Como funciona:</strong> todas as fichas do seu edital já ficam disponíveis para consulta e busca; ao falar com o NPC (ou vencer seu duelo) ela vira <strong className="text-[#7dd3fc]">Estudada ✓</strong> (+ Pergaminho), e ao acertar suas questões vira <strong className="text-[#86efac]">Dominada ★</strong>.
+            <strong className="text-[#f5d76e]">Como funciona:</strong> todas as fichas do seu edital já ficam disponíveis para consulta e busca; ao falar com o NPC (ou vencer seu duelo) ela vira <strong className="text-[#7dd3fc]">Estudada ✓</strong> (+ Pergaminho), e ao acertar suas questões vira <strong className="text-[#86efac]">Dominada ★</strong>. As questões reais de prova da FCC têm contagem à parte, dentro de cada ficha.
           </span>
         </div>
 
@@ -222,6 +223,26 @@ export const GrimorioModal: React.FC<GrimorioModalProps> = ({
                       onClose();
                     }}
                   />
+
+                  {/* Questões reais de prova (FCC) ligadas a esta ficha: contagem própria, fora do Dominada ★ */}
+                  {(() => {
+                    const real = getRealExamProgress(activeFicha.id, saveState, allQuestions);
+                    if (real.total === 0) return null;
+                    return (
+                      <div
+                        data-testid="provas-reais"
+                        className="p-3 bg-[#14201a] border border-[#2f6b47] rounded-[4px] text-xs sm:text-sm text-[#d1fae5] space-y-1"
+                      >
+                        <div className="font-semibold text-[#86efac]">
+                          Questões de prova da FCC: você acertou {real.acertadas} de {real.total}
+                        </div>
+                        <div className="text-[#a7c4b5]">
+                          Aparecem no duelo com o NPC desta ficha, no mini-boss e no chefe da região. Têm contagem
+                          própria e não entram no Dominada ★.
+                        </div>
+                      </div>
+                    );
+                  })()}
 
                   {/* Interactive SVG Mini-Graph of [[id]] Connections */}
                   {activeConnections.length > 0 && (
